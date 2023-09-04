@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/safelock/safelock.dart';
 
 
 class InvestmentDetailsScreen extends StatefulWidget {
@@ -293,20 +294,27 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                   SizedBox(
                     height: 20.sp,
                   ),
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 50.sp,
-                    decoration: BoxDecoration(
-                      color: Color(0xff3B5AFB),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "BUY NOW",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontFamily: 'Poppins',
-                            fontSize: 16.sp,
-                            color: Colors.white),
+                  GestureDetector(
+                    onTap: () {
+                 Navigator.of(context).push(
+                 MaterialPageRoute(builder: (BuildContext context) =>SafelockScreen())
+            );
+          },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 50.sp,
+                      decoration: BoxDecoration(
+                        color: Color(0xff3B5AFB),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "BUY NOW",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontFamily: 'Poppins',
+                              fontSize: 16.sp,
+                              color: Colors.white),
+                        ),
                       ),
                     ),
                   )
