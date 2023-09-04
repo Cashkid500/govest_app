@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
 
 
@@ -10,7 +11,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  TextEditingController emailController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 35.0, left: 10.0, right: 10.0),
+            padding: EdgeInsets.only(top: 35.sp, left: 10.sp, right: 10.sp),
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     text: TextSpan(
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
-                        fontSize: 25.0,
+                        fontSize: 25.sp,
                         fontFamily: 'Poppins',
                       ),
                       children: [
@@ -54,70 +54,70 @@ class _LoginScreenState extends State<LoginScreen> {
                 ]),
           ),
           SizedBox(
-            height: 2.0,
+            height: 2.sp,
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              left: 20.0,
+            padding: EdgeInsets.only(
+              left: 20.sp,
             ),
             child: Text(
               "Welcome back,",
               style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 18,
+                  fontSize: 18.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xffffffff)),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0),
+            padding: EdgeInsets.only(left: 20.sp),
             child: Text(
               "Login to your Account",
               style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 24,
+                  fontSize: 24.sp,
                   fontWeight: FontWeight.w700,
                   color: Color(0xffffffff)),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 20.sp,),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0),
+            padding: EdgeInsets.only(left: 20.sp),
             child: Container(
-              height: 50,
-              width: 320,
+              height: 50.sp,
+              width: 320.sp,
                 decoration: BoxDecoration(
             color: Color(0xffffffff),
-            borderRadius: BorderRadius.circular(5)),
+            borderRadius: BorderRadius.circular(5.r)),
                 child: TextField(
             decoration: InputDecoration(
-                  contentPadding: EdgeInsets.all(10),
+                  contentPadding: EdgeInsets.all(10.sp),
                   labelText: 'Email address',
                   labelStyle: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 16,
+            fontSize: 16.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xffc4c4c4),
                   ),
                 )),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 20.sp,),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0),
+            padding: EdgeInsets.only(left: 20.sp),
             child: Container(
-              height: 50,
-              width: 320,
+              height: 50.sp,
+              width: 320.sp,
                 decoration: BoxDecoration(
             color: Color(0xffffffff),
-            borderRadius: BorderRadius.circular(5)),
+            borderRadius: BorderRadius.circular(5.r)),
                 child: TextField(
             decoration: InputDecoration(
-                  contentPadding: EdgeInsets.all(10),
+                  contentPadding: EdgeInsets.all(10.sp),
                   labelText: 'Password',
                   labelStyle: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 16,
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xffc4c4c4),
                   ),
@@ -125,14 +125,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 )),
             ),
           ),
-          SizedBox(height: 5,),
+          SizedBox(height: 5.sp,),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0),
-            child: Text("Forgot Password?", style: TextStyle(fontFamily: 'Poppins', fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xff000000)),),
+            padding: EdgeInsets.only(left: 20.sp),
+            child: Text("Forgot Password?", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w500, color: Color(0xff000000)),),
           ),
-          SizedBox(height: 320,),
+          SizedBox(height: 320.sp,),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0),
+            padding: EdgeInsets.only(left: 20.sp),
             child: GestureDetector(
               onTap: () {
                  Navigator.of(context).push(
@@ -140,24 +140,24 @@ class _LoginScreenState extends State<LoginScreen> {
             );
           },
               child: Container(
-                height: 50,
-                  width: 320,
+                height: 50.sp,
+                  width: 320.sp,
                     decoration: BoxDecoration(
                 color: Color(0xffffffff),
-                borderRadius: BorderRadius.circular(5)),
-                child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: 'Poppins', fontSize: 14, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),)),
+                borderRadius: BorderRadius.circular(5.r)),
+                child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),)),
               ),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 20.sp,),
               Center(
                 child: RichText(
                   text: TextSpan(
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 12.0,
+                            fontSize: 12.sp,
                             fontFamily: 'Poppins',
-                            height: 1.8,
+                            height: 1.8.sp,
                           ),
                           children: [
                             TextSpan(
@@ -168,7 +168,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               text: "Sign Up",
                               style: TextStyle(
                                 color: Color(0xff000000),
-                                fontSize: 12,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),

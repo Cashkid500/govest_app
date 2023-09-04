@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/signup/signup.dart';
 
 
@@ -23,25 +24,25 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 40.0, right: 20.0),
-                child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
+                padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
+                child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 20.sp,),
               Center(child: Image.asset('assets/images/Page View1.png')),
-              SizedBox(height: 30,),
-              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: 'Poppins', fontSize: 24, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
+              SizedBox(height: 30.sp,),
+              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
               textAlign: TextAlign.center,),
-              SizedBox(height: 90,),
+              SizedBox(height: 90.sp,),
               Center(
                 child: Container(
-                  height: 54,
-                  width: 330,
+                  height: 54.sp,
+                  width: 330.sp,
                   decoration: BoxDecoration(
                     color: Color(0xff3B5AFB),
-                    borderRadius: BorderRadius.circular(82),
+                    borderRadius: BorderRadius.circular(82.r),
                   ),
                   child: Center(
-                    child: Text("Get Started", style: TextStyle(fontFamily: 'Poppins', fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
+                    child: Text("Get Started", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
                     ),
                   ),
                 ),
@@ -60,31 +61,31 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 40.0, right: 20.0),
-                  child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xffffffff)),),
+                  padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
+                  child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xffffffff)),),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(height: 20.sp,),
                 Center(child: Image.asset('assets/images/Page View2.png')),
-                SizedBox(height: 30,),
-                Text("Get access to best investment assets", style: TextStyle(fontFamily: 'Poppins', fontSize: 24, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
+                SizedBox(height: 30.sp,),
+                Text("Get access to best investment assets", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
                 textAlign: TextAlign.center,),
-                SizedBox(height: 90,),
+                SizedBox(height: 90.sp,),
                 Center(
                   child: Container(
-                    height: 54,
-                    width: 180,
+                    height: 54.sp,
+                    width: 180.sp,
                     decoration: BoxDecoration(
                       color: Color(0xffffffff),
-                      borderRadius: BorderRadius.circular(82),
+                      borderRadius: BorderRadius.circular(82.r),
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Center(
-                          child: Text("Next", style: TextStyle(fontFamily: 'Poppins', fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
+                          child: Text("Next", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
                           ),
                         ),
-                        SizedBox(width: 5,),
+                        SizedBox(width: 5.sp,),
                         Icon(Icons.arrow_right_alt, color: Color(0xff3B5AFB),)
                       ],
                     ),
@@ -99,15 +100,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 40.0, right: 20.0),
-                child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
+                padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
+                child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 20.sp,),
               Center(child: Image.asset('assets/images/Page View3.png')),
-              SizedBox(height: 30,),
-              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: 'Poppins', fontSize: 24, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
+              SizedBox(height: 30.sp,),
+              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
               textAlign: TextAlign.center,),
-              SizedBox(height: 90,),
+              SizedBox(height: 90.sp,),
               Center(
                 child: GestureDetector(
                   onTap: () {
@@ -116,14 +117,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             );
           },
                   child: Container(
-                    height: 54,
-                    width: 330,
+                    height: 54.sp,
+                    width: 330.sp,
                     decoration: BoxDecoration(
                       color: Color(0xff3B5AFB),
-                      borderRadius: BorderRadius.circular(82),
+                      borderRadius: BorderRadius.circular(82.r),
                     ),
                     child: Center(
-                      child: Text("Create an account", style: TextStyle(fontFamily: 'Poppins', fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
+                      child: Text("Create an account", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
                       ),
                     ),
                   ),

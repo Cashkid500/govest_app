@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/onboarding/onboarding.dart';
 
 void main() => runApp(MyApp());
@@ -8,14 +7,17 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
-    return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          home: SplashScreen(), // Use SplashScreen as the initial screen
-        );
-      }
+    return ScreenUtilInit(
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            home: SplashScreen(), // Use SplashScreen as the initial screen
+          );
+        });
   }
-
+}
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -52,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
             text: TextSpan(
               style: TextStyle(
                 fontWeight: FontWeight.w700,
-                fontSize: 30.0,
+                fontSize: 30.sp,
                 fontFamily: 'Poppins',
               ),
               children: [
