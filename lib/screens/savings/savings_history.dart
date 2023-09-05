@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:govest_app/screens/savings/gosavings.dart';
 
 class SavingsHistoryScreen extends StatefulWidget {
   const SavingsHistoryScreen({Key? key}) : super(key: key);
@@ -10,13 +10,12 @@ class SavingsHistoryScreen extends StatefulWidget {
 }
 
 class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     bool _switchFunction = false;
     return Scaffold(
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -26,7 +25,8 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
               height: 325.sp,
               decoration: BoxDecoration(color: Color(0xff3B5AFB)),
               child: Padding(
-                padding: EdgeInsets.only(right: 20.sp, left: 20.sp, top: 40.sp, bottom: 20.sp),
+                padding: EdgeInsets.only(
+                    right: 20.sp, left: 20.sp, top: 40.sp, bottom: 20.sp),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -128,7 +128,11 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       children: [
                         Text(
                           "42 days Left",
-                          style: TextStyle(color: Colors.white, fontFamily: 'Poppins', fontSize: 10.sp, fontWeight: FontWeight.w500),
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Poppins',
+                              fontSize: 10.sp,
+                              fontWeight: FontWeight.w500),
                         ),
                       ],
                     ),
@@ -174,21 +178,28 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
               padding: EdgeInsets.all(20.sp),
               child: Column(
                 children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 60.sp,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.r),
-                      color: Color(0xff3B5AFB),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Save Now",
-                        style: TextStyle(
-                          fontSize: 20.sp,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              GoSavingsScreen()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 60.sp,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.r),
+                        color: Color(0xff3B5AFB),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Save Now",
+                          style: TextStyle(
+                            fontSize: 20.sp,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
