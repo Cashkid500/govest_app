@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:govest_app/screens/savings/savings.dart';
+import '../savings/savings_dashboard.dart';
 
 
 class SafelockScreen extends StatefulWidget {
@@ -157,7 +157,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
               GestureDetector(
                 onTap: () {
                  Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>SavingsScreen())
+                 MaterialPageRoute(builder: (BuildContext context) =>SavingsDashboardScreen())
             );
           },
                 child: Container(
@@ -242,7 +242,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
               SizedBox(height: 5.sp,),
               Row(
                 children: [
-                  Icon(Icons.check_circle_outline, color: Color(0xff0EB51F)),
+                  Icon(Icons.check_circle, color: Color(0xff0EB51F)),
                   SizedBox(width: 10.sp,),
                   Text(
                     "Number of units you wish to buy",
