@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/profile/change_password.dart';
+import 'package:govest_app/screens/profile/edit_profile.dart';
+import 'package:govest_app/screens/profile/next_of_kin.dart';
+
+import '../login/login.dart';
 
 class ProfileAccountScreen extends StatefulWidget {
   const ProfileAccountScreen({Key? key}) : super(key: key);
@@ -95,13 +100,20 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  "Edit Profile",
-                                  style: TextStyle(
-                                    fontSize: 12.sp,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white,
-                                    fontFamily: 'Poppins',
+                                GestureDetector(
+                                onTap: () {
+                                Navigator.of(context).push(
+                                MaterialPageRoute(builder: (BuildContext context) =>EditProfileScreen())
+                                );
+                                },
+                                  child: Text(
+                                    "Edit Profile",
+                                    style: TextStyle(
+                                      fontSize: 12.sp,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white,
+                                      fontFamily: 'Poppins',
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
@@ -157,13 +169,20 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  "Next of Kin Update",
-                                  style: TextStyle(
-                                    fontSize: 12.sp,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white,
-                                    fontFamily: 'Poppins',
+                                GestureDetector(
+                                onTap: () {
+                                Navigator.of(context).push(
+                                MaterialPageRoute(builder: (BuildContext context) =>NextOfKinScreen())
+                                );
+                                },
+                                  child: Text(
+                                    "Next of Kin Update",
+                                    style: TextStyle(
+                                      fontSize: 12.sp,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white,
+                                      fontFamily: 'Poppins',
+                                    ),
                                   ),
                                 ),
                                 SizedBox(height: 5.sp),
@@ -239,13 +258,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 )
                               ],
                             ),
-                            // SizedBox(
-                            //   width: 2.sp,
-                            // ),
-                            Icon(
-                              Icons.chevron_right,
-                              color: Colors.white,
-                            ),
+                            Icon(Icons.chevron_right,color: Colors.white,),
                           ],
                         )
                       ],
@@ -312,13 +325,20 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 SizedBox(
                                   height: 5.sp,
                                 ),
-                                Text(
-                                  "Change password",
-                                  style: TextStyle(
-                                    fontSize: 10.sp,
-                                    fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.w500,
-                                    color: Color(0xffBFBFE3),
+                                GestureDetector(
+                                onTap: () {
+                                Navigator.of(context).push(
+                                MaterialPageRoute(builder: (BuildContext context) =>ChangePasswordScreen())
+                                );
+                                },
+                                  child: Text(
+                                    "Change password",
+                                    style: TextStyle(
+                                      fontSize: 10.sp,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                      color: Color(0xffBFBFE3),
+                                    ),
                                   ),
                                 )
                               ],
