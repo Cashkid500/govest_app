@@ -149,28 +149,21 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
               child: Center(child: Text("Use Go Wallet (N20,000)", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
              ),
              SizedBox(height: 30.sp,),
-             GestureDetector(
-              onTap: () {
-                 Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>AddBankScreen())
-            );
-          },
-               child: Container(
-                height: 60.sp,
-                width: 329.sp,
-                decoration: BoxDecoration(
-                  color: Color(0xff3B5AFB),
-                  borderRadius: BorderRadius.circular(10.r)
-                ),
-                child: Center(child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset('assets/images/Mastercard.png'),
-                    SizedBox(width: 10.sp,),
-                    Text("Use Card with Paystack", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),),
-                  ],
-                )),
-               ),
+             Container(
+              height: 60.sp,
+              width: 329.sp,
+              decoration: BoxDecoration(
+                color: Color(0xff3B5AFB),
+                borderRadius: BorderRadius.circular(10.r)
+              ),
+              child: Center(child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/Mastercard.png'),
+                  SizedBox(width: 10.sp,),
+                  Text("Use Card with Paystack", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),),
+                ],
+              )),
              ),
             ],
           ),
