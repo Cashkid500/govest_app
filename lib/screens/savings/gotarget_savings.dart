@@ -13,7 +13,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
   List<String> items = [
     "Daily",
     "Weekly",
-    "Montly",
+    "Monthly",
   ];
   int current = 0;
   List<String> items1 = [
