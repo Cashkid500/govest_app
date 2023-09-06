@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/dashboard/dashboard.dart';
 import 'package:govest_app/screens/profile/profile_account.dart';
 import 'package:govest_app/screens/profile/setup_kyc.dart';
+import 'package:govest_app/screens/profile/transaction_history.dart';
+
+import '../profile/add_bank.dart';
 
 
 class InvestmentPackageGridScreen extends StatefulWidget {
@@ -75,13 +78,20 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                   ) ,
                   ),
                   SizedBox(width: 10.sp,),
-                  Text("Dashboard",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.w400,
-                  ),),
+                  GestureDetector(
+                    onTap: () {
+                 Navigator.of(context).push(
+                 MaterialPageRoute(builder: (BuildContext context) =>DashboardScreen())
+            );
+          },
+                    child: Text("Dashboard",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.w400,
+                    ),),
+                  ),
                 ],
               ),
             ),
@@ -120,13 +130,20 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 children: [
                   Icon(Icons.receipt_long, color: Colors.white,),
                   SizedBox(width: 10.sp,),
-                  Text("Transaction History",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.w400,
-                  ),),
+                  GestureDetector(
+                  onTap: () {
+                  Navigator.of(context).push(
+                 MaterialPageRoute(builder: (BuildContext context) =>TransactionHistoryScreen())
+                );
+                },
+                    child: Text("Transaction History",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.w400,
+                    ),),
+                  ),
                 ],
               ),
             ),
@@ -139,13 +156,20 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 children: [
                   Icon(Icons.account_balance_wallet, color: Colors.white,),
                   SizedBox(width: 10.sp,),
-                  Text("Bank & Debit Card",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.w400,
-                  ),),
+                  GestureDetector(
+                    onTap: () {
+                 Navigator.of(context).push(
+                 MaterialPageRoute(builder: (BuildContext context) =>AddBankScreen())
+                );
+                },
+                    child: Text("Bank & Debit Card",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.w400,
+                    ),),
+                  ),
                 ],
               ),
             ),
@@ -219,33 +243,26 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
               children: [
                 Padding(
                   padding: EdgeInsets.only(right: 20.sp),
-                  child: GestureDetector(
-                    onTap: () {
-                 Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>DashboardScreen())
-            );
-          },
-                    child: Container(
-                      height: 68.sp,
-                      width: 149.sp,
-                      decoration: BoxDecoration(
-                        color: Color(0xffffffff),
-                        borderRadius: BorderRadius.circular(7.r),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text("Log out",
-                              style: TextStyle(
-                                fontSize: 20.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: 'Poppins',
-                                color: Color(0xff3B5AFB),
-                              ),),
-                              Image.asset("assets/images/Logout.png"),
-                        ],
-                      ),
+                  child: Container(
+                    height: 68.sp,
+                    width: 149.sp,
+                    decoration: BoxDecoration(
+                      color: Color(0xffffffff),
+                      borderRadius: BorderRadius.circular(7.r),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text("Log out",
+                            style: TextStyle(
+                              fontSize: 20.sp,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: 'Poppins',
+                              color: Color(0xff3B5AFB),
+                            ),),
+                            Image.asset("assets/images/Logout.png"),
+                      ],
                     ),
                   ),
                 )
