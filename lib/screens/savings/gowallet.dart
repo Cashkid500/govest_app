@@ -23,10 +23,6 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Icon(Icons.close, color: Color(0xff3B5AFB),),
-              // SizedBox(
-              //   height: 30.sp,
-              // ),
               Text(
                 "Go Wallet",
                 style: TextStyle(

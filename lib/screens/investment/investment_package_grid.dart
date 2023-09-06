@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/dashboard/dashboard.dart';
+import 'package:govest_app/screens/profile/profile_account.dart';
+import 'package:govest_app/screens/profile/setup_kyc.dart';
 
 
 class InvestmentPackageGridScreen extends StatefulWidget {
@@ -92,13 +94,20 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 children: [
                   Icon(Icons.person, color: Colors.white,),
                   SizedBox(width: 10.sp,),
-                  Text("Profile account",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.w400,
-                  ),),
+                  GestureDetector(
+                      onTap: () {
+                 Navigator.of(context).push(
+                 MaterialPageRoute(builder: (BuildContext context) =>ProfileAccountScreen())
+            );
+            },
+                    child: Text("Profile account",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.w400,
+                    ),),
+                  ),
                 ],
               ),
             ),
@@ -149,13 +158,20 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 children: [
                   Image.asset('assets/images/KYC.png'),
                   SizedBox(width: 10.sp,),
-                  Text("Setup KYC",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.w400,
-                  ),),
+                  GestureDetector(
+                    onTap: () {
+                 Navigator.of(context).push(
+                 MaterialPageRoute(builder: (BuildContext context) =>SetupKYCScreen())
+            );
+            },
+                    child: Text("Setup KYC",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.w400,
+                    ),),
+                  ),
                 ],
               ),
             ),
