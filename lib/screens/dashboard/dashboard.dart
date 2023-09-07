@@ -450,7 +450,7 @@ class DashboardContainer extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.grey,
                           fontFamily: GoVestAssetsPath.govestFont,
-                          fontSize: 13,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500),
                     ),
                   ),

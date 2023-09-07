@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/savings/gosavings.dart';
-
 import '../constants/asset_path.dart';
 
 class SavingsHistoryScreen extends StatefulWidget {
@@ -25,7 +25,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 325.sp,
-              decoration: BoxDecoration(color: Color(0xff3B5AFB)),
+              decoration: BoxDecoration(color: hooloovooBlue),
               child: Padding(
                 padding: EdgeInsets.only(
                     right: 20.sp, left: 20.sp, top: 40.sp, bottom: 20.sp),
@@ -39,8 +39,8 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       children: [
                         Icon(
                           Icons.close,
-                          size: 30,
-                          color: Colors.white,
+                          size: 30.sp,
+                          color: whiteText,
                         ),
                         SizedBox(
                           width: 70.sp,
@@ -51,7 +51,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                             fontSize: 24.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white,
+                            color: whiteText,
                           ),
                         ),
                       ],
@@ -65,7 +65,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           fontWeight: FontWeight.w700,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 16.sp,
-                          color: Colors.white),
+                          color: whiteText),
                     ),
                     SizedBox(
                       height: 25,
@@ -84,7 +84,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                               fontSize: 32.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white),
+                              color: whiteText),
                         ),
                         Text(
                           "/",
@@ -92,7 +92,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                               fontSize: 14.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white),
+                              color: whiteText),
                         ),
                         Text(
                           "300,000",
@@ -100,7 +100,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                               fontSize: 16.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white),
+                              color: whiteText),
                         ),
                       ],
                     ),
@@ -111,16 +111,16 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       height: 15.sp,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
+                          borderRadius: BorderRadius.circular(10.r),
+                          color: whiteText),
                       child: Row(
                         children: [
                           Container(
                             height: 15.sp,
                             width: 66.sp,
                             decoration: BoxDecoration(
-                                color: Color(0xff0EB51F),
-                                borderRadius: BorderRadius.circular(10)),
+                                color: springForth,
+                                borderRadius: BorderRadius.circular(10.r)),
                           ),
                         ],
                       ),
@@ -131,7 +131,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                         Text(
                           "42 days Left",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontSize: 10.sp,
                               fontWeight: FontWeight.w500),
@@ -147,8 +147,8 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           width: 40.sp,
                           height: 20.sp,
                           decoration: BoxDecoration(
-                            color: Color(0xff3B5AFB),
-                            borderRadius: BorderRadius.circular(8),
+                            color: hooloovooBlue,
+                            borderRadius: BorderRadius.circular(8.r),
                           ),
                           child: Switch(
                             value: _switchFunction,
@@ -168,7 +168,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                               fontSize: 12.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
-                              color: Colors.white),
+                              color: whiteText),
                         )
                       ],
                     ),
@@ -191,7 +191,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       height: 60.sp,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.r),
-                        color: Color(0xff3B5AFB),
+                        color: hooloovooBlue,
                       ),
                       child: Center(
                         child: Text(
@@ -200,7 +200,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                             fontSize: 20.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white,
+                            color: whiteText,
                           ),
                         ),
                       ),
@@ -218,7 +218,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                             fontSize: 18.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w600,
-                            color: Color(0xff979797)),
+                            color: spanishGrey),
                       ),
                       Text(
                         "See more",
@@ -226,7 +226,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                             fontSize: 12.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w500,
-                            color: Color(0xff979797)),
+                            color: spanishGrey),
                       )
                     ],
                   ),
@@ -283,7 +283,7 @@ class HistoryWidget extends StatelessWidget {
               height: 45.sp,
               width: 45.sp,
               decoration: BoxDecoration(
-                  color: Color(0xff0EB51F),
+                  color: springForth,
                   borderRadius: BorderRadius.circular(10.r)),
               child: Icon(Icons.trending_down),
             ),
@@ -297,7 +297,7 @@ class HistoryWidget extends StatelessWidget {
                 Text(
                   "Save from wallet",
                   style: TextStyle(
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
@@ -309,7 +309,7 @@ class HistoryWidget extends StatelessWidget {
                       fontSize: 10.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xff979797)),
+                      color: spanishGrey),
                 )
               ],
             ),
@@ -321,7 +321,7 @@ class HistoryWidget extends StatelessWidget {
             fontSize: 14.sp,
             fontFamily: GoVestAssetsPath.govestFont,
             fontWeight: FontWeight.w700,
-            color: Color(0xff0EB51F),
+            color: springForth,
           ),
         )
       ],

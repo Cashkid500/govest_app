@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/create_new_savings.dart';
 import 'package:govest_app/screens/savings/savings_dashboard.dart';
-
 import '../constants/asset_path.dart';
+import '../constants/color_constants.dart';
 
 
 class SavingsTransactionsScreen extends StatefulWidget {
@@ -27,9 +27,9 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
               Container(
                 width: MediaQuery.of(context).size.width,
                 decoration:
-                    BoxDecoration(color: Color(0xff60f248).withOpacity(0.23)),
+                    BoxDecoration(color: biopunk.withOpacity(0.23)),
                 child: Padding(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20.sp),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,9 +55,9 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         text: "Go",
                                         style: TextStyle(
                                           decoration: TextDecoration.underline,
-                                          decorationColor: Color(0xff0EB51F),
+                                          decorationColor: springForth,
                                           decorationThickness: 0.5.sp,
-                                          color: Color(0xff0EB51F),
+                                          color: springForth,
                                         ),
                                       ),
                                       TextSpan(
@@ -65,9 +65,9 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         style: TextStyle(
                                             decoration:
                                                 TextDecoration.underline,
-                                            decorationColor: Color(0xff2A52E2),
+                                            decorationColor: veteranBlue,
                                             decorationThickness: 0.5.sp,
-                                            color: Color(0xff2A52E2)),
+                                            color: veteranBlue),
                                       ),
                                     ],
                                   ),
@@ -78,11 +78,11 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w400,
                                       fontFamily: GoVestAssetsPath.govestFont,
-                                      color: Color(0xff979797)),
+                                      color: spanishGrey),
                                 )
                               ],
                             ),
-                            Icon(Icons.add_circle, color: Color(0xff3B5AFB), size: 45.sp,),
+                            Icon(Icons.add_circle, color: hooloovooBlue, size: 45.sp,),
                           ],
                         ),
                         SizedBox(
@@ -98,12 +98,12 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               "590,000.00",
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
-                                decorationColor: Colors.black,
+                                decorationColor: blackText,
                                 decorationThickness: 1.sp,
                                 fontSize: 40.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
-                                color: Colors.black,
+                                color: blackText,
                               ),
                             )
                           ],
@@ -129,7 +129,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     fontSize: 16.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
-                                    color: Color(0xff979797),
+                                    color: spanishGrey,
                                   ),
                                 ),
                               ),
@@ -139,7 +139,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   fontSize: 16.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
-                                  color: Color(0xff3B5AFB),
+                                  color: hooloovooBlue,
                                 ),
                               ),
                             ],
@@ -154,7 +154,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                             height: 1.sp,
                             width: MediaQuery.of(context).size.width,
                             decoration: BoxDecoration(
-                              color: Color(0xff979797),
+                              color: spanishGrey,
                             ),
                           ),
                         ),
@@ -168,10 +168,10 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                   height: 232.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30.r),
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(20.sp),
                     child: Column(
                       children: [
                         Row(
@@ -186,12 +186,12 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                     decoration: TextDecoration.underline,
                                     decorationColor:
-                                        Colors.white.withOpacity(0.41),
+                                        whiteText.withOpacity(0.41),
                                     decorationThickness: 1.sp,
                                     fontSize: 16,
                                     fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w500,
-                                    color: Colors.white.withOpacity(0.41),
+                                    color: whiteText.withOpacity(0.41),
                                   ),
                                 ),
                                 SizedBox(
@@ -202,12 +202,12 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
                                       decorationColor:
-                                          Colors.white.withOpacity(0.41),
+                                          whiteText.withOpacity(0.41),
                                       decorationThickness: 3.sp,
                                       fontSize: 16.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.white),
+                                      color: whiteText),
                                 )
                               ],
                             ),
@@ -216,7 +216,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               width: 40.sp,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50.r),
-                                  color: Colors.white),
+                                  color: whiteText),
                               child: Center(
                                 child: Text(
                                   "35%",
@@ -224,7 +224,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: GoVestAssetsPath.govestFont,
-                                      color: Color(0xff3B5AFB)),
+                                      color: hooloovooBlue),
                                 ),
                               ),
                             ),
@@ -240,7 +240,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               height: 100.sp,
                               width: 135.sp,
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: whiteText,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Padding(
@@ -255,11 +255,11 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         fontSize: 14.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
-                                        color: Color(0xff3B5AFB),
+                                        color: hooloovooBlue,
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 15,
+                                      height: 15.sp,
                                     ),
                                     Text(
                                       "# 590,000",
@@ -267,7 +267,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
-                                          color: Color(0xff3B5AFB)),
+                                          color: hooloovooBlue),
                                     )
                                   ],
                                 ),
@@ -277,8 +277,8 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               height: 100.sp,
                               width: 135.sp,
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.30),
-                                borderRadius: BorderRadius.circular(10),
+                                color: whiteText.withOpacity(0.30),
+                                borderRadius: BorderRadius.circular(10.r),
                               ),
                               child: Padding(
                                 padding: EdgeInsets.all(20.sp),
@@ -292,11 +292,11 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         fontSize: 14.sp,
                                         fontWeight: FontWeight.w700,
                                         fontFamily: GoVestAssetsPath.govestFont,
-                                        color: Colors.white,
+                                        color: whiteText,
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 15,
+                                      height: 15.sp,
                                     ),
                                     Text(
                                       "# 200,000",
@@ -304,7 +304,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           fontSize: 16.sp,
                                           fontWeight: FontWeight.w700,
                                           fontFamily: GoVestAssetsPath.govestFont,
-                                          color: Colors.white),
+                                          color: whiteText),
                                     )
                                   ],
                                 ),
@@ -325,10 +325,10 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                   height: 232.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30.r),
-                    color: Colors.black,
+                    color: blackText,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(20.sp),
                     child: Column(
                       children: [
                         Row(
@@ -343,12 +343,12 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                     decoration: TextDecoration.underline,
                                     decorationColor:
-                                        Colors.white.withOpacity(0.41),
+                                        whiteText.withOpacity(0.41),
                                     decorationThickness: 1.sp,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
                                     fontFamily: GoVestAssetsPath.govestFont,
-                                    color: Colors.white.withOpacity(0.41),
+                                    color: whiteText.withOpacity(0.41),
                                   ),
                                 ),
                                 SizedBox(
@@ -359,12 +359,12 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
                                       decorationColor:
-                                          Colors.white.withOpacity(0.41),
+                                          whiteText.withOpacity(0.41),
                                       decorationThickness: 3.sp,
                                       fontSize: 16.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.white),
+                                      color: whiteText),
                                 )
                               ],
                             ),
@@ -373,7 +373,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               width: 40.sp,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50.r),
-                                  color: Colors.white),
+                                  color: whiteText),
                               child: Center(
                                 child: Text(
                                   "20%",
@@ -381,7 +381,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: GoVestAssetsPath.govestFont,
-                                      color: Color(0xff3B5AFB)),
+                                      color: hooloovooBlue),
                                 ),
                               ),
                             ),
@@ -397,8 +397,8 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               height: 100.sp,
                               width: 135.sp,
                               decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(10),
+                                color: whiteText,
+                                borderRadius: BorderRadius.circular(10.r),
                               ),
                               child: Padding(
                                 padding: EdgeInsets.all(20.sp),
@@ -412,7 +412,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         fontSize: 14.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
-                                        color: Color(0xff3B5AFB),
+                                        color: hooloovooBlue,
                                       ),
                                     ),
                                     SizedBox(height: 15,),
@@ -422,7 +422,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
-                                          color: Color(0xff3B5AFB)),
+                                          color: hooloovooBlue),
                                     )
                                   ],
                                 ),
@@ -432,7 +432,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               height: 100.sp,
                               width: 135.sp,
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.30),
+                                color: whiteText.withOpacity(0.30),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Padding(
@@ -447,7 +447,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         fontSize: 14.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
-                                        color: Colors.white,
+                                        color: whiteText,
                                       ),
                                     ),
                                     SizedBox(height: 15,
@@ -458,7 +458,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
-                                          color: Colors.white),
+                                          color: whiteText),
                                     )
                                   ],
                                 ),
@@ -484,7 +484,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                     height: 232.sp,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30.r),
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(20),
@@ -504,16 +504,16 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         style: TextStyle(
                                           decoration: TextDecoration.underline,
                                           decorationColor:
-                                              Colors.white.withOpacity(0.41),
+                                              whiteText.withOpacity(0.41),
                                           decorationThickness: 1.sp,
                                           fontSize: 16,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w500,
-                                          color: Colors.white.withOpacity(0.41),
+                                          color: whiteText.withOpacity(0.41),
                                         ),
                                       ),
                                       SizedBox(width: 5.sp,),
-                                      Icon(Icons.lock, color: Colors.white.withOpacity(0.41),)
+                                      Icon(Icons.lock, color: whiteText.withOpacity(0.41),)
                                     ],
                                   ),
                                   SizedBox(
@@ -524,12 +524,12 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     style: TextStyle(
                                         decoration: TextDecoration.underline,
                                         decorationColor:
-                                            Colors.white.withOpacity(0.41),
+                                            whiteText.withOpacity(0.41),
                                         decorationThickness: 3.sp,
                                         fontSize: 16.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
-                                        color: Colors.white),
+                                        color: whiteText),
                                   )
                                 ],
                               ),
@@ -538,7 +538,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                 width: 40.sp,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(50.r),
-                                    color: Colors.white),
+                                    color: whiteText),
                                 child: Center(
                                   child: Text(
                                     "40%",
@@ -546,7 +546,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w700,
                                         fontFamily: GoVestAssetsPath.govestFont,
-                                        color: Color(0xff3B5AFB)),
+                                        color: hooloovooBlue),
                                   ),
                                 ),
                               ),
@@ -562,7 +562,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                 height: 100.sp,
                                 width: 135.sp,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: whiteText,
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Padding(
@@ -577,7 +577,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           fontSize: 14.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
-                                          color: Color(0xff3B5AFB),
+                                          color: hooloovooBlue,
                                         ),
                                       ),
                                       SizedBox(
@@ -589,7 +589,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                             fontSize: 16.sp,
                                             fontFamily: GoVestAssetsPath.govestFont,
                                             fontWeight: FontWeight.w700,
-                                            color: Color(0xff3B5AFB)),
+                                            color: hooloovooBlue),
                                       )
                                     ],
                                   ),
@@ -599,7 +599,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                 height: 100.sp,
                                 width: 135.sp,
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.30),
+                                  color: whiteText.withOpacity(0.30),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Padding(
@@ -614,7 +614,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           fontSize: 14.sp,
                                           fontWeight: FontWeight.w700,
                                           fontFamily: GoVestAssetsPath.govestFont,
-                                          color: Colors.white,
+                                          color: whiteText,
                                         ),
                                       ),
                                       SizedBox(
@@ -626,7 +626,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                             fontSize: 16.sp,
                                             fontWeight: FontWeight.w700,
                                             fontFamily: GoVestAssetsPath.govestFont,
-                                            color: Colors.white),
+                                            color: whiteText),
                                       )
                                     ],
                                   ),
