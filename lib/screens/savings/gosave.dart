@@ -12,6 +12,12 @@ class GoSaveScreen extends StatefulWidget {
 
 class _GoSaveScreenState extends State<GoSaveScreen> {
   bool _switchFunction = false;
+  List<String> items1 = [
+  "Autosave",
+  "Manual",
+  ];
+  int current1 = 0;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -105,57 +111,68 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
              SizedBox(height: 25.sp,),
              Text("How do you want to safe?", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, fontFamily: 'Poppins', color: Color(0xff979797)),),
              SizedBox(height: 10.sp),
-             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Container(
-                  height: 59.sp,
-                  width: 120.sp,
-                  decoration: BoxDecoration(
-                    color: Color(0xff3B5AFB),
-                    borderRadius: BorderRadius.circular(5.r),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        height: 15.sp,
-                        width: 15.sp,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.r),
-                          color: Color(0xffffffff)
-                        ),
-                      ),
-                      Text("AutoSave", style: TextStyle(fontFamily: 'Poppins', fontSize: 12.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)
-                    ],
-                  ),
-                ),
-                SizedBox(width: 20.sp,),
-                Container(
-                  height: 59.sp,
-                  width: 120.sp,
-                  decoration: BoxDecoration(
-                    color: Color(0xffffffff),
-                    borderRadius: BorderRadius.circular(5.r),
-                    border: Border.all(color: Color(0xff3B5AFB))
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        height: 15.sp,
-                        width: 15.sp,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.r),
-                          color: Color(0xff3B5AFB)
-                        ),
-                      ),
-                      Text("Manual", style: TextStyle(fontFamily: 'Poppins', fontSize: 12.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),)
-                    ],
-                  ),
-                )
-              ],
-             ),
+             SizedBox(
+                height: MediaQuery.of(context).size.height / 12,
+                width: double.infinity,
+                child: ListView.builder(
+                    itemCount: items1.length,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (ctx, index) {
+                      return Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                current1 = index;
+                              });
+                            },
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 100),
+                              margin: EdgeInsets.all(5),
+                              width: 120.sp,
+                              height: 54.sp,
+                              decoration: BoxDecoration(
+                                  color: current1 == index
+                                      ? Color(0xff2A52E2)
+                                      : Colors.white.withOpacity(0.12),
+                                  border: Border.all(color: Color(0xffE7E7F6)),
+                                  borderRadius: BorderRadius.circular(5)),
+                              child: Center(
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 10.sp,
+                                    ),
+                                    Container(
+                                      height: 20.sp,
+                                      width: 20.sp,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: current1 == index
+                                            ? Colors.white
+                                            : Color(0xff2A52E2),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 10.sp,
+                                    ),
+                                    Text(
+                                      items1[index],
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          color: current1 == index
+                                              ? Colors.white
+                                              : Color(0xff2A52E2)),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+                    }),
+              ),
              SizedBox(height: 20.sp,),
              SizedBox(
                 height: 30.sp,
