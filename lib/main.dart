@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/asset_path.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/onboarding/onboarding.dart';
 
 void main() => runApp(MyApp());
@@ -49,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: whiteText,
           ),
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             RichText(
@@ -62,12 +63,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 children: [
                   TextSpan(
                     text: "Go",
-                    style: TextStyle(color: Color(0xff2A52E2)),
+                    style: TextStyle(color: veteranBlue),
                   ),
                   TextSpan(
                     text: "VEST",
                     style: TextStyle(
-                      color: Color(0xff0EB51F),
+                      color: springForth,
                     ),
                   ),
                 ],

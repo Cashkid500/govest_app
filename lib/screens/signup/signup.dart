@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/login/login.dart';
 
 import '../constants/asset_path.dart';
+import '../constants/color_constants.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -29,7 +30,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   children: [
                     Icon(
                       Icons.keyboard_arrow_left,
-                      color: Colors.white,
+                      color: whiteText,
                     ),
                     RichText(
                       text: TextSpan(
@@ -41,12 +42,12 @@ class _SignupScreenState extends State<SignupScreen> {
                         children: [
                           TextSpan(
                             text: "Go",
-                            style: TextStyle(color: Color(0xffffffff)),
+                            style: TextStyle(color: whiteText),
                           ),
                           TextSpan(
                             text: "Vest",
                             style: TextStyle(
-                              color: Color(0xff0EB51F),
+                              color: springForth,
                             ),
                           ),
                         ],
@@ -67,7 +68,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xffffffff)),
+                    color: whiteText),
               ),
             ),
             Padding(
@@ -78,7 +79,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 20.sp,
                     fontWeight: FontWeight.w700,
-                    color: Color(0xffffffff)),
+                    color: whiteText),
               ),
             ),
             SizedBox(
@@ -93,7 +94,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     height: 50.sp,
                     width: 160.sp,
                     decoration: BoxDecoration(
-                        color: Color(0xffffffff),
+                        color: whiteText,
                         borderRadius: BorderRadius.circular(5.r)),
                     child: TextField(
                         decoration: InputDecoration(
@@ -103,7 +104,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w500,
-                          color: Color(0xffc4c4c4)),
+                          color: weatheredStone),
                     )),
                   ),
                 ),
@@ -116,7 +117,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     height: 50.sp,
                     width: 160.sp,
                     decoration: BoxDecoration(
-                        color: Color(0xffffffff),
+                        color: whiteText,
                         borderRadius: BorderRadius.circular(5.r)),
                     child: TextField(
                         decoration: InputDecoration(
@@ -126,7 +127,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xffc4c4c4),
+                        color: weatheredStone,
                       ),
                     )),
                   ),
@@ -148,7 +149,7 @@ class _SignupScreenState extends State<SignupScreen> {
               height: 50.sp,
               width: 340.sp,
             decoration: BoxDecoration(
-            color: Color(0xffffffff),
+            color: whiteText,
             borderRadius: BorderRadius.circular(5.r)),
         child: TextField(
           decoration: InputDecoration(
@@ -158,9 +159,9 @@ class _SignupScreenState extends State<SignupScreen> {
             fontFamily: GoVestAssetsPath.govestFont,
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,
-            color: Color(0xffc4c4c4),
+            color: weatheredStone,
           ),
-          suffixIcon: Icon(Icons.loyalty, color: Color(0xff3B5AFB),)
+          suffixIcon: Icon(Icons.loyalty, color: hooloovooBlue,)
         )),
             ),
             SizedBox(
@@ -169,12 +170,12 @@ class _SignupScreenState extends State<SignupScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(Icons.error_outlined, color: Color(0xffffffff), size: 15.sp,),
+                Icon(Icons.error_outlined, color: whiteText, size: 15.sp,),
                 Padding(
                   padding: EdgeInsets.only(right: 30.sp),
                   child: Text(
                     "Your friend get rewarded when you use their referal code.", style: TextStyle(
-                      fontFamily: GoVestAssetsPath.govestFont, fontSize: 10.sp, fontWeight: FontWeight.w400, color: Color(0xffffffff)
+                      fontFamily: GoVestAssetsPath.govestFont, fontSize: 10.sp, fontWeight: FontWeight.w400, color: whiteText
                     )
                   ),
                 ),
@@ -194,12 +195,12 @@ class _SignupScreenState extends State<SignupScreen> {
                           children: [
                             TextSpan(
                               text: "By signing up, you agree to the ",
-                              style: TextStyle(color: Color(0xffffffff)),
+                              style: TextStyle(color: whiteText),
                             ),
                             TextSpan(
                               text: "Terms of Use & Privacy Policy",
                               style: TextStyle(
-                                color: Color(0xff000000),
+                                color: blackText,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -219,10 +220,10 @@ class _SignupScreenState extends State<SignupScreen> {
                           height: 50.sp,
                           width: 340.sp,
                           decoration: BoxDecoration(
-                          color: Color(0xff4169E1),
+                          color: royalBlue,
                           borderRadius: BorderRadius.circular(5.r),
-                          border: Border.all(color: Color(0xffffffff))),
-                          child: Center(child: Text("Become A Family", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w800, color: Color(0xffffffff)),)),
+                          border: Border.all(color: whiteText)),
+                          child: Center(child: Text("Become A Family", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w800, color: whiteText),)),
                   ),
                 ),
                 SizedBox(height: 20.sp,),
@@ -237,12 +238,12 @@ class _SignupScreenState extends State<SignupScreen> {
                           children: [
                             TextSpan(
                               text: "Already a family? ",
-                              style: TextStyle(color: Color(0xffffffff)),
+                              style: TextStyle(color: whiteText),
                             ),
                             TextSpan(
                               text: "Sign In",
                               style: TextStyle(
-                                color: Color(0xff000000),
+                                color: blackText,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -271,7 +272,7 @@ class TextField1 extends StatelessWidget {
       height: 50.sp,
       width: 340.sp,
       decoration: BoxDecoration(
-          color: Color(0xffffffff),
+          color: whiteText,
           borderRadius: BorderRadius.circular(5.r)),
       child: TextField(
           decoration: InputDecoration(
@@ -281,7 +282,7 @@ class TextField1 extends StatelessWidget {
           fontFamily: GoVestAssetsPath.govestFont,
           fontSize: 16,
           fontWeight: FontWeight.w500,
-          color: Color(0xffc4c4c4),
+          color: weatheredStone,
         ),
       )),
     );
