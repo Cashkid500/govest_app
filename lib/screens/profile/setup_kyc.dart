@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../constants/asset_path.dart';
+
 class SetupKYCScreen extends StatefulWidget {
   const SetupKYCScreen({Key? key}) : super(key: key);
 
@@ -14,7 +16,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: 600,
+          height: 600.sp,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.only(
@@ -49,7 +51,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                           child: Text(
                             "An OTP code has been sent to the phone number tied to the BVN you provided. Enter it below.",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 15.sp,
                                 fontWeight: FontWeight.w400,
                                 color: Color(0xff414141)),
@@ -62,7 +64,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Color(0xffc4c4c4)),
                       ),
                       SizedBox(
@@ -74,12 +76,13 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                           keyboardType: TextInputType.multiline,
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 20),
+                                horizontal: 20.sp, vertical: 20.sp),
                             isCollapsed: true,
                             labelText: "275963",
                             labelStyle: TextStyle(
                               color: Color(0xff3B5AFB),
-                              fontSize: 14.0,
+                              fontSize: 14.sp,
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                             ),
                             filled: true,
@@ -98,7 +101,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Color(0xffc4c4c4)),
                       ),
                       SizedBox(
@@ -115,7 +118,8 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                             labelText: "**********",
                             labelStyle: TextStyle(
                               color: Color(0xff3B5AFB),
-                              fontSize: 14.0,
+                              fontSize: 14.sp,
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                             ),
                             filled: true,
@@ -136,7 +140,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                   color: Color(0xff3B5AFB),
                   borderRadius: BorderRadius.circular(10.r)
                               ),
-                              child: Center(child: Text("VERIFY BVN", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                              child: Center(child: Text("VERIFY BVN", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                              ),
                 
                     ],
@@ -178,7 +182,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 24.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Color(0xffffffff),
                     ),
                   ),
@@ -188,7 +192,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                 ),
                 SizedBox(
                   width: 300.sp,
-                  child: Text("It is very important to verify your identity with GOVest", style: TextStyle(fontFamily: 'Poppins', fontSize: 12.sp, fontWeight: FontWeight.w400, color: Color(0xffffffff)),)),
+                  child: Text("It is very important to verify your identity with GOVest", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 12.sp, fontWeight: FontWeight.w400, color: Color(0xffffffff)),)),
                 SizedBox(height: 20.sp,),
                 GestureDetector(
                   onTap: () {
@@ -213,7 +217,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                           child: Text(
                             "Why do we ask your BVN?",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff3B5AFB)),
@@ -232,7 +236,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                               Image.asset('assets/images/Lock.png'),
                               SizedBox(
                                 width: 250.sp,
-                              child: Text("To confirm your identity on Govest, you need to connect your BVN. This does not give GOVest any access to your bank information or balances. This just enables GoVest to confirm your real identty such as real name, phone, and date of birth. from your bank.", style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400, fontFamily: 'Poppins', color: Color(0xff979797)),))
+                              child: Text("To confirm your identity on Govest, you need to connect your BVN. This does not give GOVest any access to your bank information or balances. This just enables GoVest to confirm your real identty such as real name, phone, and date of birth. from your bank.", style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400, fontFamily: GoVestAssetsPath.govestFont, color: Color(0xff979797)),))
                             ],
                           ),
                         )
@@ -246,11 +250,11 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Oya, Connect BVN",
-                    labelStyle: TextStyle(fontFamily: 'Poppins', fontSize: 20.sp, color: Color(0xffffffff), fontWeight: FontWeight.w700)
+                    labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, color: Color(0xffffffff), fontWeight: FontWeight.w700)
                   ),
                 ),
                 SizedBox(height: 20.sp,),
-                Text("Enter your BVN Number (send *565*0# to get your BVN)", style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w700, fontFamily: 'Poppins', color: Color(0xffffffff)),),
+                Text("Enter your BVN Number (send *565*0# to get your BVN)", style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w700, fontFamily: GoVestAssetsPath.govestFont, color: Color(0xffffffff)),),
                 SizedBox(height: 10.sp,),
                 SizedBox(
                         width: 300,
@@ -263,7 +267,8 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                             labelText: "23457876321",
                             labelStyle: TextStyle(
                               color: Colors.grey,
-                              fontSize: 14.0,
+                              fontFamily: GoVestAssetsPath.govestFont,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                             ),
                             filled: true,
@@ -277,7 +282,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                         ),
                       ),
                     SizedBox(height: 60.sp,),
-                    Text("Thanks! BVN has been verified", style: TextStyle(fontFamily: 'Poppins', fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)
+                    Text("Thanks! BVN has been verified", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)
                 ],
             ),
           ),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/preview_savings.dart';
 
+import '../constants/asset_path.dart';
+
 class GoTargetSavingsScreen extends StatefulWidget {
   const GoTargetSavingsScreen({Key? key}) : super(key: key);
 
@@ -45,7 +47,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 "Create GoTargetSavings",
                 style: TextStyle(
                   fontSize: 18,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff3B5AFB),
                 ),
@@ -57,7 +59,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 "How much is your Target?",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff979797),
                 ),
@@ -79,7 +81,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                     "200,000.00",
                     style: TextStyle(
                         fontSize: 24.sp,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700),
                   )
                 ],
@@ -106,7 +108,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                   "Type in amount you would like to lock",
                   style: TextStyle(
                       fontSize: 12.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
                       color: Color(0xff979797)),
                 ),
@@ -117,7 +119,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
               Text(
                 "Set Title for your Target",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
                     color: Color(0xff979797)),
@@ -126,7 +128,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
               Text(
                 "Wedding Aid",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     fontSize: 16.sp,
                     color: Color(0xff000000)),
@@ -146,7 +148,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     color: Color(0xff979797)),
               ),
               Center(
@@ -202,7 +204,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     color: Color(0xff979797)),
               ),
               SizedBox(height: 10.sp),
@@ -286,7 +288,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                       child: Text(
                     "CONTINUE",
                     style: TextStyle(
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 20.sp,
                         fontWeight: FontWeight.w700,
                         color: Color(0xffffffff)),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../constants/asset_path.dart';
+
 
 
 class TransactionHistoryScreen extends StatefulWidget {
@@ -29,7 +31,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
                     SizedBox(
                       height: 15.sp,
                     ),
-                    Text('Transaction History', style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize:  22, color: Color(0xff3B5AFB)),)
+                    Text('Transaction History', style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize:  22, color: Color(0xff3B5AFB)),)
                   ],
                 ),
                 SizedBox(
@@ -45,7 +47,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
               color: Color(0xff4E4E4E),
               fontSize: 14.0,
               fontWeight: FontWeight.w400,
-              fontFamily: 'Poppins'),
+              fontFamily: GoVestAssetsPath.govestFont),
           filled: true,
           fillColor: Color(0xffEEEEEE),
           prefixIcon: Icon( Icons.search, ),
@@ -134,7 +136,7 @@ class Withdraw extends StatelessWidget {
                   style: TextStyle(
                     color: Color(0xff3B5AFB),
                     fontSize: 12.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -142,7 +144,7 @@ class Withdraw extends StatelessWidget {
                  '12-Dec-2021',
                   style: TextStyle(
                       fontSize: 10.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
                       color: Color(0xff979797)),
                 )
@@ -154,7 +156,7 @@ class Withdraw extends StatelessWidget {
           '#50,000.00',
           style: TextStyle(
             fontSize: 14.sp,
-            fontFamily: 'Poppins',
+            fontFamily: GoVestAssetsPath.govestFont,
             fontWeight: FontWeight.w700,
             color: Color(0xff0EB51F),
           ),
@@ -196,7 +198,7 @@ class Invest extends StatelessWidget {
             style: TextStyle(
               color: Color(0xff3B5AFB),
               fontSize: 12.sp,
-              fontFamily: 'Poppins',
+              fontFamily: GoVestAssetsPath.govestFont,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -204,7 +206,7 @@ class Invest extends StatelessWidget {
            '12-Dec-2021',
             style: TextStyle(
                 fontSize: 10.sp,
-                fontFamily: 'Poppins',
+                fontFamily: GoVestAssetsPath.govestFont,
                 fontWeight: FontWeight.w500,
                 color: Color(0xff979797)),
           )
@@ -216,7 +218,7 @@ class Invest extends StatelessWidget {
     '#250,000.00',
     style: TextStyle(
       fontSize: 14.sp,
-      fontFamily: 'Poppins',
+      fontFamily: GoVestAssetsPath.govestFont,
       fontWeight: FontWeight.w700,
       color: Color(0xffB50E18),
     ),

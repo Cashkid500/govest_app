@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/safelock/safelock_preview.dart';
 
+import '../constants/asset_path.dart';
+
 
 class SafelockDaysScreen extends StatefulWidget {
   const SafelockDaysScreen({Key? key}) : super(key: key);
@@ -50,7 +52,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     "SafeLock for 10-30 Days",
                     style: TextStyle(
                       fontSize: 20.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,
                       color: Color(0xff3B5AFB),
                     ),
@@ -64,7 +66,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 "Create a safelock for 10-30 days with a return close to 6%. The longer the payback date, the higher your return.",
                 style: TextStyle(
                     fontSize: 12.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     color: Colors.black),
                     textAlign: TextAlign.left,
@@ -76,7 +78,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 "How much ?",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff979797),
                 ),
@@ -97,11 +99,11 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     prefixIcon: Image.asset(
                         "assets/images/Big Naira.png", height: 10.sp,), // Placeholder text
                     labelStyle: TextStyle(
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,
                       fontSize: 24.sp,
-                        color: Colors.black), // Color of the label text
-                    border: InputBorder.none, // Hide the default border
+                        color: Colors.black),
+                    border: InputBorder.none,
                   ),
                 ),
               ),
@@ -118,7 +120,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     "Type in amount you would like to lock",
                     style: TextStyle(
                         fontSize: 12.sp,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w500,
                         color: Color(0xff979797)),
                   )
@@ -131,7 +133,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 "Set Title",
                 style: TextStyle(
                   fontSize: 14.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff979797),
                 ),
@@ -149,7 +151,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Emergency fund',
-                    labelStyle: TextStyle(color: Color(0xff000000), fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700),
+                    labelStyle: TextStyle(color: Color(0xff000000), fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700),
                     border: InputBorder.none,
                   ),
                 ),
@@ -161,7 +163,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 "Payback Date",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff979797),
                 ),
@@ -171,7 +173,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 "The longer it is, the higher your return.",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w500,
                   color: Color(0xff979797),
                 ),
@@ -196,7 +198,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     labelText: '11 October 2021',
                     labelStyle: TextStyle(
                         color: Color(0xff000000),
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700),
                     border: InputBorder.none,
@@ -216,7 +218,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     "Your return is 0.5 % at 10 days.",
                     style: TextStyle(
                         fontSize: 12.sp,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w400,
                         color: Colors.black),
                   )
@@ -230,7 +232,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     color: Color(0xff979797)),
               ),
               Container(
@@ -246,7 +248,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Wallet - NGN 200,000',
-                    labelStyle: TextStyle(fontFamily: 'Popppins', fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
+                    labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(
                       Icons.expand_more,
                       color: Color(0xff979797),
@@ -277,6 +279,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                       "Preview GoSafe",
                       style: TextStyle(
                         fontSize: 20.sp,
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),

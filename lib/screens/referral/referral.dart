@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/investment/investment_package.dart';
 
+import '../constants/asset_path.dart';
+
 
 class ReferralScreen extends StatefulWidget {
   const ReferralScreen({Key? key}) : super(key: key);
@@ -28,6 +30,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                     text: TextSpan(
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 25.sp,
                       ),
                       children: [
@@ -69,14 +72,14 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                   fontSize: 48.sp,
                                   fontWeight: FontWeight.w700,
                                   color: Colors.white,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                 ),
                               ),
                               Text(
                                 "Commission",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 20.sp,
                                   fontWeight: FontWeight.w700,
                                 ),
@@ -86,7 +89,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           Image.asset("assets/images/Commission.png"),
                         ],
                       ),
-                      // Image.asset('assets/images/Graph.png'),
                       SizedBox(
                         height: 40.sp,
                       ),
@@ -95,6 +97,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Colors.white),
                       ),
                     ],
@@ -108,7 +111,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 padding: EdgeInsets.only(right: 120.sp),
                 child: Text(
                   "Copy your referral code",
-                  style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, fontFamily: 'Poppins'),
+                  style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, fontFamily: GoVestAssetsPath.govestFont),
                 ),
               ),
               SizedBox(
@@ -137,7 +140,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                           ),
                         ),
                       ),
@@ -157,6 +160,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               "Tap to Copy",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w700,
                               ),
@@ -171,7 +175,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
               Padding(
                 padding: EdgeInsets.all(20),
                 child: Container(
-                  height: 142.sp,
+                  height: 150.sp,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     border: Border.all(color: Color(0xff3B5AFB).withOpacity(0.8)),
@@ -187,7 +191,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               "Sign-Ups",
                               style: TextStyle(
                                   fontSize: 12.sp,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w400,
                                   color: Color(0xff979797)),
                             ),
@@ -196,7 +200,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 color: Color(0xff979797),
                               ),
                             )
@@ -211,14 +215,16 @@ class _ReferralScreenState extends State<ReferralScreen> {
                             Text(
                               "10",
                               style: TextStyle(
-                                fontSize: 12,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w700,
+                                fontFamily: GoVestAssetsPath.govestFont,
                               ),
                             ),
                             Text(
                               "7",
                               style: TextStyle(
-                                fontSize: 12,
+                                fontSize: 12.sp,
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                               ),
                             )
@@ -244,18 +250,18 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               "Total Bonus Earned",
                               style: TextStyle(
                                 color: Color(0xff979797),
-                                fontSize: 10,
+                                fontSize: 10.sp,
                                 fontWeight: FontWeight.w700,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                               ),
                             ),
                             Text(
                               "Bonus per referral",
                               style: TextStyle(
                                 color: Color(0xff979797),
-                                fontSize: 10,
+                                fontSize: 10.sp,
                                 fontWeight: FontWeight.w700,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                               ),
                             )
                           ],
@@ -273,7 +279,8 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                 Text(
                                   "3,500.00",
                                   style: TextStyle(
-                                      fontSize: 13,
+                                      fontSize: 13.sp,
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
                                       color: Colors.black),
                                 ),
@@ -288,7 +295,8 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                 Text(
                                   "500.00",
                                   style: TextStyle(
-                                      fontSize: 13,
+                                      fontSize: 13.sp,
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
                                       color: Colors.black),
                                 ),
@@ -322,7 +330,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                         style: TextStyle(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                         ),
                       ),
                     ],

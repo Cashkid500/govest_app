@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
 
+import '../constants/asset_path.dart';
 import '../login/login.dart';
 import 'transaction_history.dart';
 
@@ -41,8 +42,8 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                   children: [
                     Text('Add Next of Kin',
                     style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 22,
+                      fontFamily: GoVestAssetsPath.govestFont,
+                      fontSize: 22.sp,
                       fontWeight: FontWeight.w700,
                       color: Color(0xff3B5AFB),
                     ),
@@ -79,7 +80,7 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                child: Center(
                  child: Text('Add Next of Kin', 
                  style: TextStyle(
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
                   color: Color(0xffFFFFFF)
@@ -121,7 +122,7 @@ class NextofKinTextField extends StatelessWidget {
                   color: Color(0xff93A4FF),
                   fontSize: 14.0,
                   fontWeight: FontWeight.w500,
-                  fontFamily: 'Poppins'),
+                  fontFamily: GoVestAssetsPath.govestFont),
               filled: true,
               fillColor: Color(0xffFFFFFF),
               enabledBorder: OutlineInputBorder(

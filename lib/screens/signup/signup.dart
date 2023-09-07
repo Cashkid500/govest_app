@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/login/login.dart';
 
+import '../constants/asset_path.dart';
+
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
 
@@ -34,7 +36,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontSize: 25.sp,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                         ),
                         children: [
                           TextSpan(
@@ -62,7 +64,7 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Text(
                 "Hello there,",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffffffff)),
@@ -73,7 +75,7 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Text(
                 "Become a Titan",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 20.sp,
                     fontWeight: FontWeight.w700,
                     color: Color(0xffffffff)),
@@ -98,7 +100,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       contentPadding: EdgeInsets.all(10.sp),
                       labelText: 'First name',
                       labelStyle: TextStyle(
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xffc4c4c4)),
@@ -121,7 +123,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       contentPadding: EdgeInsets.all(10.sp),
                       labelText: 'Last name',
                       labelStyle: TextStyle(
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xffc4c4c4),
@@ -153,7 +155,7 @@ class _SignupScreenState extends State<SignupScreen> {
           contentPadding: EdgeInsets.all(10.sp),
           labelText: 'Referral code (optional)',
           labelStyle: TextStyle(
-            fontFamily: 'Poppins',
+            fontFamily: GoVestAssetsPath.govestFont,
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xffc4c4c4),
@@ -172,7 +174,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   padding: EdgeInsets.only(right: 30.sp),
                   child: Text(
                     "Your friend get rewarded when you use their referal code.", style: TextStyle(
-                      fontFamily: 'Poppins', fontSize: 10.sp, fontWeight: FontWeight.w400, color: Color(0xffffffff)
+                      fontFamily: GoVestAssetsPath.govestFont, fontSize: 10.sp, fontWeight: FontWeight.w400, color: Color(0xffffffff)
                     )
                   ),
                 ),
@@ -186,7 +188,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 12.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             height: 1.8.sp,
                           ),
                           children: [
@@ -220,7 +222,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           color: Color(0xff4169E1),
                           borderRadius: BorderRadius.circular(5.r),
                           border: Border.all(color: Color(0xffffffff))),
-                          child: Center(child: Text("Become A Family", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w800, color: Color(0xffffffff)),)),
+                          child: Center(child: Text("Become A Family", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w800, color: Color(0xffffffff)),)),
                   ),
                 ),
                 SizedBox(height: 20.sp,),
@@ -229,7 +231,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: 12.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             height: 1.8.sp,
                           ),
                           children: [
@@ -276,7 +278,7 @@ class TextField1 extends StatelessWidget {
         contentPadding: EdgeInsets.all(10.sp),
         labelText: phonepath,
         labelStyle: TextStyle(
-          fontFamily: 'Poppins',
+          fontFamily: GoVestAssetsPath.govestFont,
           fontSize: 16,
           fontWeight: FontWeight.w500,
           color: Color(0xffc4c4c4),

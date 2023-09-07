@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../constants/asset_path.dart';
 import '../savings/savings_dashboard.dart';
 
 
@@ -51,6 +52,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                         "Wallet - NGN 200,000",
                         style: TextStyle(
                             color: Color(0xff0EB51F),
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w400,
                             fontSize: 20),
                       ),
@@ -91,6 +93,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                             "Paystack with Card",
                             style: TextStyle(
                                 color: Color(0xff3B5AFB),
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 fontSize: 20),
                           ),
@@ -146,7 +149,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     style: TextStyle(
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w700,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         color: Color(0xff3B5AFB)),
                   )
                 ],
@@ -179,7 +182,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                           style: TextStyle(
                               fontSize: 10.sp,
                               height: 2.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               color: Colors.white),
                         ),
@@ -199,7 +202,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                           style: TextStyle(
                             fontSize: 10.sp,
                             height: 2.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                           ),
@@ -217,6 +220,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w700,
+                  fontFamily: GoVestAssetsPath.govestFont,
                   color: Color(0xff979797),
                 ),
               ),
@@ -226,6 +230,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 style: TextStyle(
                   fontSize: 24.sp,
                   fontWeight: FontWeight.w700,
+                  fontFamily: GoVestAssetsPath.govestFont,
                   color: Colors.black,
                 ),
               ),
@@ -249,7 +254,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     style: TextStyle(
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Colors.black,
                     ),
                   ),
@@ -275,7 +280,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     "Total Investment",
                     style: TextStyle(
                       fontSize: 12.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
                       color: Color(0xff979797),
                     ),
@@ -284,7 +289,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     "Total Investment + Return",
                     style: TextStyle(
                       fontSize: 12.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
                       color: Color(0xff979797),
                     ),
@@ -301,7 +306,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     "N 500,000.00",
                     style: TextStyle(
                         fontSize: 14.sp,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700,
                         color: Colors.black),
                   ),
@@ -309,6 +314,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     "N 650,000.00",
                     style: TextStyle(
                         fontSize: 14.sp,
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700,
                         color: Colors.black),
                   ),
@@ -331,7 +337,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 "Select source of fund",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff979797),
                 ),
@@ -347,7 +353,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         color: Colors.black),
                   ),
                   Padding(
@@ -390,7 +396,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                       "I authorize GoVEST to safelock NGN500,000 immediately and return it in full on Wednesday 11th of October 2021 by 12:23PM to my bank account with 2355643. I confirm and approve this transaction.",
                       style: TextStyle(
                         color: Colors.black,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w400,
                       ),
@@ -417,6 +423,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                       "BUY INVESTMENT",
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 16.sp,
                           color: Colors.white),
                     ),

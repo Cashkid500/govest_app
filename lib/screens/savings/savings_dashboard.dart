@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/savings_transactions.dart';
 
+import '../constants/asset_path.dart';
+
 
 class SavingsDashboardScreen extends StatefulWidget {
   const SavingsDashboardScreen({Key? key}) : super(key: key);
@@ -47,7 +49,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                 text: TextSpan(
                                   style: TextStyle(
                                     fontWeight: FontWeight.w700,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontSize: 24.sp,
                                   ),
                                   children: [
@@ -76,6 +78,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                 "Take a bold step to get higher return",
                                 style: TextStyle(
                                     fontSize: 10.sp,
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w400,
                                     color: Color(0xff979797)),
                               )
@@ -101,7 +104,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                               decorationThickness: 1.sp,
                               fontSize: 40.sp,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               color: Colors.black,
                             ),
                           )
@@ -117,7 +120,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                               "Dashboard",
                               style: TextStyle(
                                 fontSize: 16.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff3B5AFB),
                               ),
@@ -132,7 +135,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                 "Transactions",
                                 style: TextStyle(
                                   fontSize: 16.sp,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
                                   color: Color(0xff979797),
                                 ),
@@ -236,7 +239,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                 Gotype,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
               ),
@@ -249,7 +252,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                   "Lock funds away for short-term to avoid spending.",
                   style: TextStyle(
                     fontSize: 10.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w400,
                     color: Colors.white,
                   ),
@@ -262,7 +265,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                 Amount,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
               ),
@@ -331,7 +334,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                 Gotype,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
               ),
@@ -344,7 +347,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                   "Lock funds away for short-term to avoid spending.",
                   style: TextStyle(
                     fontSize: 10.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w400,
                     color: Colors.white,
                   ),
@@ -355,7 +358,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                 Amount,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
               ),
@@ -365,7 +368,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                   Text(
                     Interest,
                     style: TextStyle(
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w700,
                       color: Colors.white,

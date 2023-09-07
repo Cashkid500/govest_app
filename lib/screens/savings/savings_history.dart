@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/gosavings.dart';
 
+import '../constants/asset_path.dart';
+
 class SavingsHistoryScreen extends StatefulWidget {
   const SavingsHistoryScreen({Key? key}) : super(key: key);
 
@@ -47,7 +49,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "Overview",
                           style: TextStyle(
                             fontSize: 24.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                           ),
@@ -61,7 +63,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       "Your Target Savings",
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 16.sp,
                           color: Colors.white),
                     ),
@@ -80,7 +82,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "50,000",
                           style: TextStyle(
                               fontSize: 32.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               color: Colors.white),
                         ),
@@ -88,7 +90,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "/",
                           style: TextStyle(
                               fontSize: 14.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               color: Colors.white),
                         ),
@@ -96,7 +98,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "300,000",
                           style: TextStyle(
                               fontSize: 16.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               color: Colors.white),
                         ),
@@ -130,7 +132,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "42 days Left",
                           style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontSize: 10.sp,
                               fontWeight: FontWeight.w500),
                         ),
@@ -164,7 +166,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "Auto Save On",
                           style: TextStyle(
                               fontSize: 12.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               color: Colors.white),
                         )
@@ -196,7 +198,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           "Save Now",
                           style: TextStyle(
                             fontSize: 20.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                           ),
@@ -214,7 +216,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                         "Savings History",
                         style: TextStyle(
                             fontSize: 18.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w600,
                             color: Color(0xff979797)),
                       ),
@@ -222,7 +224,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                         "See more",
                         style: TextStyle(
                             fontSize: 12.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w500,
                             color: Color(0xff979797)),
                       )
@@ -296,7 +298,7 @@ class HistoryWidget extends StatelessWidget {
                   "Save from wallet",
                   style: TextStyle(
                     color: Color(0xff3B5AFB),
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
                   ),
@@ -305,7 +307,7 @@ class HistoryWidget extends StatelessWidget {
                   "12-Dec-2021",
                   style: TextStyle(
                       fontSize: 10.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
                       color: Color(0xff979797)),
                 )
@@ -317,7 +319,7 @@ class HistoryWidget extends StatelessWidget {
           "#50,000.00",
           style: TextStyle(
             fontSize: 14.sp,
-            fontFamily: 'Poppins',
+            fontFamily: GoVestAssetsPath.govestFont,
             fontWeight: FontWeight.w700,
             color: Color(0xff0EB51F),
           ),

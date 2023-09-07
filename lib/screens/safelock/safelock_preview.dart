@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/savings_history.dart';
 
+import '../constants/asset_path.dart';
+
 
 class SafelockPreviewScreen extends StatefulWidget {
   const SafelockPreviewScreen({Key? key}) : super(key: key);
@@ -55,7 +57,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         "PREVIEW",
                         style: TextStyle(
                           fontSize: 20.sp,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
                           color: Color(0xff3B5AFB),
                         ),
@@ -64,7 +66,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         "Safelock School Fund",
                         style: TextStyle(
                           fontSize: 14.sp,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w500,
                           color: Color(0xff979797),
                         ),
@@ -78,7 +80,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                 "Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas.",
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 12.sp,
                     color: Colors.black),
               ),
@@ -100,7 +102,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         style: TextStyle(
                           fontSize: 18.sp,
                           color: Colors.white,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -123,7 +125,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "Fund To Lock",
                             style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               fontSize: 12.sp,
                             ),
@@ -132,7 +134,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "Return Rate",
                             style: TextStyle(
                                 fontSize: 12.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           )
@@ -152,7 +154,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 "200,000",
                                 style: TextStyle(
                                     fontSize: 14.sp,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
                                     color: Colors.white),
                               ),
@@ -162,7 +164,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "0.5 %",
                             style: TextStyle(
                                 fontSize: 14.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white),
                           )
@@ -187,7 +189,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "Amount to Return",
                             style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               fontSize: 12.sp,
                             ),
@@ -196,7 +198,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "Payback Date",
                             style: TextStyle(
                                 fontSize: 12.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           )
@@ -216,7 +218,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 "205,000",
                                 style: TextStyle(
                                     fontSize: 14.sp,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
                                     color: Colors.white),
                               ),
@@ -226,7 +228,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "11th Oct 2021",
                             style: TextStyle(
                                 fontSize: 14.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white),
                           )
@@ -254,7 +256,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "Duration of Lock",
                             style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               fontSize: 12.sp,
                             ),
@@ -263,7 +265,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "Payback Into",
                             style: TextStyle(
                                 fontSize: 12.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           )
@@ -276,7 +278,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             "15 days",
                             style: TextStyle(
                                 fontSize: 14.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white),
                           ),
@@ -293,7 +295,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                   "** 4566",
                                   style: TextStyle(
                                       fontSize: 14.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
                                       color: Color(0xff3B5AFB)),
                                 ),
@@ -345,7 +347,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 10.sp,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -380,7 +382,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                       "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
                       style: TextStyle(
                         color: Colors.black,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w400,
                       ),
@@ -409,6 +411,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                       "Create GoSafeLock",
                       style: TextStyle(
                         fontSize: 20.sp,
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/gowallet.dart';
 
+import '../constants/asset_path.dart';
+
 
 class GoSaveScreen extends StatefulWidget {
   const GoSaveScreen({Key? key}) : super(key: key);
@@ -37,7 +39,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 "Create GoTargetSavings",
                 style: TextStyle(
                   fontSize: 18,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff3B5AFB),
                 ),
@@ -49,7 +51,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 "Create a safelock for 10-30 days with a return close to 6%. The longer the payback date, the higher your return.",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),
@@ -61,7 +63,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 "How much to save per time?",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff979797),
                 ),
@@ -74,7 +76,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
               children: [
                 Image.asset('assets/images/Big Naira.png', height: 16.sp,),
                 SizedBox(width: 10.sp,),
-                Text("200,000.00", style: TextStyle(fontSize: 24.sp, fontFamily: 'Poppins', fontWeight: FontWeight.w700),)
+                Text("200,000.00", style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
               ],
              ),
              SizedBox(height: 5.sp,
@@ -93,23 +95,23 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                       "Type in amount you would like to lock",
                       style: TextStyle(
                           fontSize: 12.sp,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w500,
                           color: Color(0xff979797)),
                     ),
               ]
              ),
              SizedBox(height: 30.sp,),
-             Text("Set Title for your Savings", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
+             Text("Set Title for your Savings", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
              SizedBox(height: 20.sp),
-            Text("Wedding Aid", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+            Text("Wedding Aid", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
             SizedBox(height: 20.sp,
              child: Divider(
               thickness: 1.sp,
               color: Color(0xff000000),
              ),),
              SizedBox(height: 25.sp,),
-             Text("How do you want to safe?", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, fontFamily: 'Poppins', color: Color(0xff979797)),),
+             Text("How do you want to safe?", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, fontFamily: GoVestAssetsPath.govestFont, color: Color(0xff979797)),),
              SizedBox(height: 10.sp),
              SizedBox(
                 height: MediaQuery.of(context).size.height / 12,
@@ -182,7 +184,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     color: Color(0xff979797)),
               ),
               Container(
@@ -198,7 +200,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Wallet - NGN 200,000',
-                    labelStyle: TextStyle(fontFamily: 'Popppins', fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
+                    labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(
                       Icons.expand_more,
                       color: Color(0xff979797),
@@ -234,7 +236,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                       "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
                       style: TextStyle(
                         color: Colors.black,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w400,
                       ),
@@ -256,7 +258,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   color: Color(0xff3B5AFB),
                   borderRadius: BorderRadius.circular(10.r)
                 ),
-                child: Center(child: Text("GO SAVE NOW", style: TextStyle(fontFamily: 'Poppins', fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                child: Center(child: Text("GO SAVE NOW", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                ),
              )
             ],

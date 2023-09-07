@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/referral/referral.dart';
 
+import '../constants/asset_path.dart';
+
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -43,7 +45,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 "Hello",
                                 style: TextStyle(
                                   fontSize: 16.sp,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -52,7 +54,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               ", Ganni West",
                               style: TextStyle(
                                 fontSize: 19.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -114,7 +116,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           "INVESTMENT",
                           style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               fontSize: 16),
                         ),
@@ -126,7 +128,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 10.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w400,
                           ),
                         )
@@ -157,7 +159,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           "SAVINGS",
                           style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               fontSize: 16),
                         ),
@@ -168,7 +170,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           "Transaction fees to earn for every trade from a referral.",
                           style: TextStyle(
                             fontSize: 10.sp,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Colors.white,
                             fontWeight: FontWeight.w400,
                           ),
@@ -185,7 +187,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 "REFER & EARN",
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 14.sp,
                     color: Color(0xff979797)),
               ),
@@ -214,7 +216,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 "Earn 10% commission when\na friend joins with your code",
                                 style: TextStyle(
                                   fontSize: 12.sp,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
                                   color: Color(0xff000000),
                                 ),
@@ -224,7 +226,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 "REFER NOW",
                                 style: TextStyle(
                                     fontSize: 12.sp,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
                                     color: Color(0xff0EB51F)),
                               ),
@@ -248,7 +250,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     style: TextStyle(
                       color: Color(0xff979797),
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 14,
                     ),
                   ),
@@ -256,7 +258,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     "See more",
                     style: TextStyle(
                       color: Color(0xff979797),
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                     ),
@@ -294,7 +296,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 "Wallet withdraw",
                                 style: TextStyle(
                                   fontSize: 14.sp,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
                                   color: Colors.white,
                                 ),
@@ -306,7 +308,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 "5 May 2021 at 12:30 AM",
                                 style: TextStyle(
                                   fontSize: 10,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w400,
                                   color: Colors.grey,
                                 ),
@@ -323,7 +325,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w700,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   color: Colors.white),
                             ),
                           ],
@@ -385,7 +387,7 @@ class DashboardContainer extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 13.sp,
                   ),
                 ),
@@ -397,7 +399,7 @@ class DashboardContainer extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 10.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -408,7 +410,7 @@ class DashboardContainer extends StatelessWidget {
                   amount,
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 23.sp,
                     fontWeight: FontWeight.w700,
                   ),
@@ -420,7 +422,7 @@ class DashboardContainer extends StatelessWidget {
                   name,
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.w600,
                   ),
@@ -447,7 +449,7 @@ class DashboardContainer extends StatelessWidget {
                       bank,
                       style: TextStyle(
                           color: Colors.grey,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 13,
                           fontWeight: FontWeight.w500),
                     ),

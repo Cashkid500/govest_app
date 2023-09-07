@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/safelock/safelock_days.dart';
+import '../constants/asset_path.dart';
 import '../savings/savings_dashboard.dart';
 
 
@@ -53,7 +54,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                     "Create GOSafe Lock",
                     style: TextStyle(
                       fontSize: 20.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,
                       color: Color(0xff3B5AFB),
                     ),
@@ -67,7 +68,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                 "Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas.",
                 style: TextStyle(
                   fontSize: 14.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),
@@ -166,7 +167,7 @@ class SafelockContainer2 extends StatelessWidget {
               ReturnDays2,
               style: TextStyle(
                   fontSize: 16.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Colors.white),
             ),
@@ -179,7 +180,7 @@ class SafelockContainer2 extends StatelessWidget {
                 "Lock funds away for short-term to avoid spending.",
                 style: TextStyle(
                   fontSize: 10.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
                   color: Colors.white,
                 ),
@@ -257,7 +258,7 @@ class SafelockContainer1 extends StatelessWidget {
                 ReturnDays,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
               ),
@@ -270,7 +271,7 @@ class SafelockContainer1 extends StatelessWidget {
                   "Lock funds away for short-term to avoid spending.",
                   style: TextStyle(
                     fontSize: 10.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w400,
                     color: Colors.white,
                   ),
@@ -287,7 +288,7 @@ class SafelockContainer1 extends StatelessWidget {
                     child: Text(
                       ReturnPerAnnum,
                       style: TextStyle(
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,

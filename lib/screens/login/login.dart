@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
 
+import '../constants/asset_path.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -36,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontSize: 25.sp,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                         ),
                         children: [
                           TextSpan(
@@ -64,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Text(
                 "Welcome back,",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffffffff)),
@@ -75,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Text(
                 "Login to your Account",
                 style: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
                     color: Color(0xffffffff)),
@@ -95,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     contentPadding: EdgeInsets.all(10.sp),
                     labelText: 'Email address',
                     labelStyle: TextStyle(
-              fontFamily: 'Poppins',
+              fontFamily: GoVestAssetsPath.govestFont,
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,
               color: Color(0xffc4c4c4),
@@ -117,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     contentPadding: EdgeInsets.all(10.sp),
                     labelText: 'Password',
                     labelStyle: TextStyle(
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffc4c4c4),
@@ -129,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 5.sp,),
             Padding(
               padding: EdgeInsets.only(left: 20.sp),
-              child: Text("Forgot Password?", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w500, color: Color(0xff000000)),),
+              child: Text("Forgot Password?", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w500, color: Color(0xff000000)),),
             ),
             SizedBox(height: 320.sp,),
             Padding(
@@ -146,7 +148,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       decoration: BoxDecoration(
                   color: Color(0xffffffff),
                   borderRadius: BorderRadius.circular(5.r)),
-                  child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),)),
+                  child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),)),
                 ),
               ),
             ),
@@ -157,7 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 12.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               height: 1.8.sp,
                             ),
                             children: [

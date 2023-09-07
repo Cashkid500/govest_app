@@ -4,6 +4,7 @@ import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
 import 'package:govest_app/screens/profile/next_of_kin.dart';
 
+import '../constants/asset_path.dart';
 import '../login/login.dart';
 
 class ProfileAccountScreen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                   style: TextStyle(
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Colors.black),
                 ),
               ),
@@ -51,7 +52,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                   style: TextStyle(
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Colors.black),
                 ),
               ),
@@ -64,7 +65,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xff979797),
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                 ),
               ),
               Container(
@@ -113,7 +114,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w400,
                                         color: Colors.white,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                       ),
                                     ),
                                   ),
@@ -126,7 +127,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
                                       color: Color(0xffBFBFE3),
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                   )
                                 ],
@@ -182,7 +183,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w400,
                                         color: Colors.white,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                       ),
                                     ),
                                   ),
@@ -193,7 +194,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
                                       color: Color(0xffBFBFE3),
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                   )
                                 ],
@@ -242,7 +243,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w400,
                                       color: Colors.white,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                   ),
                                   SizedBox(
@@ -253,7 +254,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       color: Color(0xffBFBFE3),
                                     ),
                                   )
@@ -276,7 +277,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                 style: TextStyle(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     color: Color(0xff979797)),
               ),
               Container(
@@ -287,7 +288,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                   borderRadius: BorderRadius.circular(10.r),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20.sp),
                   child: Column(
                     children: [
                       Row(
@@ -319,7 +320,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w400,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       color: Colors.white,
                                     ),
                                   ),
@@ -336,7 +337,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       "Change password",
                                       style: TextStyle(
                                         fontSize: 10.sp,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w500,
                                         color: Color(0xffBFBFE3),
                                       ),
@@ -347,10 +348,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               SizedBox(
                                 width: 60.sp,
                               ),
-                              Icon(
-                                Icons.chevron_right,
-                                color: Colors.white,
-                              )
+                              Icon(Icons.chevron_right,color: Colors.white,),
                             ],
                           )
                         ],
@@ -366,16 +364,10 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(0)),
                             child: Center(
-                              child: Icon(
-                                Icons.headset,
-                                size: 25,
-                                color: Colors.white,
-                              ),
+                              child: Icon(Icons.headset,size: 25,color: Colors.white,),
                             ),
                           ),
-                          SizedBox(
-                            width: 20.sp,
-                          ),
+                          SizedBox(width: 20.sp,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -387,7 +379,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     "Help and Support",
                                     style: TextStyle(
                                       fontSize: 12.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w400,
                                       color: Colors.white,
                                     ),
@@ -399,7 +391,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     "Contact support and the help desk",
                                     style: TextStyle(
                                       fontSize: 10.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w500,
                                       color: Color(0xffBFBFE3),
                                     ),
@@ -409,10 +401,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               SizedBox(
                                 width: 20.sp,
                               ),
-                              Icon(
-                                Icons.chevron_right,
-                                color: Colors.white,
-                              )
+                              Icon(Icons.chevron_right,color: Colors.white,),
                             ],
                           )
                         ],

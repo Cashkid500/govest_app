@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../constants/asset_path.dart';
+
 class AddBankScreen extends StatefulWidget {
   const AddBankScreen({Key? key}) : super(key: key);
 
@@ -14,7 +16,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: 600,
+          height: 600.sp,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.only(
@@ -49,7 +51,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           child: Text(
                             "Provide us with acccount to withdraw your funds",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 15.sp,
                                 fontWeight: FontWeight.w400,
                                 color: Color(0xff414141)),
@@ -62,7 +64,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Color(0xffc4c4c4)),
                       ),
                       SizedBox(
@@ -79,13 +81,14 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             labelText: '0123456789',
                             labelStyle: TextStyle(
                               color: Color(0xff3B5AFB),
-                              fontSize: 14.0,
+                              fontSize: 14.sp,
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                             ),
                             filled: true,
                             fillColor: Color(0xffFFFFFF),
                             enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.r),
                               borderSide:
                                   BorderSide(color: Color(0xff6E6E71), width: 1),
                             ),
@@ -98,7 +101,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Color(0xffc4c4c4)),
                       ),
                       SizedBox(
@@ -115,7 +118,8 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             labelText: "Select Your Bank",
                             labelStyle: TextStyle(
                               color: Color(0xff3B5AFB),
-                              fontSize: 14.0,
+                              fontFamily: GoVestAssetsPath.govestFont,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                             ),
                             filled: true,
@@ -137,10 +141,9 @@ class _AddBankScreenState extends State<AddBankScreen> {
                   color: Color(0xff3B5AFB),
                   borderRadius: BorderRadius.circular(4.r)
                               ),
-                              child: Center(child: Text("VERIFY ACCOUNT", style: TextStyle(fontFamily: 'Poppins', fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                              child: Center(child: Text("VERIFY ACCOUNT", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                              ),
-                
-                    ],
+                            ],
                   ),
                 ),
                 onTap: () {
@@ -179,7 +182,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 24.sp,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Color(0xffffffff),
                     ),
                   ),
@@ -210,7 +213,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           child: Text(
                             "Add Bank Details",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff3B5AFB)),
@@ -233,7 +236,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                   text: TextSpan(
                                     style: TextStyle(
                                       fontSize: 10.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       height: 2.2.sp,
                                     ),
                                     children: [
@@ -291,7 +294,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           child: Text(
                             "Add Debit Card",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff0EB51F)),
@@ -318,7 +321,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                   style: TextStyle(
                                     color: Color(0xff979797),
                                     fontWeight: FontWeight.w400,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     height: 1.5.sp,
                                     fontSize: 10.sp,
                                   ),
@@ -352,7 +355,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           Text(
                             "LUKMAN IBRAHIM OLALEKAN",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff3B5AFB)),
@@ -363,7 +366,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           Text(
                             "3091534445 - First Bank",
                             style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xff3B5AFB)),
@@ -383,7 +386,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                   child: Text(
                     'Edit Bank Details',
                     style: TextStyle(
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w700,
                         color: Color(0xffffffff)),
@@ -411,7 +414,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             child: Text(
                               "LUKMAN IBRAHIM OLALEKAN",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w700,
                                   color: Color(0xff3B5AFB)),
@@ -422,7 +425,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             child: Text(
                               "12/22",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xff3B5AFB)),
@@ -441,7 +444,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             child: Text(
                               "****  ****  **** 3566",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w700,
                                   color: Color(0xff3B5AFB)),
@@ -452,7 +455,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             child: Text(
                               "First Bank",
                               style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xff3B5AFB)),
@@ -471,7 +474,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                   child: Text(
                     'Edit Card',
                     style: TextStyle(
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w700,
                         color: Color(0xffffffff)),

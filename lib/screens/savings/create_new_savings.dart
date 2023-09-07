@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/safelock/gosafe_lock.dart';
 
+import '../constants/asset_path.dart';
+
 
 class CreateNewSavingsScreen extends StatefulWidget {
   const CreateNewSavingsScreen({Key? key}) : super(key: key);
@@ -46,7 +48,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                 style: TextStyle(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w700,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   color: Colors.black,
                 ),
               ),
@@ -59,7 +61,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                     style: TextStyle(
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Colors.black,
                     ),
                   ),
@@ -83,7 +85,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                     style: TextStyle(
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Colors.white,
                     ),
                   ),
@@ -111,6 +113,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                         "CREATE GOSAFE",
                         style: TextStyle(
                           fontSize: 20.sp,
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
                           color: Colors.white,
                         ),

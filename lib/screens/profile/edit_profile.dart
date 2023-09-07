@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../constants/asset_path.dart';
+
 class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({Key? key}) : super(key: key);
 
@@ -26,7 +28,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               children: [
                 Icon(Icons.chevron_left,size: 40,color: Colors.white,),
                 SizedBox(height: 10.sp,),
-                Center(child: Text("Edit Profile", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                Center(child: Text("Edit Profile", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                 SizedBox(height: 10.sp,),
                 Center(child: Image.asset("assets/images/Profile Image.png")),
                 SizedBox(
@@ -38,7 +40,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     style: TextStyle(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w700,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         color: Colors.white),
                   ),
                 ),
@@ -59,13 +61,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             "Change avatar",
                             style: TextStyle(
                               fontSize: 10.sp,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               color: Color(0xff3B5AFB),
                             ),
                           ),
                           SizedBox(width: 10.sp,),
-                          Icon(Icons.edit, color: Color(0xff3B5AFB), )
+                          Icon(Icons.edit, color: Color(0xff3B5AFB),),
                         ],
                       ),
                     ),
@@ -100,7 +102,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   child: Center(
                     child: Text(
                       "Save Changes",
-                      style: TextStyle(fontSize: 14.sp, fontFamily: 'Poppins', fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
+                      style: TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
                     ),
                   ),
                 )
@@ -132,9 +134,9 @@ class EditTextfield extends StatelessWidget {
       child: TextField(
         decoration: InputDecoration(
           hintText: name,
-          hintStyle: TextStyle(color: Color(0xff979797)),
+          hintStyle: TextStyle(color: Color(0xff979797), fontFamily: GoVestAssetsPath.govestFont),
           border: InputBorder.none,
-          contentPadding: EdgeInsets.all(10),
+          contentPadding: EdgeInsets.all(10.sp),
         ),
       ),
     );

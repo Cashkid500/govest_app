@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/gotarget_savings.dart';
 
+import '../constants/asset_path.dart';
+
 
 class GoSavingsScreen extends StatefulWidget {
   const GoSavingsScreen({Key? key}) : super(key: key);
@@ -31,7 +33,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                 "Create GoSavings",
                 style: TextStyle(
                   fontSize: 18,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff3B5AFB),
                 ),
@@ -43,7 +45,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                 "Create a safelock for 10-30 days with a return close to 6%. The longer the payback date, the higher your return.",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),
@@ -52,13 +54,13 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                 height: 30.sp,
               ),
               Container(
-                height: 76.sp,
+                height: 86.sp,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     color: Color(0xff3B5AFB),
                     borderRadius: BorderRadius.circular(10.r)),
                 child: Padding(
-                  padding: EdgeInsets.all(8.sp),
+                  padding: EdgeInsets.all(10.sp),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -73,7 +75,8 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                           Text(
                             "GoSavings",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 20.sp,
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
                               color: Colors.white,
                             ),
@@ -83,7 +86,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                             child: Text(
                               "Create a safelock for 10-30 days with a return close to 6%.",
                               style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
                                 color: Colors.white.withOpacity(0.6),
@@ -104,13 +107,13 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
               );
             },
                 child: Container(
-                  height: 76.sp,
+                  height: 86.sp,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                       color: Color(0xff0EB51F),
                       borderRadius: BorderRadius.circular(10.r)),
                   child: Padding(
-                    padding: EdgeInsets.all(8.sp),
+                    padding: EdgeInsets.all(10.sp),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -127,6 +130,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                               style: TextStyle(
                                 fontSize: 20.sp,
                                 fontWeight: FontWeight.w700,
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 color: Colors.white,
                               ),
                             ),
@@ -135,7 +139,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                               child: Text(
                                 "Setup a savings target and get paid every month for upto 8%",
                                 style: TextStyle(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w400,
                                   color: Colors.white.withOpacity(0.6),

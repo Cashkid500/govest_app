@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../constants/asset_path.dart';
 import 'edit_profile.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   style: TextStyle(
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       color: Colors.white),
                 )),
                 SizedBox(height: 10.sp,),
@@ -45,7 +46,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                       "Your new password must be different from your old password.",
                       style: TextStyle(
                           fontSize: 12.sp,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w400,
                           color: Colors.white),
                     ),
@@ -64,8 +65,8 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   child: TextField(
                     decoration: InputDecoration(
                         hintText: "Enter Current Password",
-                        hintStyle: TextStyle(color: Color(0xff979797)),
-                        contentPadding: EdgeInsets.all(10),
+                        hintStyle: TextStyle(color: Color(0xff979797), fontFamily: GoVestAssetsPath.govestFont),
+                        contentPadding: EdgeInsets.all(10.sp),
                         border: InputBorder.none,
                         suffixIcon: Icon(Icons.visibility_off,
                             size: 20, color: Color(0xff3B5AFB))),
@@ -93,7 +94,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     child: Text(
                       "Change Password",
                       style:
-                          TextStyle(fontSize: 14.sp, fontFamily: 'Poppins', fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
+                          TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
                     ),
                   ),
                 )

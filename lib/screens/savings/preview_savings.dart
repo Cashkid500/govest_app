@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/gosave.dart';
 
+import '../constants/asset_path.dart';
+
 
 class PreviewSavingsScreen extends StatefulWidget {
   const PreviewSavingsScreen({Key? key}) : super(key: key);
@@ -32,7 +34,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 "Finish settings up",
                 style: TextStyle(
                   fontSize: 18,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff3B5AFB),
                 ),
@@ -44,7 +46,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 "Finalize your target savings settings",
                 style: TextStyle(
                   fontSize: 12.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
                   color: Color(0xff000000),
                 ),
@@ -76,6 +78,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                             style: TextStyle(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w700,
+                              fontFamily: GoVestAssetsPath.govestFont,
                               color: Colors.white,
                             ),
                           ),
@@ -84,7 +87,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                             child: Text(
                               "Setup a savings target and get paid every month for upto 8%",
                               style: TextStyle(
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
                                 color: Colors.white.withOpacity(0.6),
@@ -98,9 +101,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 ),
               ),
             SizedBox(height: 30.sp,),
-             Text("Preferred Amont to save on a manual basis", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
+             Text("Preferred Amont to save on a manual basis", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
              SizedBox(height: 20.sp),
-            Text("3,000", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+            Text("3,000", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
             SizedBox(height: 20.sp,
              child: Divider(
               thickness: 1.sp,
@@ -110,10 +113,10 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Start Date", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
+                Text("Start Date", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
                 Padding(
                   padding: EdgeInsets.only(right: 40.sp),
-                  child: Text("Withdrawal Date", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
+                  child: Text("Withdrawal Date", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
                 )
               ],
              ),
@@ -121,9 +124,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("12 Sep 2021", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+                Text("12 Sep 2021", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
                 Icon(Icons.calendar_today, color: Color(0xff979797),),
-                Text("12 Dec 2021", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+                Text("12 Dec 2021", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
                 Icon(Icons.calendar_today, color: Color(0xff979797),),
               ],
              ),
@@ -158,7 +161,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                     color: Color(0xff979797),
                     fontWeight: FontWeight.w500,
                     fontSize: 10.sp,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                   ),
                 ),
                 TextSpan(
@@ -166,7 +169,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   style: TextStyle(
                     color: Color(0xff3B5AFB),
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 10.sp,
                   ),
                 ),
@@ -175,7 +178,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   style: TextStyle(
                     color: Color(0xff979797),
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 10.sp,
                   ),
                 ),
@@ -183,7 +186,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   text: "12%",
                   style: TextStyle(
                     color: Color(0xff0EB51F),
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w500,
                     fontSize: 10.sp,
                   ),
@@ -193,7 +196,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   style: TextStyle(
                     color: Color(0xff979797),
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 10.sp,
                   ),
                 ),
@@ -206,7 +209,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Poppins',
+                    fontFamily: GoVestAssetsPath.govestFont,
                     color: Color(0xff979797)),
               ),
               Container(
@@ -222,7 +225,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Go Wallet - NGN 200,000',
-                    labelStyle: TextStyle(fontFamily: 'Popppins', fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
+                    labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(
                       Icons.expand_more,
                       color: Color(0xff979797),
@@ -261,7 +264,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 10.sp,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -296,7 +299,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                       "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
                       style: TextStyle(
                         color: Colors.black,
-                        fontFamily: 'Poppins',
+                        fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w400,
                       ),
@@ -318,7 +321,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   color: Color(0xff3B5AFB),
                   borderRadius: BorderRadius.circular(10.r)
                 ),
-                child: Center(child: Text("CREATE GO TARGET", style: TextStyle(fontFamily: 'Poppins', fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                child: Center(child: Text("CREATE GO TARGET", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                            ),
               )
             ],

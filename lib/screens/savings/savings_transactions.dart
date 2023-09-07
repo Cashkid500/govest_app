@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/savings/create_new_savings.dart';
 import 'package:govest_app/screens/savings/savings_dashboard.dart';
 
+import '../constants/asset_path.dart';
+
 
 class SavingsTransactionsScreen extends StatefulWidget {
   const SavingsTransactionsScreen({Key? key}) : super(key: key);
@@ -46,7 +48,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.w700,
                                       fontSize: 24.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                     children: [
                                       TextSpan(
@@ -75,6 +77,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w400,
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       color: Color(0xff979797)),
                                 )
                               ],
@@ -98,7 +101,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                 decorationColor: Colors.black,
                                 decorationThickness: 1.sp,
                                 fontSize: 40.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.black,
                               ),
@@ -124,7 +127,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   "Dashboard",
                                   style: TextStyle(
                                     fontSize: 16.sp,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
                                     color: Color(0xff979797),
                                   ),
@@ -134,7 +137,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                 "Transactions",
                                 style: TextStyle(
                                   fontSize: 16.sp,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
                                   color: Color(0xff3B5AFB),
                                 ),
@@ -186,7 +189,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         Colors.white.withOpacity(0.41),
                                     decorationThickness: 1.sp,
                                     fontSize: 16,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white.withOpacity(0.41),
                                   ),
@@ -202,7 +205,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           Colors.white.withOpacity(0.41),
                                       decorationThickness: 3.sp,
                                       fontSize: 16.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
                                       color: Colors.white),
                                 )
@@ -220,6 +223,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w700,
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       color: Color(0xff3B5AFB)),
                                 ),
                               ),
@@ -249,7 +253,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       "TARGET",
                                       style: TextStyle(
                                         fontSize: 14.sp,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
                                         color: Color(0xff3B5AFB),
                                       ),
@@ -261,7 +265,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       "# 590,000",
                                       style: TextStyle(
                                           fontSize: 16.sp,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
                                           color: Color(0xff3B5AFB)),
                                     )
@@ -287,7 +291,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       style: TextStyle(
                                         fontSize: 14.sp,
                                         fontWeight: FontWeight.w700,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         color: Colors.white,
                                       ),
                                     ),
@@ -299,7 +303,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       style: TextStyle(
                                           fontSize: 16.sp,
                                           fontWeight: FontWeight.w700,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           color: Colors.white),
                                     )
                                   ],
@@ -343,7 +347,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     decorationThickness: 1.sp,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
-                                    fontFamily: 'Poppins',
+                                    fontFamily: GoVestAssetsPath.govestFont,
                                     color: Colors.white.withOpacity(0.41),
                                   ),
                                 ),
@@ -358,7 +362,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                           Colors.white.withOpacity(0.41),
                                       decorationThickness: 3.sp,
                                       fontSize: 16.sp,
-                                      fontFamily: 'Poppins',
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
                                       color: Colors.white),
                                 )
@@ -376,6 +380,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w700,
+                                      fontFamily: GoVestAssetsPath.govestFont,
                                       color: Color(0xff3B5AFB)),
                                 ),
                               ),
@@ -405,7 +410,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       "TARGET",
                                       style: TextStyle(
                                         fontSize: 14.sp,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
                                         color: Color(0xff3B5AFB),
                                       ),
@@ -415,7 +420,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       "# 590,000",
                                       style: TextStyle(
                                           fontSize: 16.sp,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
                                           color: Color(0xff3B5AFB)),
                                     )
@@ -440,7 +445,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       "TARGET",
                                       style: TextStyle(
                                         fontSize: 14.sp,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
                                         color: Colors.white,
                                       ),
@@ -451,16 +456,14 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       "# 200,000",
                                       style: TextStyle(
                                           fontSize: 16.sp,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
                                           color: Colors.white),
                                     )
                                   ],
                                 ),
                               ),
-                              // Test
-                            
-                            ),
+                              ),
                           ],
                         )
                       ],
@@ -504,7 +507,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                               Colors.white.withOpacity(0.41),
                                           decorationThickness: 1.sp,
                                           fontSize: 16,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w500,
                                           color: Colors.white.withOpacity(0.41),
                                         ),
@@ -524,7 +527,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                             Colors.white.withOpacity(0.41),
                                         decorationThickness: 3.sp,
                                         fontSize: 16.sp,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
                                         color: Colors.white),
                                   )
@@ -542,6 +545,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     style: TextStyle(
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w700,
+                                        fontFamily: GoVestAssetsPath.govestFont,
                                         color: Color(0xff3B5AFB)),
                                   ),
                                 ),
@@ -571,7 +575,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         "TARGET",
                                         style: TextStyle(
                                           fontSize: 14.sp,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
                                           color: Color(0xff3B5AFB),
                                         ),
@@ -583,7 +587,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         "# 590,000",
                                         style: TextStyle(
                                             fontSize: 16.sp,
-                                            fontFamily: 'Poppins',
+                                            fontFamily: GoVestAssetsPath.govestFont,
                                             fontWeight: FontWeight.w700,
                                             color: Color(0xff3B5AFB)),
                                       )
@@ -609,7 +613,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         style: TextStyle(
                                           fontSize: 14.sp,
                                           fontWeight: FontWeight.w700,
-                                          fontFamily: 'Poppins',
+                                          fontFamily: GoVestAssetsPath.govestFont,
                                           color: Colors.white,
                                         ),
                                       ),
@@ -621,7 +625,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         style: TextStyle(
                                             fontSize: 16.sp,
                                             fontWeight: FontWeight.w700,
-                                            fontFamily: 'Poppins',
+                                            fontFamily: GoVestAssetsPath.govestFont,
                                             color: Colors.white),
                                       )
                                     ],

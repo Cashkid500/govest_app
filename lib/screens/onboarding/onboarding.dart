@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/signup/signup.dart';
 
+import '../constants/asset_path.dart';
+
 
 
 class OnboardingScreen extends StatefulWidget {
@@ -25,12 +27,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
-                child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
+                child: Text("Skip", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
               ),
               SizedBox(height: 20.sp,),
               Center(child: Image.asset('assets/images/Page View1.png')),
               SizedBox(height: 30.sp,),
-              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
+              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
               textAlign: TextAlign.center,),
               SizedBox(height: 90.sp,),
               Center(
@@ -42,7 +44,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     borderRadius: BorderRadius.circular(82.r),
                   ),
                   child: Center(
-                    child: Text("Get Started", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
+                    child: Text("Get Started", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
                     ),
                   ),
                 ),
@@ -62,12 +64,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
-                  child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xffffffff)),),
+                  child: Text("Skip", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xffffffff)),),
                 ),
                 SizedBox(height: 20.sp,),
                 Center(child: Image.asset('assets/images/Page View2.png')),
                 SizedBox(height: 30.sp,),
-                Text("Get access to best investment assets", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
+                Text("Get access to best investment assets", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
                 textAlign: TextAlign.center,),
                 SizedBox(height: 90.sp,),
                 Center(
@@ -82,7 +84,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Center(
-                          child: Text("Next", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
+                          child: Text("Next", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
                           ),
                         ),
                         SizedBox(width: 5.sp,),
@@ -101,12 +103,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
-                child: Text("Skip", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
+                child: Text("Skip", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: Color(0xff3B5AFB)),),
               ),
               SizedBox(height: 20.sp,),
               Center(child: Image.asset('assets/images/Page View3.png')),
               SizedBox(height: 30.sp,),
-              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
+              Text("Get in a simple way of increasing your wealth", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w600, color: Color(0xff3B5AFB)),
               textAlign: TextAlign.center,),
               SizedBox(height: 90.sp,),
               Center(
@@ -124,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       borderRadius: BorderRadius.circular(82.r),
                     ),
                     child: Center(
-                      child: Text("Create an account", style: TextStyle(fontFamily: 'Poppins', fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
+                      child: Text("Create an account", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),
                       ),
                     ),
                   ),

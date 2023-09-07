@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/onboarding/onboarding.dart';
 
 void main() => runApp(MyApp());
@@ -56,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 30.sp,
-                  fontFamily: 'Poppins',
+                  fontFamily: GoVestAssetsPath.govestFont,
                 ),
                 children: [
                   TextSpan(

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/safelock/safelock.dart';
 
+import '../constants/asset_path.dart';
+
 
 class InvestmentDetailsScreen extends StatefulWidget {
   const InvestmentDetailsScreen({Key? key}) : super(key: key);
@@ -50,7 +52,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               style: TextStyle(
                                   fontSize: 10.sp,
                                   fontWeight: FontWeight.w700,
-                                  fontFamily: 'Poppins',
+                                  fontFamily: GoVestAssetsPath.govestFont,
                                   color: Color(0xff60F248)),
                             ),
                           ),
@@ -74,7 +76,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           "Cashew Nut Investment",
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             fontSize: 22.sp,
                             color: Colors.white,
                           ),
@@ -100,7 +102,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           "By Agro-allied investment",
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Poppins',
+                            fontFamily: GoVestAssetsPath.govestFont,
                             color: Colors.white,
                             fontSize: 14.sp,
                           ),
@@ -118,6 +120,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               "VERIFIED OPPURTUNITY",
                               style: TextStyle(
                                 fontSize: 6.sp,
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff3B5AFB),
                               ),
@@ -136,7 +139,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               style: TextStyle(
                                 fontSize: 11.sp,
                                 fontWeight: FontWeight.w400,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 color: Colors.white,
                               ),
                             ),
@@ -145,7 +148,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               style: TextStyle(
                                 fontSize: 18.sp,
                                 fontWeight: FontWeight.w700,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 color: Colors.white,
                               ),
                             )
@@ -162,7 +165,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w700,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 color: Colors.white,
                               ),
                             ),
@@ -170,7 +173,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               "Per unit",
                               style: TextStyle(
                                 fontSize: 10.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.white,
                               ),
@@ -193,7 +196,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                         style: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           color: Color(0xff3B5AFB),
                         ),
                       ),
@@ -206,7 +209,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                     "Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas.  Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas. ",
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins',
+                      fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 12.sp,
                     ),
                   ),
@@ -218,7 +221,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                         "Read more",
                         style: TextStyle(
                           color: Color(0xff3B5AFB),
-                          fontFamily: 'Poppins',
+                          fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                         ),
@@ -256,7 +259,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w500,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 color: Colors.white,
                               ),
                             ),
@@ -267,7 +270,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               "Leadway Assurance",
                               style: TextStyle(
                                 fontSize: 12.sp,
-                                fontFamily: 'Poppins',
+                                fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white,
                               ),
@@ -311,7 +314,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           "BUY NOW",
                           style: TextStyle(
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'Poppins',
+                              fontFamily: GoVestAssetsPath.govestFont,
                               fontSize: 16.sp,
                               color: Colors.white),
                         ),
@@ -356,7 +359,7 @@ class CashewNutReturn extends StatelessWidget {
             style: TextStyle(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
-              fontFamily: 'Poppins',
+              fontFamily: GoVestAssetsPath.govestFont,
               color: Colors.white,
             ),
           ),
@@ -367,7 +370,7 @@ class CashewNutReturn extends StatelessWidget {
             Returnpath,
             style: TextStyle(
               fontSize: 14.sp,
-              fontFamily: 'Poppins',
+              fontFamily: GoVestAssetsPath.govestFont,
               fontWeight: FontWeight.w700,
               color: Colors.white,
             ),
