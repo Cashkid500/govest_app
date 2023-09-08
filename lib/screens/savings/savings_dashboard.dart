@@ -92,7 +92,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                       ),
                       Row(
                         children: [
-                          Image.asset("assets/images/Big Naira.png", color: blackText,),
+                          Image.asset(GoVestAssetsPath.bigNaira, color: blackText,),
                           SizedBox(
                             width: 5.sp,
                           ),
@@ -327,7 +327,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50.r),
                     color: whiteText.withOpacity(0.3)),
-                child: Icon(Icons.lock, color: Color(0xffffffff), size: 15.sp,),
+                child: Icon(Icons.lock, color: whiteText, size: 15.sp,),
               ),
               SizedBox(height: 10.sp,),
               Text(

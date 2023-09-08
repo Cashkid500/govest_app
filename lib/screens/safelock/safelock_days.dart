@@ -98,7 +98,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   decoration: InputDecoration(
                     labelText: '200,000.00',
                     prefixIcon: Image.asset(
-                        "assets/images/Big Naira.png", height: 10.sp,), // Placeholder text
+                        GoVestAssetsPath.bigNaira, height: 10.sp,), // Placeholder text
                     labelStyle: TextStyle(
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,

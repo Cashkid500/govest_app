@@ -147,7 +147,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset("assets/images/Naira.png"),
+                              Image.asset(GoVestAssetsPath.naira),
                               SizedBox(
                                 width: 5.sp,
                               ),
@@ -211,7 +211,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset("assets/images/Naira.png"),
+                              Image.asset(GoVestAssetsPath.naira),
                               SizedBox(
                                 width: 5.sp,
                               ),
@@ -303,7 +303,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 SizedBox(
                                   width: 5.sp,
                                 ),
-                                Image.asset("assets/images/Playback.png"),
+                                Image.asset(GoVestAssetsPath.playback),
                                 SizedBox(
                                   width: 5.sp,
                                 ),
@@ -330,7 +330,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     height: 20.sp,
                     decoration: BoxDecoration(
                       color: hooloovooBlue,
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.r),
                     ),
                     child: Switch(
                       value: _switchValue,

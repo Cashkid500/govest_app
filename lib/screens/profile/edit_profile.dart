@@ -26,11 +26,11 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.chevron_left,size: 40,color: Colors.white,),
+                Icon(Icons.chevron_left,size: 40,color: whiteText),
                 SizedBox(height: 10.sp,),
                 Center(child: Text("Edit Profile", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: whiteText),)),
                 SizedBox(height: 10.sp,),
-                Center(child: Image.asset("assets/images/Profile Image.png")),
+                Center(child: Image.asset(GoVestAssetsPath.profileImage)),
                 SizedBox(
                   height: 10.sp,
                 ),

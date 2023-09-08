@@ -39,7 +39,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                     borderRadius: BorderRadius.circular(100.r),
                     color: hooloovooBlue,
                   ),
-                  child: Image.asset("assets/images/Readings.png"),
+                  child: Image.asset(GoVestAssetsPath.readings),
                 ),
               ),
               SizedBox(height: 20.sp,),
@@ -68,7 +68,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                 ),
               ),
               SizedBox(height: 30.sp,),
-              Image.asset("assets/images/Scroll.png"),
+              Image.asset(GoVestAssetsPath.scroll),
               SizedBox(
                 height: 30.sp,
               ),

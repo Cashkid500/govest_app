@@ -42,7 +42,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
               SizedBox(
                 height: 40.sp,
               ),
-              Center(child: Image.asset("assets/images/Profile.png")),
+              Center(child: Image.asset(GoVestAssetsPath.profile)),
               SizedBox(
                 height: 5.sp,
               ),
@@ -222,7 +222,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 borderRadius: BorderRadius.circular(0)),
                             child: Center(
                               child: Image.asset(
-                                'assets/images/Wallet3.png',
+                                GoVestAssetsPath.wallet3,
                                 color: whiteText,
                               ),
                             ),

@@ -74,7 +74,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Image.asset("assets/images/Lite Naira.png"),
+                        Image.asset(GoVestAssetsPath.liteNaira),
                         SizedBox(
                           width: 2.sp,
                         ),

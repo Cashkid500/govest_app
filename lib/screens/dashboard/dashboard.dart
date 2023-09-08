@@ -38,7 +38,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       children: [
                         Row(
                           children: [
-                            Image.asset("assets/images/Profile.png"),
+                            Image.asset(GoVestAssetsPath.profile),
                             Padding(
                               padding: EdgeInsets.only(left: 10.sp),
                               child: Text(
@@ -74,7 +74,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               amount: "30,250.00",
                               name: "Ganni West",
                               bank: "Wema Bank",
-                              imagepath: "assets/images/Plus.png"),
+                              imagepath: GoVestAssetsPath.plus),
                           SizedBox(
                             width: 10.sp,
                           ),
@@ -84,7 +84,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             amount: "30,250.00",
                             name: "Ganni West",
                             bank: "Wema Bank",
-                            imagepath: "assets/images/Plus.png",
+                            imagepath: GoVestAssetsPath.plus,
                           ),
                         ],
                       ),
@@ -108,7 +108,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset("assets/images/Investment.png"),
+                        Image.asset(GoVestAssetsPath.investment),
                         SizedBox(
                           height: 5.sp,
                         ),
@@ -151,7 +151,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset("assets/images/Savings.png"),
+                        Image.asset(GoVestAssetsPath.savings),
                         SizedBox(
                           height: 10.sp,
                         ),
@@ -232,7 +232,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               ),
                             ],
                           ),
-                          Image.asset('assets/images/Refer.png')
+                          Image.asset(GoVestAssetsPath.refer)
                         ],
                       ),
                     ),
@@ -286,7 +286,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Image.asset('assets/images/Withdraw.png'),
+                        Image.asset(GoVestAssetsPath.withdraw),
                         SizedBox(width: 10.sp,),
                         Padding(
                           padding: EdgeInsets.only(right: 50.sp),
@@ -318,7 +318,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                         Row(
                           children: [
-                            Image.asset('assets/images/Naira.png'),
+                            Image.asset(GoVestAssetsPath.naira),
                             SizedBox(width: 2.sp,),
                             Text(
                               "2,000",
@@ -434,7 +434,7 @@ class DashboardContainer extends StatelessWidget {
             height: 205.sp,
             width: 46.sp,
             decoration: BoxDecoration(
-                color: sapphireGlitter,
+                color: sapphireGlitter2,
                 borderRadius: BorderRadius.only(
                     topRight: Radius.circular(10.r),
                     bottomRight: Radius.circular(10.r))),

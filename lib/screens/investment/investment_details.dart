@@ -27,9 +27,9 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                 height: 375.sp,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/Cashew.png'),
-                    fit: BoxFit.cover,
-                    colorFilter: ColorFilter.mode(
+                  image: AssetImage(GoVestAssetsPath.cashew),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
                         veteranBlue.withOpacity(0.6), BlendMode.srcOver),
                   ),
                 ),

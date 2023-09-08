@@ -229,7 +229,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Image.asset('assets/images/Purse.png'),
+                              Image.asset(GoVestAssetsPath.purse),
                               Padding(
                                 padding: EdgeInsets.only(right: 18.sp),
                                 child: RichText(
@@ -310,7 +310,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Image.asset('assets/images/Wallet2.png'),
+                              Image.asset(GoVestAssetsPath.wallet2),
                               SizedBox(
                                 width: 10.sp,
                               ),

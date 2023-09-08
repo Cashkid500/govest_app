@@ -72,7 +72,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'assets/images/Big Naira.png',
+                    GoVestAssetsPath.bigNaira,
                     height: 16.sp,
                   ),
                   SizedBox(

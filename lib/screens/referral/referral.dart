@@ -47,7 +47,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                       ],
                     ),
                   ),
-                  Image.asset("assets/images/Profile.png", height: 50.sp,),
+                  Image.asset(GoVestAssetsPath.profile, height: 50.sp,),
                 ],
               ),
               SizedBox(height: 20.sp,),
@@ -86,7 +86,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               ),
                             ],
                           ),
-                          Image.asset("assets/images/Commission.png"),
+                          Image.asset(GoVestAssetsPath.commission),
                         ],
                       ),
                       SizedBox(
@@ -272,7 +272,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           children: [
                             Row(
                               children: [
-                                Image.asset("assets/images/Naira.png", color: blackText,),
+                                Image.asset(GoVestAssetsPath.naira, color: blackText,),
                                 SizedBox(
                                   width: 5.sp,
                                 ),
@@ -288,7 +288,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                             ),
                             Row(
                               children: [
-                                Image.asset('assets/images/Naira.png', color: blackText,),
+                                Image.asset(GoVestAssetsPath.naira, color: blackText,),
                                 SizedBox(
                                   width: 5.sp,
                                 ),
@@ -323,7 +323,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset("assets/images/Upload.png"),
+                      Image.asset(GoVestAssetsPath.upload),
                       SizedBox(height: 20.sp,),
                       Text(
                         "Share Link",

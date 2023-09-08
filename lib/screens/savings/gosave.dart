@@ -75,7 +75,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
              Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset('assets/images/Big Naira.png', height: 16.sp,),
+                Image.asset(GoVestAssetsPath.bigNaira, height: 16.sp,),
                 SizedBox(width: 10.sp,),
                 Text("200,000.00", style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
               ],

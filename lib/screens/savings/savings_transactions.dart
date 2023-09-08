@@ -90,7 +90,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                         ),
                         Row(
                           children: [
-                            Image.asset("assets/images/Big Naira.png"),
+                            Image.asset(GoVestAssetsPath.bigNaira),
                             SizedBox(
                               width: 5.sp,
                             ),
@@ -118,11 +118,11 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               GestureDetector(
-                                onTap: () {
-                 Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>SavingsDashboardScreen())
-                );
-                },
+                              onTap: () {
+                              Navigator.of(context).push(
+                              MaterialPageRoute(builder: (BuildContext context) =>SavingsDashboardScreen())
+                              );
+                              },
                                 child: Text(
                                   "Dashboard",
                                   style: TextStyle(
@@ -241,7 +241,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               width: 135.sp,
                               decoration: BoxDecoration(
                                 color: whiteText,
-                                borderRadius: BorderRadius.circular(10),
+                                borderRadius: BorderRadius.circular(10.r),
                               ),
                               child: Padding(
                                 padding: EdgeInsets.all(20.sp),
@@ -487,7 +487,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                       color: hooloovooBlue,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(20.sp),
                       child: Column(
                         children: [
                           Row(

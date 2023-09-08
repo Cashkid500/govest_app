@@ -65,7 +65,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Image.asset("assets/images/White Wallet.png", height: 36.sp, width: 36.sp),
+                      Image.asset(GoVestAssetsPath.whiteWallet, height: 36.sp, width: 36.sp),
                       SizedBox(
                         width: 20.sp,
                       ),

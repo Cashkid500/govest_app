@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/profile/add_bank.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -65,7 +64,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
              Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset('assets/images/Big Naira.png', height: 16.sp,),
+                Image.asset(GoVestAssetsPath.bigNaira, height: 16.sp,),
                 SizedBox(width: 10.sp,),
                 Text("20,000.00", style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
               ],
@@ -162,7 +161,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
               child: Center(child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/Mastercard.png'),
+                  Image.asset(GoVestAssetsPath.mastercard),
                   SizedBox(width: 10.sp,),
                   Text("Use Card with Paystack", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),),
                 ],

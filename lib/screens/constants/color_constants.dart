@@ -23,4 +23,4 @@ Color widowmaker = const Color(0xff93A4FF);
 Color glowingBrakeDisc = const Color(0xffF24848);
 Color poisonousIceCream = const Color(0xffDDDC24);
 Color mithril = const Color(0xff878787);
-Color sapphireGlitter = const Color(0xff0C35C6);
+Color sapphireGlitter2 = const Color(0xff0C35C6);

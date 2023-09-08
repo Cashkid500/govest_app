@@ -60,7 +60,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                         ),
                       ],
                     ),
-                    Image.asset("assets/images/Profile.png", height: 80.sp,),
+                    Image.asset(GoVestAssetsPath.profile, height: 80.sp,),
                   ],
                 ),
             ),
@@ -182,7 +182,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 padding: EdgeInsets.only(left: 20.sp),
                 child: Row(
                   children: [
-                    Image.asset('assets/images/KYC.png'),
+                    Image.asset(GoVestAssetsPath.kyc),
                     SizedBox(width: 10.sp,),
                     GestureDetector(
                       onTap: () {
@@ -263,7 +263,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 color: hooloovooBlue,
                               ),),
-                              Image.asset("assets/images/Logout.png"),
+                              Image.asset(GoVestAssetsPath.logout),
                         ],
                       ),
                     ),

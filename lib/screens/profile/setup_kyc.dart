@@ -234,7 +234,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Image.asset('assets/images/Lock.png'),
+                              Image.asset(GoVestAssetsPath.lock),
                               SizedBox(
                                 width: 250.sp,
                               child: Text("To confirm your identity on Govest, you need to connect your BVN. This does not give GOVest any access to your bank information or balances. This just enables GoVest to confirm your real identty such as real name, phone, and date of birth. from your bank.", style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400, fontFamily: GoVestAssetsPath.govestFont, color: spanishGrey),))

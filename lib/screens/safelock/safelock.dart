@@ -47,7 +47,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                         padding: EdgeInsets.only(top: 20.0, left: 10.sp),
                       ),
                       SizedBox(width: 10.sp,),
-                      Image.asset("assets/images/Wallet.png"),
+                      Image.asset(GoVestAssetsPath.wallet),
                       SizedBox(width: 10.sp,),
                       Text(
                         "Wallet - NGN 200,000",
@@ -85,7 +85,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                               image: DecorationImage(
                                   image: Image(
                                           image: AssetImage(
-                                              'assets/images/Card.png'))
+                                              GoVestAssetsPath.card))
                                       .image),
                             ),
                           ),

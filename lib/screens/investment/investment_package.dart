@@ -80,7 +80,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                 children: [
                   Row(
                     children: [
-                      Image.asset("assets/images/Naira Blue.png"),
+                      Image.asset(GoVestAssetsPath.nairaBlue),
                       Text(
                         "590,000.00",
                         style: TextStyle(
@@ -94,7 +94,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                   ),
                   Row(
                     children: [
-                      Image.asset("assets/images/Naira Blue.png"),
+                      Image.asset(GoVestAssetsPath.nairaBlue),
                       Text(
                         "690,000.00",
                         style: TextStyle(
@@ -166,7 +166,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                           ],
                         ),
                       ),
-                      Image.asset("assets/images/Proceed.png"),
+                      Image.asset(GoVestAssetsPath.proceed),
                     ],
                   ),
                 ),
@@ -264,7 +264,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("assets/images/Maize.png"),
+                          Image.asset(GoVestAssetsPath.maize),
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.only(
@@ -321,8 +321,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                     children: [
                                       Row(
                                         children: [
-                                          Image.asset(
-                                              "assets/images/Naira.png"),
+                                          Image.asset(GoVestAssetsPath.naira),
                                           SizedBox(
                                             width: 2.sp,
                                           ),
@@ -393,7 +392,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset("assets/images/Poultry.png",),
+                        Image.asset(GoVestAssetsPath.poultry),
                         Container(
                               decoration: BoxDecoration(
                               borderRadius: BorderRadius.only(
@@ -450,7 +449,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   children: [
                                     Row(
                                       children: [
-                                        Image.asset("assets/images/Naira.png"),
+                                        Image.asset(GoVestAssetsPath.naira),
                                         SizedBox(
                                           width: 2.sp,
                                         ),
