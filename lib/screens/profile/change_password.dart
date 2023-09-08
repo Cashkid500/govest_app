@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:govest_app/screens/constants/color_constants.dart';
 import '../constants/asset_path.dart';
 import 'edit_profile.dart';
 
@@ -20,14 +20,14 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(color: Color(0xff3B5AFB)),
+          decoration: BoxDecoration(color: hooloovooBlue),
           child: Padding(
             padding: EdgeInsets.only(left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.chevron_left,size: 40.sp,color: Colors.white,),
+                Icon(Icons.chevron_left,size: 40.sp,color: whiteText,),
                 SizedBox(height: 20.sp,),
                 Center(
                     child: Text(
@@ -36,7 +36,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w700,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      color: Colors.white),
+                      color: whiteText),
                 )),
                 SizedBox(height: 10.sp,),
                 Center(
@@ -48,7 +48,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                           fontSize: 12.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w400,
-                          color: Colors.white),
+                          color: whiteText),
                     ),
                   ),
                 ),
@@ -58,18 +58,18 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 Container(
                   height: 50.sp,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5.0),
-                    border: Border.all(color: Colors.white),
+                    color: whiteText,
+                    borderRadius: BorderRadius.circular(5.r),
+                    border: Border.all(color: whiteText),
                   ),
                   child: TextField(
                     decoration: InputDecoration(
                         hintText: "Enter Current Password",
-                        hintStyle: TextStyle(color: Color(0xff979797), fontFamily: GoVestAssetsPath.govestFont),
+                        hintStyle: TextStyle(color: spanishGrey, fontFamily: GoVestAssetsPath.govestFont),
                         contentPadding: EdgeInsets.all(10.sp),
                         border: InputBorder.none,
                         suffixIcon: Icon(Icons.visibility_off,
-                            size: 20, color: Color(0xff3B5AFB))),
+                            size: 20.sp, color: hooloovooBlue)),
                   ),
                 ),
                 SizedBox(
@@ -87,14 +87,14 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   width: MediaQuery.of(context).size.width,
                   height: 42.sp,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8),
+                    color: whiteText,
+                    borderRadius: BorderRadius.circular(8.r),
                   ),
                   child: Center(
                     child: Text(
                       "Change Password",
                       style:
-                          TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
+                          TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: hooloovooBlue),
                     ),
                   ),
                 )

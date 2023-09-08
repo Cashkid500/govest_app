@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/savings/gowallet.dart';
 
 import '../constants/asset_path.dart';
@@ -31,7 +32,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.close, color: Color(0xff3B5AFB),),
+              Icon(Icons.close, color: hooloovooBlue,),
               SizedBox(
                 height: 30.sp,
               ),
@@ -41,7 +42,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   fontSize: 18,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff3B5AFB),
+                  color: hooloovooBlue,
                 ),
               ),
               SizedBox(
@@ -53,7 +54,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
-                  color: Colors.black,
+                  color: blackText,
                 ),
               ),
               SizedBox(
@@ -65,7 +66,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                 ),
               ),
               SizedBox(
@@ -82,12 +83,12 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
              SizedBox(height: 5.sp,
              child: Divider(
               thickness: 1.sp,
-              color: Color(0xff000000),
+              color: blackText,
              ),),
              SizedBox(height: 5.sp,),
              Row(
               children: [
-                    Icon(Icons.check_circle, color: Color(0xff0EB51F),),
+                    Icon(Icons.check_circle, color: springForth,),
                     SizedBox(
                       width: 5.sp,
                     ),
@@ -97,18 +98,18 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                           fontSize: 12.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w500,
-                          color: Color(0xff979797)),
+                          color: spanishGrey),
                     ),
               ]
              ),
              SizedBox(height: 30.sp,),
-             Text("Set Title for your Savings", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: Color(0xff979797)),),
+             Text("Set Title for your Savings", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
              SizedBox(height: 20.sp),
-            Text("Wedding Aid", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+            Text("Wedding Aid", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: blackText),),
             SizedBox(height: 20.sp,
              child: Divider(
               thickness: 1.sp,
-              color: Color(0xff000000),
+              color: blackText,
              ),),
              SizedBox(height: 25.sp,),
              Text("How do you want to safe?", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, fontFamily: GoVestAssetsPath.govestFont, color: Color(0xff979797)),),
@@ -135,9 +136,9 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                               height: 54.sp,
                               decoration: BoxDecoration(
                                   color: current1 == index
-                                      ? Color(0xff2A52E2)
-                                      : Colors.white.withOpacity(0.12),
-                                  border: Border.all(color: Color(0xffE7E7F6)),
+                                      ? veteranBlue
+                                      : whiteText.withOpacity(0.12),
+                                  border: Border.all(color: icyLilac),
                                   borderRadius: BorderRadius.circular(5)),
                               child: Center(
                                 child: Row(
@@ -149,10 +150,10 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                                       height: 20.sp,
                                       width: 20.sp,
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(50),
+                                        borderRadius: BorderRadius.circular(50.r),
                                         color: current1 == index
-                                            ? Colors.white
-                                            : Color(0xff2A52E2),
+                                            ? whiteText
+                                            : veteranBlue,
                                       ),
                                     ),
                                     SizedBox(
@@ -163,8 +164,8 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                                       style: TextStyle(
                                           fontWeight: FontWeight.w500,
                                           color: current1 == index
-                                              ? Colors.white
-                                              : Color(0xff2A52E2)),
+                                              ? whiteText
+                                              : veteranBlue),
                                     ),
                                   ],
                                 ),
@@ -182,18 +183,18 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
               Text(
                 "Select source of fund",
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 20.sp,
                     fontWeight: FontWeight.w700,
                     fontFamily: GoVestAssetsPath.govestFont,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
               Container(
-                padding: EdgeInsets.only(bottom: 5.0),
+                padding: EdgeInsets.only(bottom: 5.sp),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: Colors.black,
-                      width: 2.0,
+                      color: blackText,
+                      width: 2.sp,
                     ),
                   ),
                 ),
@@ -201,13 +202,8 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   decoration: InputDecoration(
                     labelText: 'Wallet - NGN 200,000',
                     labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
-                    suffixIcon: Icon(
-                      Icons.expand_more,
-                      color: Color(0xff979797),
-                      size: 30.sp,
-                    ),
-                    //
-                  ),
+                    suffixIcon: Icon(Icons.expand_more,color: spanishGrey,size: 30.sp,),
+                   ),
                 ),
               ),
               SizedBox(height: 15.sp,),
@@ -218,8 +214,8 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                     width: 40.sp,
                     height: 20.sp,
                     decoration: BoxDecoration(
-                      color: Color(0xff979797),
-                      borderRadius: BorderRadius.circular(8),
+                      color: spanishGrey,
+                      borderRadius: BorderRadius.circular(8.r),
                     ),
                     child: Switch(
                       value: _switchFunction,
@@ -235,7 +231,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                     child: Text(
                       "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
                       style: TextStyle(
-                        color: Colors.black,
+                        color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w400,
@@ -255,7 +251,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 height: 60.sp,
                 width: 329.sp,
                 decoration: BoxDecoration(
-                  color: Color(0xff3B5AFB),
+                  color: hooloovooBlue,
                   borderRadius: BorderRadius.circular(10.r)
                 ),
                 child: Center(child: Text("GO SAVE NOW", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),

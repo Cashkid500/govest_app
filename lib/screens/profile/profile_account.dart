@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
 import 'package:govest_app/screens/profile/next_of_kin.dart';
-
 import '../constants/asset_path.dart';
 import '../login/login.dart';
 
@@ -21,7 +21,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(20.sp),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,11 +36,11 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w700,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      color: Colors.black),
+                      color: blackText),
                 ),
               ),
               SizedBox(
-                height: 40,
+                height: 40.sp,
               ),
               Center(child: Image.asset("assets/images/Profile.png")),
               SizedBox(
@@ -53,7 +53,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w700,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      color: Colors.black),
+                      color: blackText),
                 ),
               ),
               SizedBox(
@@ -64,7 +64,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                   fontFamily: GoVestAssetsPath.govestFont,
                 ),
               ),
@@ -72,8 +72,8 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                 width: MediaQuery.of(context).size.width,
                 height: 197.sp,
                 decoration: BoxDecoration(
-                    color: Color(0xff3B5AFB),
-                    borderRadius: BorderRadius.circular(10)),
+                    color: hooloovooBlue,
+                    borderRadius: BorderRadius.circular(10.r)),
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.sp, left: 15.sp),
                   child: Column(
@@ -84,13 +84,13 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                             height: 40.sp,
                             width: 40.sp,
                             decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: whiteText,
                                 borderRadius: BorderRadius.circular(50)),
                             child: Center(
                               child: Icon(
                                 Icons.person_outline,
                                 size: 20,
-                                color: Color(0xff3B5AFB),
+                                color: hooloovooBlue,
                               ),
                             ),
                           ),
@@ -113,7 +113,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       style: TextStyle(
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w400,
-                                        color: Colors.white,
+                                        color: whiteText,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                       ),
                                     ),
@@ -126,7 +126,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
-                                      color: Color(0xffBFBFE3),
+                                      color: prettyPosie,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                   )
@@ -137,7 +137,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               ),
                               Icon(
                                 Icons.chevron_right,
-                                color: Colors.white,
+                                color: whiteText,
                               )
                             ],
                           )
@@ -156,8 +156,8 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                             child: Center(
                               child: Icon(
                                 Icons.sentiment_satisfied,
-                                size: 30,
-                                color: Colors.white,
+                                size: 30.sp,
+                                color: whiteText,
                               ),
                             ),
                           ),
@@ -182,7 +182,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       style: TextStyle(
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w400,
-                                        color: Colors.white,
+                                        color: whiteText,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                       ),
                                     ),
@@ -193,7 +193,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
-                                      color: Color(0xffBFBFE3),
+                                      color: prettyPosie,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                   )
@@ -204,14 +204,14 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               ),
                               Icon(
                                 Icons.chevron_right,
-                                color: Colors.white,
+                                color: whiteText,
                               )
                             ],
                           )
                         ],
                       ),
                       SizedBox(
-                        height: 15,
+                        height: 15.sp,
                       ),
                       Row(
                         children: [
@@ -223,7 +223,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                             child: Center(
                               child: Image.asset(
                                 'assets/images/Wallet3.png',
-                                color: Colors.white,
+                                color: whiteText,
                               ),
                             ),
                           ),
@@ -242,7 +242,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w400,
-                                      color: Colors.white,
+                                      color: whiteText,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                     ),
                                   ),
@@ -255,12 +255,12 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
                                       fontFamily: GoVestAssetsPath.govestFont,
-                                      color: Color(0xffBFBFE3),
+                                      color: prettyPosie,
                                     ),
                                   )
                                 ],
                               ),
-                              Icon(Icons.chevron_right,color: Colors.white,),
+                              Icon(Icons.chevron_right,color: whiteText,),
                             ],
                           )
                         ],
@@ -278,13 +278,13 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w500,
                     fontFamily: GoVestAssetsPath.govestFont,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
               Container(
                 height: 155.sp,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                  color: Color(0xff3B5AFB),
+                  color: hooloovooBlue,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
                 child: Padding(
@@ -302,7 +302,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 child: Icon(
                               Icons.lock,
                               size: 25.sp,
-                              color: Colors.white,
+                              color: whiteText,
                             )),
                           ),
                           SizedBox(
@@ -321,7 +321,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w400,
                                       fontFamily: GoVestAssetsPath.govestFont,
-                                      color: Colors.white,
+                                      color: whiteText,
                                     ),
                                   ),
                                   SizedBox(
@@ -339,7 +339,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                         fontSize: 10.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w500,
-                                        color: Color(0xffBFBFE3),
+                                        color: prettyPosie,
                                       ),
                                     ),
                                   )
@@ -348,7 +348,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               SizedBox(
                                 width: 60.sp,
                               ),
-                              Icon(Icons.chevron_right,color: Colors.white,),
+                              Icon(Icons.chevron_right,color: whiteText,),
                             ],
                           )
                         ],
@@ -364,7 +364,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(0)),
                             child: Center(
-                              child: Icon(Icons.headset,size: 25,color: Colors.white,),
+                              child: Icon(Icons.headset,size: 25,color: whiteText,),
                             ),
                           ),
                           SizedBox(width: 20.sp,),
@@ -381,7 +381,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 12.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w400,
-                                      color: Colors.white,
+                                      color: whiteText,
                                     ),
                                   ),
                                   SizedBox(
@@ -393,7 +393,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                       fontSize: 10.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w500,
-                                      color: Color(0xffBFBFE3),
+                                      color: prettyPosie,
                                     ),
                                   )
                                 ],
@@ -401,7 +401,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               SizedBox(
                                 width: 20.sp,
                               ),
-                              Icon(Icons.chevron_right,color: Colors.white,),
+                              Icon(Icons.chevron_right,color: whiteText,),
                             ],
                           )
                         ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/safelock/gosafe_lock.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -26,8 +26,8 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.close, color: Color(0xff3B5AFB), size: 40.sp,),
-                  Icon(Icons.info, color: Color(0xff3B5AFB), size: 40.sp,),
+                  Icon(Icons.close, color: hooloovooBlue, size: 40.sp,),
+                  Icon(Icons.info, color: hooloovooBlue, size: 40.sp,),
                 ],
               ),
               SizedBox(height: 70.sp,),
@@ -37,7 +37,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                   height: 200.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100.r),
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                   ),
                   child: Image.asset("assets/images/Readings.png"),
                 ),
@@ -49,7 +49,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w700,
                   fontFamily: GoVestAssetsPath.govestFont,
-                  color: Colors.black,
+                  color: blackText,
                 ),
               ),
               SizedBox(height: 20.sp,),
@@ -62,7 +62,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      color: Colors.black,
+                      color: blackText,
                     ),
                   ),
                 ),
@@ -76,7 +76,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                 height: 66.sp,
                 width: 278.sp,
                 decoration: BoxDecoration(
-                  color: Color(0xff3B5AFB),
+                  color: hooloovooBlue,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
                 child: Center(
@@ -86,7 +86,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w700,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      color: Colors.white,
+                      color: whiteText,
                     ),
                   ),
                 ),
@@ -102,7 +102,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                   height: 66.sp,
                   width: 278.sp,
                   decoration: BoxDecoration(
-                    color: Color(0xff0EB51F),
+                    color: springForth,
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                   child: Row(
@@ -115,11 +115,11 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                           fontSize: 20.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
-                          color: Colors.white,
+                          color: whiteText,
                         ),
                       ),
                       SizedBox(width: 20.sp,),
-                      Icon(Icons.lock, color: Color(0xffffffff),),
+                      Icon(Icons.lock, color: whiteText,),
                     ],
                   ),
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/savings/savings_history.dart';
 
 import '../constants/asset_path.dart';
@@ -29,7 +30,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Icon(Icons.close, color: Color(0xff3B5AFB), size: 30.sp),
+                  Icon(Icons.close, color: hooloovooBlue, size: 30.sp),
                 ],
               ),
               SizedBox(
@@ -39,13 +40,13 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 40.sp,
+                    height: 40.sp,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xff3B5AFB).withOpacity(0.31),
+                      color: hooloovooBlue.withOpacity(0.31),
                     ),
-                    child: Icon(Icons.lock, color: Color(0xff3B5AFB), size: 20.sp),
+                    child: Icon(Icons.lock, color: hooloovooBlue, size: 20.sp),
                   ),
                   SizedBox(
                     width: 20.sp,
@@ -59,7 +60,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           fontSize: 20.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xff3B5AFB),
+                          color: hooloovooBlue,
                         ),
                       ),
                       Text(
@@ -68,7 +69,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           fontSize: 14.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w500,
-                          color: Color(0xff979797),
+                          color: spanishGrey,
                         ),
                       )
                     ],
@@ -82,7 +83,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     fontWeight: FontWeight.w400,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 12.sp,
-                    color: Colors.black),
+                    color: blackText),
               ),
               SizedBox(
                 height: 20.sp,
@@ -90,7 +91,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
               Container(
                 height: 325.sp,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(color: Color(0xff3B5AFB)),
+                decoration: BoxDecoration(color: hooloovooBlue),
                 child: Padding(
                   padding: EdgeInsets.all(20.sp),
                   child: Column(
@@ -101,7 +102,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         "Fund and Return",
                         style: TextStyle(
                           fontSize: 18.sp,
-                          color: Colors.white,
+                          color: whiteText,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
                         ),
@@ -113,7 +114,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         height: 2.sp,
                         width: MediaQuery.of(context).size.width,
                         decoration:
-                            BoxDecoration(color: Colors.white.withOpacity(0.4)),
+                            BoxDecoration(color: whiteText.withOpacity(0.4)),
                       ),
                       SizedBox(
                         height: 30.sp,
@@ -124,7 +125,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           Text(
                             "Fund To Lock",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               fontSize: 12.sp,
@@ -136,7 +137,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.white),
+                                color: whiteText),
                           )
                         ],
                       ),
@@ -156,7 +157,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                     fontSize: 14.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.white),
+                                    color: whiteText),
                               ),
                             ],
                           ),
@@ -166,7 +167,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 fontSize: 14.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
-                                color: Colors.white),
+                                color: whiteText),
                           )
                         ],
                       ),
@@ -177,7 +178,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         width: MediaQuery.of(context).size.width,
                         height: 2.sp,
                         decoration:
-                            BoxDecoration(color: Colors.white.withOpacity(0.3)),
+                            BoxDecoration(color: whiteText.withOpacity(0.3)),
                       ),
                       SizedBox(
                         height: 20.sp,
@@ -188,7 +189,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           Text(
                             "Amount to Return",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               fontSize: 12.sp,
@@ -200,7 +201,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.white),
+                                color: whiteText),
                           )
                         ],
                       ),
@@ -220,7 +221,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                     fontSize: 14.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.white),
+                                    color: whiteText),
                               ),
                             ],
                           ),
@@ -230,7 +231,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 fontSize: 14.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
-                                color: Colors.white),
+                                color: whiteText),
                           )
                         ],
                       ),
@@ -241,7 +242,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         width: MediaQuery.of(context).size.width,
                         height: 2.sp,
                         decoration:
-                            BoxDecoration(color: Colors.white.withOpacity(0.3)),
+                            BoxDecoration(color: whiteText.withOpacity(0.3)),
                       ),
                       SizedBox(
                         height: 20.sp,
@@ -255,7 +256,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                           Text(
                             "Duration of Lock",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w500,
                               fontSize: 12.sp,
@@ -267,7 +268,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.white),
+                                color: whiteText),
                           )
                         ],
                       ),
@@ -280,11 +281,11 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 fontSize: 14.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
-                                color: Colors.white),
+                                color: whiteText),
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: whiteText,
                                 borderRadius: BorderRadius.circular(50.r)),
                             child: Row(
                               children: [
@@ -297,7 +298,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                       fontSize: 14.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
-                                      color: Color(0xff3B5AFB)),
+                                      color: hooloovooBlue),
                                 ),
                                 SizedBox(
                                   width: 5.sp,
@@ -328,7 +329,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     width: 40.sp,
                     height: 20.sp,
                     decoration: BoxDecoration(
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Switch(
@@ -345,7 +346,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     child: Text(
                       "I authorize GoVEST to safelock NGN500,000 immediately and return it in full on Wednesday 11th of October 2021 by 12:23PM to my bank account with 2355643. I confirm and approve this transaction.",
                       style: TextStyle(
-                        color: Colors.black,
+                        color: blackText,
                         fontSize: 10.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w400,
@@ -364,7 +365,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     width: 40.sp,
                     height: 20.sp,
                     decoration: BoxDecoration(
-                      color: Color(0xff979797),
+                      color: spanishGrey,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Switch(
@@ -381,7 +382,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     child: Text(
                       "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
                       style: TextStyle(
-                        color: Colors.black,
+                        color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w400,
@@ -404,7 +405,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                   height: 60.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                   ),
                   child: Center(
                     child: Text(
@@ -413,7 +414,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         fontSize: 20.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700,
-                        color: Colors.white,
+                        color: whiteText,
                       ),
                     ),
                   ),

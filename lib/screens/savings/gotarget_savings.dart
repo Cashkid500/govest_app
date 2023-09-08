@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/savings/preview_savings.dart';
 
 import '../constants/asset_path.dart';
@@ -38,7 +39,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
             children: [
               Icon(
                 Icons.close,
-                color: Color(0xff3B5AFB),
+                color: hooloovooBlue,
               ),
               SizedBox(
                 height: 30.sp,
@@ -46,10 +47,10 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
               Text(
                 "Create GoTargetSavings",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 18.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff3B5AFB),
+                  color: hooloovooBlue,
                 ),
               ),
               SizedBox(
@@ -61,7 +62,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                 ),
               ),
               SizedBox(
@@ -90,17 +91,14 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 height: 5.sp,
                 child: Divider(
                   thickness: 1.sp,
-                  color: Color(0xff000000),
+                  color: blackText,
                 ),
               ),
               SizedBox(
                 height: 5.sp,
               ),
               Row(children: [
-                Icon(
-                  Icons.check_circle,
-                  color: Color(0xff0EB51F),
-                ),
+                Icon(Icons.check_circle,color: springForth,),
                 SizedBox(
                   width: 5.sp,
                 ),
@@ -110,7 +108,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                       fontSize: 12.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xff979797)),
+                      color: spanishGrey),
                 ),
               ]),
               SizedBox(
@@ -122,7 +120,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
               SizedBox(height: 20.sp),
               Text(
@@ -131,13 +129,13 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
                     fontSize: 16.sp,
-                    color: Color(0xff000000)),
+                    color: blackText),
               ),
               SizedBox(
                 height: 20.sp,
                 child: Divider(
                   thickness: 1.sp,
-                  color: Color(0xff000000),
+                  color: blackText,
                 ),
               ),
               SizedBox(
@@ -149,7 +147,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
               Center(
                 child: SizedBox(
@@ -169,14 +167,14 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                               },
                               child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 100),
-                                margin: EdgeInsets.all(5),
+                                margin: EdgeInsets.all(5.sp),
                                 width: 100.sp,
                                 height: 50.sp,
                                 decoration: BoxDecoration(
                                     color: current == index
-                                        ? Color(0xff2A52E2)
-                                        : Colors.white.withOpacity(0.12),
-                                    border: Border.all(color: Color(0xffE7E7F6)),
+                                        ? veteranBlue
+                                        : whiteText.withOpacity(0.12),
+                                    border: Border.all(color: icyLilac),
                                     borderRadius: BorderRadius.circular(5)),
                                 child: Center(
                                   child: Text(
@@ -184,8 +182,8 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                                     style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         color: current == index
-                                            ? Colors.white
-                                            : Color(0xff2A52E2)),
+                                            ? whiteText
+                                            : veteranBlue),
                                   ),
                                 ),
                               ),
@@ -205,7 +203,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
               SizedBox(height: 10.sp),
               SizedBox(
@@ -225,15 +223,15 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                             },
                             child: AnimatedContainer(
                               duration: const Duration(milliseconds: 100),
-                              margin: EdgeInsets.all(5),
+                              margin: EdgeInsets.all(5.sp),
                               width: 120.sp,
                               height: 50.sp,
                               decoration: BoxDecoration(
                                   color: current1 == index
-                                      ? Color(0xff2A52E2)
-                                      : Colors.white.withOpacity(0.12),
-                                  border: Border.all(color: Color(0xffE7E7F6)),
-                                  borderRadius: BorderRadius.circular(5)),
+                                      ? veteranBlue
+                                      : whiteText.withOpacity(0.12),
+                                  border: Border.all(color: icyLilac),
+                                  borderRadius: BorderRadius.circular(5.r)),
                               child: Center(
                                 child: Row(
                                   children: [
@@ -244,10 +242,10 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                                       height: 20.sp,
                                       width: 20.sp,
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(50),
+                                        borderRadius: BorderRadius.circular(50.r),
                                         color: current1 == index
-                                            ? Colors.white
-                                            : Color(0xff2A52E2),
+                                            ? whiteText
+                                            : veteranBlue,
                                       ),
                                     ),
                                     SizedBox(
@@ -258,8 +256,8 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                                       style: TextStyle(
                                           fontWeight: FontWeight.w500,
                                           color: current1 == index
-                                              ? Colors.white
-                                              : Color(0xff2A52E2)),
+                                              ? whiteText
+                                              : veteranBlue),
                                     ),
                                   ],
                                 ),
@@ -282,7 +280,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                   height: 60.sp,
                   width: 329.sp,
                   decoration: BoxDecoration(
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                       borderRadius: BorderRadius.circular(10.r)),
                   child: Center(
                       child: Text(
@@ -291,7 +289,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 20.sp,
                         fontWeight: FontWeight.w700,
-                        color: Color(0xffffffff)),
+                        color: whiteText),
                   )),
                 ),
               )

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:govest_app/screens/constants/color_constants.dart';
 import '../constants/asset_path.dart';
 
 class EditProfileScreen extends StatefulWidget {
@@ -19,7 +19,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(color: Color(0xff3B5AFB)),
+          decoration: BoxDecoration(color: hooloovooBlue),
           child: Padding(
             padding: EdgeInsets.only(left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
             child: Column(
@@ -28,7 +28,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               children: [
                 Icon(Icons.chevron_left,size: 40,color: Colors.white,),
                 SizedBox(height: 10.sp,),
-                Center(child: Text("Edit Profile", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                Center(child: Text("Edit Profile", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: whiteText),)),
                 SizedBox(height: 10.sp,),
                 Center(child: Image.asset("assets/images/Profile Image.png")),
                 SizedBox(
@@ -41,7 +41,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w700,
                         fontFamily: GoVestAssetsPath.govestFont,
-                        color: Colors.white),
+                        color: whiteText),
                   ),
                 ),
                 SizedBox(height: 10.sp,),
@@ -50,8 +50,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     height: 34.sp,
                     width: 137.sp,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8),
+                      color: whiteText,
+                      borderRadius: BorderRadius.circular(8.r),
                     ),
                     child: Center(
                       child: Row(
@@ -63,11 +63,11 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                               fontSize: 10.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xff3B5AFB),
+                              color: hooloovooBlue,
                             ),
                           ),
                           SizedBox(width: 10.sp,),
-                          Icon(Icons.edit, color: Color(0xff3B5AFB),),
+                          Icon(Icons.edit, color: hooloovooBlue,),
                         ],
                       ),
                     ),
@@ -96,13 +96,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   width: MediaQuery.of(context).size.width,
                   height: 42.sp,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: whiteText,
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Center(
                     child: Text(
                       "Save Changes",
-                      style: TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),
+                      style: TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: hooloovooBlue),
                     ),
                   ),
                 )
@@ -128,13 +128,13 @@ class EditTextfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(5.0),
+        color: whiteText,
+        borderRadius: BorderRadius.circular(5.r),
       ),
       child: TextField(
         decoration: InputDecoration(
           hintText: name,
-          hintStyle: TextStyle(color: Color(0xff979797), fontFamily: GoVestAssetsPath.govestFont),
+          hintStyle: TextStyle(color: spanishGrey, fontFamily: GoVestAssetsPath.govestFont),
           border: InputBorder.none,
           contentPadding: EdgeInsets.all(10.sp),
         ),

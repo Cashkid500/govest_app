@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/savings/savings_transactions.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -29,9 +29,9 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
             Container(
               width: MediaQuery.of(context).size.width,
               decoration:
-                  BoxDecoration(color: Color(0xff60f248).withOpacity(0.23)),
+                  BoxDecoration(color: biopunk.withOpacity(0.23)),
               child: Padding(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(20.sp),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,18 +57,18 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                       text: "Go",
                                       style: TextStyle(
                                         decoration: TextDecoration.underline,
-                                        decorationColor: Color(0xff0EB51F),
+                                        decorationColor: springForth,
                                         decorationThickness: 0.5.sp,
-                                        color: Color(0xff0EB51F),
+                                        color: springForth,
                                       ),
                                     ),
                                     TextSpan(
                                       text: "Savings",
                                       style: TextStyle(
                                           decoration: TextDecoration.underline,
-                                          decorationColor: Color(0xff2A52E2),
+                                          decorationColor: veteranBlue,
                                           decorationThickness: 0.5.sp,
-                                          color: Color(0xff2A52E2)),
+                                          color: veteranBlue),
                                     ),
                                   ],
                                 ),
@@ -80,11 +80,11 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                     fontSize: 10.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w400,
-                                    color: Color(0xff979797)),
+                                    color: spanishGrey),
                               )
                             ],
                           ),
-                          Icon(Icons.add_circle, color: Color(0xff3B5AFB), size: 45.sp,),
+                          Icon(Icons.add_circle, color: hooloovooBlue, size: 45.sp,),
                         ],
                       ),
                       SizedBox(
@@ -92,7 +92,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                       ),
                       Row(
                         children: [
-                          Image.asset("assets/images/Big Naira.png", color: Color(0xff000000),),
+                          Image.asset("assets/images/Big Naira.png", color: blackText,),
                           SizedBox(
                             width: 5.sp,
                           ),
@@ -100,12 +100,12 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                             "590,000.00",
                             style: TextStyle(
                               decoration: TextDecoration.underline,
-                              decorationColor: Colors.black,
+                              decorationColor: blackText,
                               decorationThickness: 1.sp,
                               fontSize: 40.sp,
                               fontWeight: FontWeight.w700,
                               fontFamily: GoVestAssetsPath.govestFont,
-                              color: Colors.black,
+                              color: blackText,
                             ),
                           )
                         ],
@@ -122,7 +122,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                 fontSize: 16.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontWeight: FontWeight.w700,
-                                color: Color(0xff3B5AFB),
+                                color: hooloovooBlue,
                               ),
                             ),
                             GestureDetector(
@@ -137,7 +137,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                   fontSize: 16.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
-                                  color: Color(0xff979797),
+                                  color: spanishGrey,
                                 ),
                               ),
                             ),
@@ -153,7 +153,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                           height: 1.sp,
                           width: MediaQuery.of(context).size.width,
                           decoration: BoxDecoration(
-                            color: Color(0xff979797),
+                            color: spanishGrey,
                           ),
                         ),
                       ),
@@ -216,10 +216,10 @@ class SavingsDashboardContainer2 extends StatelessWidget {
         width: 147.sp,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
-          color: Color(0xff3B5AFB),
+          color: hooloovooBlue,
         ),
         child: Padding(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(10.r),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -229,8 +229,8 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                 width: 26.sp,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50.r),
-                    color: Colors.white.withOpacity(0.3)),
-                child: Icon(Icons.lock, color: Color(0xffffffff), size: 15.sp,),
+                    color: whiteText.withOpacity(0.3)),
+                child: Icon(Icons.lock, color: whiteText, size: 15.sp,),
               ),
               SizedBox(
                 height: 10.sp,
@@ -241,7 +241,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                     fontSize: 16.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
-                    color: Colors.white),
+                    color: whiteText),
               ),
               SizedBox(
                 height: 10.sp,
@@ -254,7 +254,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w400,
-                    color: Colors.white,
+                    color: whiteText,
                   ),
                 ),
               ),
@@ -267,7 +267,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                     fontSize: 16.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
-                    color: Colors.white),
+                    color: whiteText),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -277,7 +277,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                      color: whiteText,
                     ),
                   )
                 ],
@@ -313,10 +313,10 @@ class SavingsDashboardContainer1 extends StatelessWidget {
         width: 147.sp,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
-          color: Color(0xff0EB51F),
+          color: springForth,
         ),
         child: Padding(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(10.r),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -326,7 +326,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                 width: 26.sp,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50.r),
-                    color: Colors.white.withOpacity(0.3)),
+                    color: whiteText.withOpacity(0.3)),
                 child: Icon(Icons.lock, color: Color(0xffffffff), size: 15.sp,),
               ),
               SizedBox(height: 10.sp,),
@@ -336,7 +336,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                     fontSize: 16.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
-                    color: Colors.white),
+                    color: whiteText),
               ),
               SizedBox(
                 height: 10.sp,
@@ -349,7 +349,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w400,
-                    color: Colors.white,
+                    color: whiteText,
                   ),
                 ),
               ),
@@ -360,7 +360,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                     fontSize: 16.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
-                    color: Colors.white),
+                    color: whiteText),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -371,7 +371,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                      color: whiteText,
                     ),
                   )
                 ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -18,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xff3B5AFB),
+      backgroundColor: hooloovooBlue,
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Icon(
                       Icons.keyboard_arrow_left,
-                      color: Colors.white,
+                      color: whiteText,
                     ),
                     RichText(
                       text: TextSpan(
@@ -43,12 +43,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         children: [
                           TextSpan(
                             text: "Go",
-                            style: TextStyle(color: Color(0xffffffff)),
+                            style: TextStyle(color: whiteText),
                           ),
                           TextSpan(
                             text: "Vest",
                             style: TextStyle(
-                              color: Color(0xff0EB51F),
+                              color: springForth,
                             ),
                           ),
                         ],
@@ -69,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xffffffff)),
+                    color: whiteText),
               ),
             ),
             Padding(
@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
-                    color: Color(0xffffffff)),
+                    color: whiteText),
               ),
             ),
             SizedBox(height: 20.sp,),
@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50.sp,
                 width: 320.sp,
                   decoration: BoxDecoration(
-              color: Color(0xffffffff),
+              color: whiteText,
               borderRadius: BorderRadius.circular(5.r)),
                   child: TextField(
               decoration: InputDecoration(
@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
               fontFamily: GoVestAssetsPath.govestFont,
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,
-              color: Color(0xffc4c4c4),
+              color: weatheredStone,
                     ),
                   )),
               ),
@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50.sp,
                 width: 320.sp,
                   decoration: BoxDecoration(
-              color: Color(0xffffffff),
+              color: whiteText,
               borderRadius: BorderRadius.circular(5.r)),
                   child: TextField(
               decoration: InputDecoration(
@@ -122,16 +122,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xffc4c4c4),
+                    color: weatheredStone,
                     ),
-                    suffixIcon: Icon(Icons.visibility_off, color: Color(0xff3B5AFB),)
+                    suffixIcon: Icon(Icons.visibility_off, color: hooloovooBlue,)
                   )),
               ),
             ),
             SizedBox(height: 5.sp,),
             Padding(
               padding: EdgeInsets.only(left: 20.sp),
-              child: Text("Forgot Password?", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w500, color: Color(0xff000000)),),
+              child: Text("Forgot Password?", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w500, color: blackText),),
             ),
             SizedBox(height: 320.sp,),
             Padding(
@@ -146,9 +146,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 50.sp,
                     width: 320.sp,
                       decoration: BoxDecoration(
-                  color: Color(0xffffffff),
+                  color: whiteText,
                   borderRadius: BorderRadius.circular(5.r)),
-                  child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xff3B5AFB)),)),
+                  child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: hooloovooBlue),)),
                 ),
               ),
             ),
@@ -165,12 +165,12 @@ class _LoginScreenState extends State<LoginScreen> {
                             children: [
                               TextSpan(
                                 text: "New to GoVest? ",
-                                style: TextStyle(color: Color(0xffffffff)),
+                                style: TextStyle(color: whiteText),
                               ),
                               TextSpan(
                                 text: "Sign Up",
                                 style: TextStyle(
-                                  color: Color(0xff000000),
+                                  color: blackText,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w600,
                                 ),

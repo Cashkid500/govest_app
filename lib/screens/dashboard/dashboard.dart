@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/referral/referral.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -25,9 +25,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             Container(
               decoration:
-                  BoxDecoration(color: Color(0xff60f248).withOpacity(0.23)),
+                  BoxDecoration(color: biopunk.withOpacity(0.23)),
               child: Padding(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(20.sp),
                 child: Column(
                   children: [
                     SizedBox(
@@ -40,7 +40,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           children: [
                             Image.asset("assets/images/Profile.png"),
                             Padding(
-                              padding: EdgeInsets.only(left: 10.0),
+                              padding: EdgeInsets.only(left: 10.sp),
                               child: Text(
                                 "Hello",
                                 style: TextStyle(
@@ -60,7 +60,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             ),
                           ],
                         ),
-                        Icon(Icons.settings, color: Color(0xff3B5AFB),)
+                        Icon(Icons.settings, color: hooloovooBlue,)
                       ],
                     ),
                     SizedBox(height: 10.sp),
@@ -101,7 +101,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   height: 151.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
-                    color: Color(0xff0EB51F),
+                    color: springForth,
                   ),
                   child: Padding(
                     padding: EdgeInsets.all(15.sp),
@@ -115,10 +115,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Text(
                           "INVESTMENT",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              fontSize: 16),
+                              fontSize: 16.sp),
                         ),
                         SizedBox(
                           height: 10.sp,
@@ -126,7 +126,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Text(
                           "Transaction fees to earn for every trade from a referral.",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: whiteText,
                             fontSize: 10.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
                             fontWeight: FontWeight.w400,
@@ -144,7 +144,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   height: 151.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                   ),
                   child: Padding(
                     padding: EdgeInsets.all(15.sp),
@@ -158,10 +158,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Text(
                           "SAVINGS",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              fontSize: 16),
+                              fontSize: 16.sp),
                         ),
                         SizedBox(
                           height: 10.sp,
@@ -171,7 +171,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           style: TextStyle(
                             fontSize: 10.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
-                            color: Colors.white,
+                            color: whiteText,
                             fontWeight: FontWeight.w400,
                           ),
                         )
@@ -189,7 +189,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     fontWeight: FontWeight.w500,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 14.sp,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
             ),
             SizedBox(height: 5.sp,),
@@ -197,7 +197,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               padding: EdgeInsets.all(20.sp),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color(0xff60f248).withOpacity(0.23),
+                  color: biopunk.withOpacity(0.23),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -218,7 +218,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   fontSize: 12.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
-                                  color: Color(0xff000000),
+                                  color: blackText,
                                 ),
                               ),
                               SizedBox(height: 15.sp,),
@@ -228,7 +228,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     fontSize: 12.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
                                     fontWeight: FontWeight.w700,
-                                    color: Color(0xff0EB51F)),
+                                    color: springForth),
                               ),
                             ],
                           ),
@@ -248,16 +248,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   Text(
                     "What’s up today?",
                     style: TextStyle(
-                      color: Color(0xff979797),
+                      color: spanishGrey,
                       fontWeight: FontWeight.w500,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      fontSize: 14,
+                      fontSize: 14.sp,
                     ),
                   ),
                   Text(
                     "See more",
                     style: TextStyle(
-                      color: Color(0xff979797),
+                      color: spanishGrey,
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
@@ -276,10 +276,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        topRight: Radius.circular(10),
+                        topLeft: Radius.circular(10.r),
+                        topRight: Radius.circular(10.r),
                       )),
                   child: Padding(
                     padding: EdgeInsets.only(left: 10.sp, right: 20.sp, top: 20.sp, bottom: 20.sp),
@@ -298,7 +298,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   fontSize: 14.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w700,
-                                  color: Colors.white,
+                                  color: whiteText,
                                 ),
                               ),
                               SizedBox(
@@ -307,10 +307,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               Text(
                                 "5 May 2021 at 12:30 AM",
                                 style: TextStyle(
-                                  fontSize: 10,
+                                  fontSize: 10.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w400,
-                                  color: Colors.grey,
+                                  color: greyText,
                                 ),
                               )
                             ],
@@ -323,10 +323,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             Text(
                               "2,000",
                               style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w700,
                                   fontFamily: GoVestAssetsPath.govestFont,
-                                  color: Colors.white),
+                                  color: whiteText),
                             ),
                           ],
                         ),
@@ -367,8 +367,8 @@ class DashboardContainer extends StatelessWidget {
       height: 205.sp,
       width: 328.sp,
       decoration: BoxDecoration(
-        color: Color(0xff2A52E2),
-        borderRadius: BorderRadius.circular(10),
+        color: veteranBlue,
+        borderRadius: BorderRadius.circular(10.r),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -385,7 +385,7 @@ class DashboardContainer extends StatelessWidget {
                 Text(
                   walletName,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: whiteText,
                     fontWeight: FontWeight.w700,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 13.sp,
@@ -397,7 +397,7 @@ class DashboardContainer extends StatelessWidget {
                 Text(
                   accNo,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: whiteText,
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
@@ -409,7 +409,7 @@ class DashboardContainer extends StatelessWidget {
                 Text(
                   amount,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: whiteText,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 23.sp,
                     fontWeight: FontWeight.w700,
@@ -421,7 +421,7 @@ class DashboardContainer extends StatelessWidget {
                 Text(
                   name,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: whiteText,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.w600,
@@ -434,10 +434,10 @@ class DashboardContainer extends StatelessWidget {
             height: 205.sp,
             width: 46.sp,
             decoration: BoxDecoration(
-                color: Color(0xff0C35C6),
+                color: sapphireGlitter,
                 borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(10),
-                    bottomRight: Radius.circular(10))),
+                    topRight: Radius.circular(10.r),
+                    bottomRight: Radius.circular(10.r))),
             child: Padding(
               padding: EdgeInsets.all(10.sp),
               child: Column(
@@ -448,7 +448,7 @@ class DashboardContainer extends StatelessWidget {
                     child: Text(
                       bank,
                       style: TextStyle(
-                          color: Colors.grey,
+                          color: greyText,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 13.sp,
                           fontWeight: FontWeight.w500),

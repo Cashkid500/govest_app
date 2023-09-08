@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:govest_app/screens/constants/color_constants.dart';
 import '../constants/asset_path.dart';
 
 
@@ -20,18 +20,18 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.only(left:15.0, right: 15, top: 30),
+            padding: EdgeInsets.only(left: 15.sp, right: 15.sp, top: 30.sp),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon( Icons.arrow_back_ios,color: Color(0xff3B5AFB),),
+                    Icon( Icons.arrow_back_ios,color: hooloovooBlue,),
                     SizedBox(
                       height: 15.sp,
                     ),
-                    Text('Transaction History', style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize:  22, color: Color(0xff3B5AFB)),)
+                    Text('Transaction History', style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize:  22, color: hooloovooBlue),)
                   ],
                 ),
                 SizedBox(
@@ -40,20 +40,20 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
               TextField(
         keyboardType: TextInputType.multiline,
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(horizontal: 30, vertical: 18),
+          contentPadding: EdgeInsets.symmetric(horizontal: 30.sp, vertical: 18.sp),
           isCollapsed: true,
           labelText: 'Quick find transaction',
           labelStyle: TextStyle(
-              color: Color(0xff4E4E4E),
+              color: blackOak,
               fontSize: 14.0,
               fontWeight: FontWeight.w400,
               fontFamily: GoVestAssetsPath.govestFont),
           filled: true,
-          fillColor: Color(0xffEEEEEE),
+          fillColor: superSilver,
           prefixIcon: Icon( Icons.search, ),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide: BorderSide(color: Color(0xffFFFFFF),),),
+              borderSide: BorderSide(color: whiteText,),),
         ),
           ),
           SizedBox(
@@ -120,7 +120,7 @@ class Withdraw extends StatelessWidget {
               height: 45.sp,
               width: 45.sp,
               decoration: BoxDecoration(
-                  color: Color(0xff0EB51F).withOpacity(0.3),
+                  color: springForth.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(10.r)),
               child: Icon( Icons.trending_down, ),
             ),
@@ -134,7 +134,7 @@ class Withdraw extends StatelessWidget {
                 Text(
                  'Withdrawal from savings',
                   style: TextStyle(
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                     fontSize: 12.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w600,
@@ -146,7 +146,7 @@ class Withdraw extends StatelessWidget {
                       fontSize: 10.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xff979797)),
+                      color: spanishGrey),
                 )
               ],
             ),
@@ -158,7 +158,7 @@ class Withdraw extends StatelessWidget {
             fontSize: 14.sp,
             fontFamily: GoVestAssetsPath.govestFont,
             fontWeight: FontWeight.w700,
-            color: Color(0xff0EB51F),
+            color: springForth,
           ),
         )
       ],
@@ -182,7 +182,7 @@ class Invest extends StatelessWidget {
         height: 45.sp,
         width: 45.sp,
         decoration: BoxDecoration(
-            color: Color(0xffFFC1CC),
+            color: blobfish,
             borderRadius: BorderRadius.circular(10.r)),
         child: Icon( Icons.trending_up, ),
       ),
@@ -196,7 +196,7 @@ class Invest extends StatelessWidget {
           Text(
             'Invest in Fish farming',
             style: TextStyle(
-              color: Color(0xff3B5AFB),
+              color: hooloovooBlue,
               fontSize: 12.sp,
               fontFamily: GoVestAssetsPath.govestFont,
               fontWeight: FontWeight.w600,
@@ -208,7 +208,7 @@ class Invest extends StatelessWidget {
                 fontSize: 10.sp,
                 fontFamily: GoVestAssetsPath.govestFont,
                 fontWeight: FontWeight.w500,
-                color: Color(0xff979797)),
+                color: spanishGrey),
           )
         ],
       ),
@@ -220,7 +220,7 @@ class Invest extends StatelessWidget {
       fontSize: 14.sp,
       fontFamily: GoVestAssetsPath.govestFont,
       fontWeight: FontWeight.w700,
-      color: Color(0xffB50E18),
+      color: boyRed,
     ),
         )
       ],

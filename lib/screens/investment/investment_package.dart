@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:govest_app/screens/constants/color_constants.dart';
 import '../constants/asset_path.dart';
 import 'investment_details.dart';
 
@@ -42,13 +42,13 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                         TextSpan(
                           text: "Vest",
                           style: TextStyle(
-                          color: Color(0xff0EB51F),
+                          color: springForth,
                           fontFamily: GoVestAssetsPath.govestFont,
                           ),
                         ),
                         TextSpan(
                           text: "ing",
-                          style: TextStyle(color: Color(0xff2A52E2), fontFamily: GoVestAssetsPath.govestFont),
+                          style: TextStyle(color: veteranBlue, fontFamily: GoVestAssetsPath.govestFont),
                         ),
                       ],
                     ),
@@ -58,9 +58,9 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                     width: 38.sp,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(500.r),
-                      border: Border.all(color: Color(0xff878787)),
+                      border: Border.all(color: mithril),
                     ),
-                    child: Icon(Icons.receipt_long, color: Color(0xff3B5AFB),)),
+                    child: Icon(Icons.receipt_long, color: hooloovooBlue,)),
                 ],
               ),
               Padding(
@@ -71,7 +71,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w400,
                       fontFamily: GoVestAssetsPath.govestFont,
-                      color: Color(0xff979797)),
+                      color: spanishGrey),
                 ),
               ),
               SizedBox(height: 20.sp),
@@ -87,7 +87,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                           fontSize: 18.sp,
                           fontWeight: FontWeight.w700,
                           fontFamily: GoVestAssetsPath.govestFont,
-                          color: Color(0xff3B5AFB),
+                          color: hooloovooBlue,
                         ),
                       )
                     ],
@@ -101,7 +101,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                           fontSize: 18.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xff3B5AFB),
+                          color: hooloovooBlue,
                         ),
                       ),
                     ],
@@ -125,7 +125,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                 height: 120.sp,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                  color: Color(0xff2A52E2),
+                  color: veteranBlue,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
                 child: Padding(
@@ -146,7 +146,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   fontSize: 20.sp,
                                   fontWeight: FontWeight.w700,
                                   fontFamily: GoVestAssetsPath.govestFont,
-                                  color: Colors.white,
+                                  color: whiteText,
                                 ),
                               ),
                             ),
@@ -159,7 +159,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w700,
                                   fontFamily: GoVestAssetsPath.govestFont,
-                                  color: Color(0xffDDDC24),
+                                  color: poisonousIceCream,
                                 ),
                               ),
                             ),
@@ -181,9 +181,9 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                     width: 280.sp,
                     height: 36.sp,
                     decoration: BoxDecoration(
-                      color: Color(0xff979797).withOpacity(0.12),
-                      borderRadius: BorderRadius.circular(7.0),
-                      border: Border.all(color: Colors.grey),
+                      color: spanishGrey.withOpacity(0.12),
+                      borderRadius: BorderRadius.circular(7.r),
+                      border: Border.all(color: greyText),
                     ),
                     child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10.sp),
@@ -191,12 +191,12 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                         decoration: InputDecoration(
                           hintText: 'Search for investments',
                           border: InputBorder.none,
-                          prefixIcon: Icon(Icons.search, color: Colors.grey),
+                          prefixIcon: Icon(Icons.search, color: greyText),
                         ),
                       ),
                     ),
                   ),
-                  Icon(Icons.grid_view_rounded, color: Color(0xff3B5AFB), size: 35.sp,)
+                  Icon(Icons.grid_view_rounded, color: hooloovooBlue, size: 35.sp,)
                 ],
               ),
               SizedBox(height: 20.sp,),
@@ -217,16 +217,16 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                             },
                             child: AnimatedContainer(
                               duration: const Duration(milliseconds: 100),
-                              margin: EdgeInsets.all(5),
+                              margin: EdgeInsets.all(5.sp),
                               width: MediaQuery.of(context).size.width / 4,
                               height: MediaQuery.of(context).size.height / 17,
                               decoration: BoxDecoration(
                                 color: current == index
-                                    ? Color(0xff2A52E2)
-                                    : Colors.white.withOpacity(0.12),
-                                border: Border.all(color: Color(0xffE7E7F6)),
+                                    ? veteranBlue
+                                    : whiteText.withOpacity(0.12),
+                                border: Border.all(color: icyLilac),
                                 borderRadius: current == index
-                                    ? BorderRadius.circular(50)
+                                    ? BorderRadius.circular(50.r)
                                     : BorderRadius.circular(0),
                               ),
                               child: Center(
@@ -235,8 +235,8 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   style: TextStyle(
                                       fontWeight: FontWeight.w500,
                                       color: current == index
-                                          ? Colors.white
-                                          : Color(0xff2A52E2)),
+                                          ? whiteText
+                                          : veteranBlue),
                                 ),
                               ),
                             ),
@@ -271,9 +271,9 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   bottomLeft: Radius.circular(7.r),
                                   bottomRight: Radius.circular(7.r),
                                 ),
-                                color: Color(0xff2A52E2)),
+                                color: veteranBlue),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: EdgeInsets.all(8.sp),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -286,7 +286,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontWeight: FontWeight.w700,
-                                          color: Colors.white),
+                                          color: whiteText),
                                     ),
                                   ),
                                   SizedBox(
@@ -302,13 +302,13 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         TextSpan(
                                           text: "13%",
                                           style: TextStyle(
-                                              color: Color(0xffDDDC24), fontFamily: GoVestAssetsPath.govestFont),
+                                              color: poisonousIceCream, fontFamily: GoVestAssetsPath.govestFont),
                                         ),
                                         TextSpan(
                                           text: " returns in 3 months",
                                           style: TextStyle(
                                             fontFamily: GoVestAssetsPath.govestFont,
-                                            color: Colors.white,
+                                            color: whiteText,
                                           ),
                                         ),
                                       ],
@@ -329,7 +329,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                           Text(
                                             "50,000",
                                             style: TextStyle(
-                                                color: Colors.white,
+                                                color: whiteText,
                                                 fontFamily: GoVestAssetsPath.govestFont,
                                                 fontSize: 12.sp,
                                                 fontWeight: FontWeight.w700),
@@ -342,7 +342,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                       Text(
                                         "120",
                                         style: TextStyle(
-                                          color: Colors.white,
+                                          color: whiteText,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                           fontSize: 12.sp,
                                           fontWeight: FontWeight.w700,
@@ -362,7 +362,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         style: TextStyle(
                                           fontSize: 8.sp,
                                           fontWeight: FontWeight.w400,
-                                          color: Colors.white,
+                                          color: whiteText,
                                         ),
                                       ),
                                       SizedBox(
@@ -373,7 +373,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         style: TextStyle(
                                           fontSize: 8.sp,
                                           fontWeight: FontWeight.w400,
-                                          color: Colors.white,
+                                          color: whiteText,
                                         ),
                                       )
                                     ],
@@ -400,7 +400,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                 bottomLeft: Radius.circular(7.r),
                                 bottomRight: Radius.circular(7.r),
                               ),
-                              color: Color(0xff2A52E2)),
+                              color: veteranBlue),
                           child: Padding(
                             padding: EdgeInsets.all(8.sp),
                             child: Column(
@@ -415,7 +415,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         fontSize: 16.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontWeight: FontWeight.w700,
-                                        color: Colors.white),
+                                        color: whiteText),
                                   ),
                                 ),
                                 SizedBox(
@@ -431,12 +431,12 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                       TextSpan(
                                         text: "13%",
                                         style:
-                                            TextStyle(color: Color(0xffDDDC24), fontFamily: GoVestAssetsPath.govestFont),
+                                            TextStyle(color: poisonousIceCream, fontFamily: GoVestAssetsPath.govestFont),
                                       ),
                                       TextSpan(
                                         text: " returns in 3 months",
                                         style: TextStyle(
-                                          color: Colors.white,
+                                          color: whiteText,
                                           fontFamily: GoVestAssetsPath.govestFont,
                                         ),
                                       ),
@@ -457,7 +457,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         Text(
                                           "10,000",
                                           style: TextStyle(
-                                              color: Colors.white,
+                                              color: whiteText,
                                               fontFamily: GoVestAssetsPath.govestFont,
                                               fontSize: 12.sp,
                                               fontWeight: FontWeight.w700),
@@ -470,7 +470,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                     Text(
                                       "300",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: whiteText,
                                         fontFamily: GoVestAssetsPath.govestFont,
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w700,
@@ -490,7 +490,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         fontSize: 8.sp,
                                         fontWeight: FontWeight.w400,
                                         fontFamily: GoVestAssetsPath.govestFont,
-                                        color: Colors.white,
+                                        color: whiteText,
                                       ),
                                     ),
                                     SizedBox(
@@ -502,7 +502,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         fontSize: 8.sp,
                                         fontWeight: FontWeight.w400,
                                         fontFamily: GoVestAssetsPath.govestFont,
-                                        color: Colors.white,
+                                        color: whiteText,
                                       ),
                                     )
                                   ],
@@ -513,11 +513,11 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                     height: 14.sp,
                                     width: 42.sp,
                                     decoration: BoxDecoration(
-                                      color: Color(0xffffffff),
+                                      color: whiteText,
                                       borderRadius: BorderRadius.circular(50.r)
                                     ),
                                     child: Center(
-                                      child: Text("SOLD OUT", style: TextStyle( fontSize: 6.sp, fontWeight: FontWeight.w700, color: Color(0xffF24848), fontFamily: GoVestAssetsPath.govestFont,
+                                      child: Text("SOLD OUT", style: TextStyle( fontSize: 6.sp, fontWeight: FontWeight.w700, color: glowingBrakeDisc, fontFamily: GoVestAssetsPath.govestFont,
                                     )),
                                     ),
                                   ),
@@ -552,7 +552,7 @@ class TotalInput extends StatelessWidget {
         fontSize: 10.sp,
         fontFamily: GoVestAssetsPath.govestFont,
         fontWeight: FontWeight.w400,
-        color: Color(0xff979797),
+        color: spanishGrey,
       ),
     );
   }

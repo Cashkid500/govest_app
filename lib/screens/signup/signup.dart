@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/login/login.dart';
-
 import '../constants/asset_path.dart';
 import '../constants/color_constants.dart';
 
@@ -18,7 +17,7 @@ class _SignupScreenState extends State<SignupScreen> {
     String phonepath = 'Phone number';
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xff3B5AFB),
+      backgroundColor: hooloovooBlue,
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

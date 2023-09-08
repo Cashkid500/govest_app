@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/investment/investment_package.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -36,12 +36,12 @@ class _ReferralScreenState extends State<ReferralScreen> {
                       children: [
                         TextSpan(
                           text: "Go",
-                          style: TextStyle(color: Color(0xff2A52E2)),
+                          style: TextStyle(color: veteranBlue),
                         ),
                         TextSpan(
                           text: "VEST",
                           style: TextStyle(
-                            color: Color(0xff0EB51F),
+                            color: springForth,
                           ),
                         ),
                       ],
@@ -53,11 +53,11 @@ class _ReferralScreenState extends State<ReferralScreen> {
               SizedBox(height: 20.sp,),
               Container(
                 decoration: BoxDecoration(
-                  color: Color(0xff2A52E2),
+                  color: veteranBlue,
                   borderRadius: BorderRadius.circular(10.r),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20.sp),
                   child: Column(
                     children: [
                       Row(
@@ -71,14 +71,14 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                 style: TextStyle(
                                   fontSize: 48.sp,
                                   fontWeight: FontWeight.w700,
-                                  color: Colors.white,
+                                  color: whiteText,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                 ),
                               ),
                               Text(
                                 "Commission",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: whiteText,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 20.sp,
                                   fontWeight: FontWeight.w700,
@@ -98,7 +98,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             fontFamily: GoVestAssetsPath.govestFont,
-                            color: Colors.white),
+                            color: whiteText),
                       ),
                     ],
                   ),
@@ -127,7 +127,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                   width: MediaQuery.of(context).size.width,
                   height: 112.sp,
                   decoration: BoxDecoration(
-                    color: Color(0xff60F248).withOpacity(0.2),
+                    color: biopunk.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                   child: Row(
@@ -148,18 +148,18 @@ class _ReferralScreenState extends State<ReferralScreen> {
                         height: 112.sp,
                         width: 85.sp,
                         decoration: BoxDecoration(
-                        color: Color(0xff3B5AFB)),
+                        color: hooloovooBlue),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.content_copy_rounded, color: Color(0xffffffff), size: 40.sp,),
+                            Icon(Icons.content_copy_rounded, color: whiteText, size: 40.sp,),
                             SizedBox(
                               height: 10.sp,
                             ),
                             Text(
                               "Tap to Copy",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: whiteText,
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w700,
@@ -173,15 +173,15 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(20.sp),
                 child: Container(
                   height: 150.sp,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    border: Border.all(color: Color(0xff3B5AFB).withOpacity(0.8)),
+                    border: Border.all(color: hooloovooBlue.withOpacity(0.8)),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(20.sp),
                     child: Column(
                       children: [
                         Row(
@@ -193,7 +193,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                   fontSize: 12.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xff979797)),
+                                  color: spanishGrey),
                             ),
                             Text(
                               "Sign-Ups with Trading",
@@ -201,7 +201,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
                                 fontFamily: GoVestAssetsPath.govestFont,
-                                color: Color(0xff979797),
+                                color: spanishGrey,
                               ),
                             )
                           ],
@@ -237,7 +237,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           width: MediaQuery.of(context).size.width,
                           height: 2.sp,
                           decoration: BoxDecoration(
-                            color: Color(0xff979797),
+                            color: spanishGrey,
                           ),
                         ),
                         SizedBox(
@@ -249,7 +249,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                             Text(
                               "Total Bonus Earned",
                               style: TextStyle(
-                                color: Color(0xff979797),
+                                color: spanishGrey,
                                 fontSize: 10.sp,
                                 fontWeight: FontWeight.w700,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -258,7 +258,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                             Text(
                               "Bonus per referral",
                               style: TextStyle(
-                                color: Color(0xff979797),
+                                color: spanishGrey,
                                 fontSize: 10.sp,
                                 fontWeight: FontWeight.w700,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -272,7 +272,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           children: [
                             Row(
                               children: [
-                                Image.asset("assets/images/Naira.png", color: Color(0xff000000),),
+                                Image.asset("assets/images/Naira.png", color: blackText,),
                                 SizedBox(
                                   width: 5.sp,
                                 ),
@@ -282,13 +282,13 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                       fontSize: 13.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.black),
+                                      color: blackText),
                                 ),
                               ],
                             ),
                             Row(
                               children: [
-                                Image.asset('assets/images/Naira.png', color: Color(0xff000000),),
+                                Image.asset('assets/images/Naira.png', color: blackText,),
                                 SizedBox(
                                   width: 5.sp,
                                 ),
@@ -298,7 +298,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                       fontSize: 13.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
                                       fontWeight: FontWeight.w700,
-                                      color: Colors.black),
+                                      color: blackText),
                                 ),
                               ],
                             ),
@@ -310,13 +310,13 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(20.h),
                 child: Container(
                   height: 142.sp,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(7),
-                    border: Border.all(color: Color(0xff3B5AFB).withOpacity(0.8)),
+                    borderRadius: BorderRadius.circular(7.r),
+                    border: Border.all(color: hooloovooBlue.withOpacity(0.8)),
                   ),
                   child: Center(
                       child: Column(

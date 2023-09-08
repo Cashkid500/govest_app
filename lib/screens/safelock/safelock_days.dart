@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/safelock/safelock_preview.dart';
 
 import '../constants/asset_path.dart';
@@ -27,7 +28,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Icon(Icons.close, color: Color(0xff3B5AFB), size: 30.sp),
+                  Icon(Icons.close, color: hooloovooBlue, size: 30.sp),
                 ],
               ),
               SizedBox(
@@ -37,13 +38,13 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 40.sp,
+                    height: 40.sp,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xff3B5AFB).withOpacity(0.31),
+                      color: hooloovooBlue.withOpacity(0.31),
                     ),
-                    child: Icon(Icons.lock, color: Color(0xff3B5AFB), size: 20.sp),
+                    child: Icon(Icons.lock, color: hooloovooBlue, size: 20.sp),
                   ),
                   SizedBox(
                     width: 20.sp,
@@ -54,7 +55,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                       fontSize: 20.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                     ),
                   )
                 ],
@@ -68,7 +69,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     fontSize: 12.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
-                    color: Colors.black),
+                    color: blackText),
                     textAlign: TextAlign.left,
               ),
               SizedBox(
@@ -80,7 +81,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                 ),
               ),
               Container(
@@ -88,7 +89,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: Colors.black, 
+                      color: blackText, 
                       width: 2.sp,
                     ),
                   ),
@@ -102,7 +103,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,
                       fontSize: 24.sp,
-                        color: Colors.black),
+                        color: blackText),
                     border: InputBorder.none,
                   ),
                 ),
@@ -112,7 +113,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
               ),
               Row(
                 children: [
-                  Icon(Icons.check_circle, color: Color(0xff0EB51F),),
+                  Icon(Icons.check_circle, color: springForth,),
                   SizedBox(
                     width: 5.sp,
                   ),
@@ -122,7 +123,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                         fontSize: 12.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xff979797)),
+                        color: spanishGrey),
                   )
                 ],
               ),
@@ -135,23 +136,23 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   fontSize: 14.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(bottom: 5.0),
+                padding: EdgeInsets.only(bottom: 5.sp),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: Colors.black,
-                      width: 2.0,
+                      color: blackText,
+                      width: 2.sp,
                     ),
                   ),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Emergency fund',
-                    labelStyle: TextStyle(color: Color(0xff000000), fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700),
+                    labelStyle: TextStyle(color: blackText, fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700),
                     border: InputBorder.none,
                   ),
                 ),
@@ -165,7 +166,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                 ),
               ),
               SizedBox(height: 10.sp,),
@@ -175,16 +176,16 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xff979797),
+                  color: spanishGrey,
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(bottom: 5.0),
+                padding: EdgeInsets.only(bottom: 5.sp),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: Colors.black,
-                      width: 2.0,
+                      color: blackText,
+                      width: 2.sp,
                     ),
                   ),
                 ),
@@ -192,12 +193,12 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   decoration: InputDecoration(
                     suffixIcon: Icon(
                       Icons.calendar_today,
-                      color: Color(0xff979797),
+                      color: spanishGrey,
                       size: 30.sp,
                     ),
                     labelText: '11 October 2021',
                     labelStyle: TextStyle(
-                        color: Color(0xff000000),
+                        color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700),
@@ -210,7 +211,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
               ),
               Row(
                 children: [
-                  Icon(Icons.trending_up, color: Color(0xff0EB51F),),
+                  Icon(Icons.trending_up, color: springForth,),
                   SizedBox(
                     width: 10.sp,
                   ),
@@ -220,7 +221,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                         fontSize: 12.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w400,
-                        color: Colors.black),
+                        color: blackText),
                   )
                 ],
               ),
@@ -230,18 +231,18 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
               Text(
                 "Select source of fund",
                 style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w700,
                     fontFamily: GoVestAssetsPath.govestFont,
-                    color: Color(0xff979797)),
+                    color: spanishGrey),
               ),
               Container(
-                padding: EdgeInsets.only(bottom: 5.0),
+                padding: EdgeInsets.only(bottom: 5.sp),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: Colors.black,
-                      width: 2.0,
+                      color: blackText,
+                      width: 2.sp,
                     ),
                   ),
                 ),
@@ -251,7 +252,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(
                       Icons.expand_more,
-                      color: Color(0xff979797),
+                      color: spanishGrey,
                       size: 30.sp,
                     ),
                     //
@@ -272,7 +273,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   height: 60.sp,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                   ),
                   child: Center(
                     child: Text(
@@ -281,7 +282,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                         fontSize: 20.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontWeight: FontWeight.w700,
-                        color: Colors.white,
+                        color: whiteText,
                       ),
                     ),
                   ),

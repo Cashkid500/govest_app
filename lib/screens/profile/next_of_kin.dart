@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
-
 import '../constants/asset_path.dart';
 import '../login/login.dart';
 import 'transaction_history.dart';
@@ -34,7 +34,7 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                   },
                   child: Icon(
                     Icons.arrow_back_ios,
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                   ),
                 ),
                 Row(
@@ -45,7 +45,7 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 22.sp,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                     ),
                     )
                   ],
@@ -74,16 +74,16 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                 height: 45.sp,
                 width: 320.sp,
                 decoration: BoxDecoration(
-                  color: Color(0xff3B5AFB),
-                  borderRadius: BorderRadius.circular(8)
+                  color: hooloovooBlue,
+                  borderRadius: BorderRadius.circular(8.r)
                 ),
                child: Center(
                  child: Text('Add Next of Kin', 
                  style: TextStyle(
                   fontFamily: GoVestAssetsPath.govestFont,
-                  fontSize: 14,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xffFFFFFF)
+                  color: whiteText
                  ),
                  ),
                ),
@@ -110,25 +110,25 @@ class NextofKinTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        width: 350,
+        width: 350.sp,
         child: TextField(
             keyboardType: TextInputType.multiline,
             decoration: InputDecoration(
               contentPadding:
-                  EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+              EdgeInsets.symmetric(horizontal: 20.sp, vertical: 25.sp),
               isCollapsed: true,
               labelText: hint1,
               labelStyle: TextStyle(
-                  color: Color(0xff93A4FF),
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w500,
-                  fontFamily: GoVestAssetsPath.govestFont),
+              color: widowmaker,
+              fontSize: 14.sp,
+              fontWeight: FontWeight.w500,
+              fontFamily: GoVestAssetsPath.govestFont),
               filled: true,
-              fillColor: Color(0xffFFFFFF),
+              fillColor: whiteText,
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide(
-                  color: Color(0xff93A4FF),width: 1.3
+                  color: widowmaker,width: 1.3
                 ),
               ),
             ),

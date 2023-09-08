@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/savings/gotarget_savings.dart';
-
 import '../constants/asset_path.dart';
 
 
@@ -25,17 +25,17 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.close, color: Color(0xff3B5AFB),),
+              Icon(Icons.close, color: hooloovooBlue,),
               SizedBox(
                 height: 30.sp,
               ),
               Text(
                 "Create GoSavings",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 18.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xff3B5AFB),
+                  color: hooloovooBlue,
                 ),
               ),
               SizedBox(
@@ -47,7 +47,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
-                  color: Colors.black,
+                  color: blackText,
                 ),
               ),
               SizedBox(
@@ -57,7 +57,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                 height: 86.sp,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                    color: Color(0xff3B5AFB),
+                    color: hooloovooBlue,
                     borderRadius: BorderRadius.circular(10.r)),
                 child: Padding(
                   padding: EdgeInsets.all(10.sp),
@@ -78,7 +78,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                               fontSize: 20.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white,
+                              color: whiteText,
                             ),
                           ),
                           SizedBox(
@@ -89,7 +89,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
-                                color: Colors.white.withOpacity(0.6),
+                                color: whiteText.withOpacity(0.6),
                               ),
                             ),
                           )
@@ -110,7 +110,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                   height: 86.sp,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                      color: Color(0xff0EB51F),
+                      color: springForth,
                       borderRadius: BorderRadius.circular(10.r)),
                   child: Padding(
                     padding: EdgeInsets.all(10.sp),
@@ -131,18 +131,18 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                                 fontSize: 20.sp,
                                 fontWeight: FontWeight.w700,
                                 fontFamily: GoVestAssetsPath.govestFont,
-                                color: Colors.white,
+                                color: whiteText,
                               ),
                             ),
                             SizedBox(
-                              width: 230,
+                              width: 230.sp,
                               child: Text(
                                 "Setup a savings target and get paid every month for upto 8%",
                                 style: TextStyle(
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w400,
-                                  color: Colors.white.withOpacity(0.6),
+                                  color: whiteText.withOpacity(0.6),
                                 ),
                               ),
                             )

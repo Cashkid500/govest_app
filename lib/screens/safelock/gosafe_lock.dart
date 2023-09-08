@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/safelock/safelock_days.dart';
 import '../constants/asset_path.dart';
 import '../savings/savings_dashboard.dart';
@@ -29,7 +30,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Icon(Icons.close, color: Color(0xff3B5AFB), size: 30.sp,),
+                  Icon(Icons.close, color: hooloovooBlue, size: 30.sp,),
                 ],
               ),
               SizedBox(
@@ -39,13 +40,13 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 40.sp,
+                    height: 40.sp,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xff3B5AFB).withOpacity(0.31),
+                      color: hooloovooBlue.withOpacity(0.31),
                     ),
-                    child: Icon(Icons.lock, color: Color(0xff3B5AFB), size: 20.sp),
+                    child: Icon(Icons.lock, color: hooloovooBlue, size: 20.sp),
                   ),
                   SizedBox(
                     width: 20.sp,
@@ -56,7 +57,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                       fontSize: 20.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xff3B5AFB),
+                      color: hooloovooBlue,
                     ),
                   )
                 ],
@@ -70,7 +71,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                   fontSize: 14.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
-                  color: Colors.black,
+                  color: blackText,
                 ),
                 textAlign: TextAlign.left,
               ),
@@ -145,9 +146,9 @@ class SafelockContainer2 extends StatelessWidget {
       height: 172.sp,
       width: 155.sp,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.r), color: Color(0xff3B5AFB)),
+          borderRadius: BorderRadius.circular(10.r), color: hooloovooBlue),
       child: Padding(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(10.sp),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -157,8 +158,8 @@ class SafelockContainer2 extends StatelessWidget {
               width: 26.sp,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.r),
-                  color: Colors.white.withOpacity(0.3)),
-              child: Icon(Icons.lock, color: Color(0xffffffff), size: 15.sp,),
+                  color: whiteText.withOpacity(0.3)),
+              child: Icon(Icons.lock, color: whiteText, size: 15.sp,),
             ),
             SizedBox(
               height: 5.sp,
@@ -169,7 +170,7 @@ class SafelockContainer2 extends StatelessWidget {
                   fontSize: 16.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w700,
-                  color: Colors.white),
+                  color: whiteText),
             ),
             SizedBox(
               height: 10.sp,
@@ -182,7 +183,7 @@ class SafelockContainer2 extends StatelessWidget {
                   fontSize: 10.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontWeight: FontWeight.w400,
-                  color: Colors.white,
+                  color: whiteText,
                 ),
               ),
             ),
@@ -199,7 +200,7 @@ class SafelockContainer2 extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                      color: whiteText,
                     ),
                   ),
                 )
@@ -235,10 +236,10 @@ class SafelockContainer1 extends StatelessWidget {
         width: 155.sp,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
-          color: Color(0xff0EB51F),
+          color: springForth,
         ),
         child: Padding(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(10.r),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -248,8 +249,8 @@ class SafelockContainer1 extends StatelessWidget {
                 width: 26.sp,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50.r),
-                    color: Colors.white.withOpacity(0.3)),
-                child: Icon(Icons.lock, color: Color(0xffffffff), size: 15.sp,),
+                    color: whiteText.withOpacity(0.3)),
+                child: Icon(Icons.lock, color: whiteText, size: 15.sp,),
               ),
               SizedBox(
                 height: 5.sp,
@@ -260,7 +261,7 @@ class SafelockContainer1 extends StatelessWidget {
                     fontSize: 16.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
-                    color: Colors.white),
+                    color: whiteText),
               ),
               SizedBox(
                 height: 10.sp,
@@ -273,7 +274,7 @@ class SafelockContainer1 extends StatelessWidget {
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w400,
-                    color: Colors.white,
+                    color: whiteText,
                   ),
                 ),
               ),
@@ -291,7 +292,7 @@ class SafelockContainer1 extends StatelessWidget {
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w700,
-                        color: Colors.white,
+                        color: whiteText,
                       ),
                     ),
                   )
