@@ -181,8 +181,8 @@ class _SignupScreenState extends State<SignupScreen> {
                ],
             ),
             SizedBox(height: 40.sp,),
-                Padding(
-                  padding: EdgeInsets.only(left: 60.sp, right: 40.sp),
+                SizedBox(
+                  width: 251.sp,
                   child: RichText(
                     text: TextSpan(
                           style: TextStyle(
