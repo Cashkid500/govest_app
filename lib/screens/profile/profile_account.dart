@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
 import 'package:govest_app/screens/profile/next_of_kin.dart';
@@ -31,7 +32,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
               ),
               Center(
                 child: Text(
-                  "My Profile",
+                  GoVestText.myProfile,
                   style: TextStyle(
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w700,
@@ -48,7 +49,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
               ),
               Center(
                 child: Text(
-                  "Ganni West",
+                  GoVestText.gW,
                   style: TextStyle(
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w700,
@@ -60,7 +61,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                 height: 20.sp,
               ),
               Text(
-                "Profile Settings",
+                GoVestText.profileSettings,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
@@ -109,7 +110,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                   );
                                   },
                                     child: Text(
-                                      "Edit Profile",
+                                      GoVestText.editProfile,
                                       style: TextStyle(
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w400,
@@ -122,7 +123,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     height: 5.sp,
                                   ),
                                   Text(
-                                    "Update your personal informations.",
+                                    GoVestText.update,
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
@@ -178,7 +179,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                   );
                                   },
                                     child: Text(
-                                      "Next of Kin Update",
+                                      GoVestText.nextOfkinUpdate,
                                       style: TextStyle(
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w400,
@@ -189,7 +190,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                   ),
                                   SizedBox(height: 5.sp),
                                   Text(
-                                    "Update your closest relative information.",
+                                    GoVestText.relativeUpdate,
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
@@ -238,7 +239,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "KYC Update",
+                                    GoVestText.kycUpdate,
                                     style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w400,
@@ -250,7 +251,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     height: 5.sp,
                                   ),
                                   Text(
-                                    "Update your valid means of Identification.",
+                                    GoVestText.identificationUpdate,
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w500,
@@ -273,7 +274,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                 height: 30.sp,
               ),
               Text(
-                "General Settings",
+                GoVestText.generalSettings,
                 style: TextStyle(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w500,
@@ -316,7 +317,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "Update Authentication",
+                                    GoVestText.updateAuth,
                                     style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w400,
@@ -334,7 +335,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                   );
                                   },
                                     child: Text(
-                                      "Change password",
+                                      GoVestText.changePassword2,
                                       style: TextStyle(
                                         fontSize: 10.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
@@ -376,7 +377,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "Help and Support",
+                                    GoVestText.helpAndSupport,
                                     style: TextStyle(
                                       fontSize: 12.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
@@ -388,7 +389,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     height: 5.sp,
                                   ),
                                   Text(
-                                    "Contact support and the help desk",
+                                    GoVestText.contactSupport,
                                     style: TextStyle(
                                       fontSize: 10.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,

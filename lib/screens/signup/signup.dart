@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/login/login.dart';
 import '../constants/asset_path.dart';
 import '../constants/color_constants.dart';
@@ -40,11 +41,11 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                         children: [
                           TextSpan(
-                            text: "Go",
+                            text: GoVestText.go,
                             style: TextStyle(color: whiteText),
                           ),
                           TextSpan(
-                            text: "Vest",
+                            text: GoVestText.vestLowercase,
                             style: TextStyle(
                               color: springForth,
                             ),
@@ -62,7 +63,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 right: 225.sp,
               ),
               child: Text(
-                "Hello there,",
+                GoVestText.hello,
                 style: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 18.sp,
@@ -73,7 +74,7 @@ class _SignupScreenState extends State<SignupScreen> {
             Padding(
               padding: EdgeInsets.only(right: 170.sp),
               child: Text(
-                "Become a Titan",
+                GoVestText.titan,
                 style: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 20.sp,
@@ -98,7 +99,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     child: TextField(
                         decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(10.sp),
-                      labelText: 'First name',
+                      labelText: GoVestText.firtName,
                       labelStyle: TextStyle(
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 16.sp,
@@ -121,7 +122,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     child: TextField(
                         decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(10.sp),
-                      labelText: 'Last name',
+                      labelText: GoVestText.lastName,
                       labelStyle: TextStyle(
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 16.sp,
@@ -136,13 +137,13 @@ class _SignupScreenState extends State<SignupScreen> {
             SizedBox(
               height: 10.sp,
             ),
-            TextField1(phonepath: 'Phone number'),
+            TextField1(phonepath: GoVestText.phoneNumber),
             SizedBox(height: 10.sp,),
-            TextField1(phonepath: 'Email address'),
+            TextField1(phonepath: GoVestText.emailAddress),
             SizedBox(height: 10.sp,),
-            TextField1(phonepath: 'Password'),
+            TextField1(phonepath: GoVestText.password),
             SizedBox(height: 10.sp,),
-            TextField1(phonepath: 'Confirm password'),
+            TextField1(phonepath: GoVestText.confirmPassword),
             SizedBox(height: 10.sp,),
             Container(
               height: 50.sp,
@@ -153,7 +154,7 @@ class _SignupScreenState extends State<SignupScreen> {
         child: TextField(
           decoration: InputDecoration(
           contentPadding: EdgeInsets.all(10.sp),
-          labelText: 'Referral code (optional)',
+          labelText: GoVestText.referral,
           labelStyle: TextStyle(
             fontFamily: GoVestAssetsPath.govestFont,
             fontSize: 16.sp,
@@ -173,7 +174,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 Padding(
                   padding: EdgeInsets.only(right: 30.sp),
                   child: Text(
-                    "Your friend get rewarded when you use their referal code.", style: TextStyle(
+                    GoVestText.yourFriend, style: TextStyle(
                       fontFamily: GoVestAssetsPath.govestFont, fontSize: 10.sp, fontWeight: FontWeight.w400, color: whiteText
                     )
                   ),
@@ -193,11 +194,11 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                           children: [
                             TextSpan(
-                              text: "By signing up, you agree to the ",
+                              text: GoVestText.bySigning,
                               style: TextStyle(color: whiteText),
                             ),
                             TextSpan(
-                              text: "Terms of Use & Privacy Policy",
+                              text: GoVestText.terms,
                               style: TextStyle(
                                 color: blackText,
                                 fontSize: 12.sp,
@@ -222,7 +223,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           color: royalBlue,
                           borderRadius: BorderRadius.circular(5.r),
                           border: Border.all(color: whiteText)),
-                          child: Center(child: Text("Become A Family", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w800, color: whiteText),)),
+                          child: Center(child: Text(GoVestText.family, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w800, color: whiteText),)),
                   ),
                 ),
                 SizedBox(height: 20.sp,),
@@ -236,11 +237,11 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                           children: [
                             TextSpan(
-                              text: "Already a family? ",
+                              text: GoVestText.already,
                               style: TextStyle(color: whiteText),
                             ),
                             TextSpan(
-                              text: "Sign In",
+                              text: GoVestText.signIn,
                               style: TextStyle(
                                 color: blackText,
                                 fontSize: 12.sp,

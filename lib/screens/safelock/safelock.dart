@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import '../constants/asset_path.dart';
 import '../savings/savings_dashboard.dart';
 
@@ -50,7 +51,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                       Image.asset(GoVestAssetsPath.wallet),
                       SizedBox(width: 10.sp,),
                       Text(
-                        "Wallet - NGN 200,000",
+                        GoVestText.wallet,
                         style: TextStyle(
                             color: springForth,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -91,7 +92,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                           ),
                           SizedBox(width: 10.sp,),
                           Text(
-                            "Paystack with Card",
+                            GoVestText.paystack,
                             style: TextStyle(
                                 color: hooloovooBlue,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -146,7 +147,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     width: 20.sp,
                   ),
                   Text(
-                    "Cashew Nut Investment",
+                    GoVestText.cashew,
                     style: TextStyle(
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w700,
@@ -179,7 +180,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                           child: Icon(Icons.close, color: whiteText,),
                         ),
                         Text(
-                          "This investment is insured by Leadway Assurance and offer is valid through November 22nd.",
+                          GoVestText.leadway,
                           style: TextStyle(
                               fontSize: 10.sp,
                               height: 2.sp,
@@ -199,7 +200,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                         ),
                         SizedBox(height: 20.sp,),
                         Text(
-                          "Note: Kindly add your payout bank and KYC details to have your money at due time",
+                          GoVestText.note,
                           style: TextStyle(
                             fontSize: 10.sp,
                             height: 2.sp,
@@ -217,7 +218,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 height: 30.sp,
               ),
               Text(
-                "How many Units",
+                GoVestText.unit,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w700,
@@ -227,7 +228,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
               ),
               SizedBox(height: 10.sp,),
               Text(
-                "5",
+                GoVestText.five,
                 style: TextStyle(
                   fontSize: 24.sp,
                   fontWeight: FontWeight.w700,
@@ -251,7 +252,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                   Icon(Icons.check_circle, color: springForth),
                   SizedBox(width: 10.sp,),
                   Text(
-                    "Number of units you wish to buy",
+                    GoVestText.numberOfUnits,
                     style: TextStyle(
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
@@ -278,7 +279,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Total Investment",
+                    GoVestText.totalInvestment,
                     style: TextStyle(
                       fontSize: 12.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -287,7 +288,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                     ),
                   ),
                   Text(
-                    "Total Investment + Return",
+                    GoVestText.totalInvestmentPlusReturn,
                     style: TextStyle(
                       fontSize: 12.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -304,7 +305,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "N 500,000.00",
+                    GoVestText.fiveHundredKay,
                     style: TextStyle(
                         fontSize: 14.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -312,7 +313,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                         color: blackText),
                   ),
                   Text(
-                    "N 650,000.00",
+                    GoVestText.sixFifty,
                     style: TextStyle(
                         fontSize: 14.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -335,7 +336,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 height: 20.sp,
               ),
               Text(
-                "Select source of fund",
+                GoVestText.selectSource,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -350,7 +351,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Wallet - NGN 200,000",
+                    GoVestText.wallet,
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700,
@@ -394,7 +395,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I authorize GoVEST to safelock NGN500,000 immediately and return it in full on Wednesday 11th of October 2021 by 12:23PM to my bank account with 2355643. I confirm and approve this transaction.",
+                      GoVestText.authorize,
                       style: TextStyle(
                         color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -421,7 +422,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "BUY INVESTMENT",
+                      GoVestText.buyInvestment,
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontFamily: GoVestAssetsPath.govestFont,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import '../constants/asset_path.dart';
 import '../constants/color_constants.dart';
 
@@ -36,7 +37,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Connect your bank",
+                        GoVestText.connectBank,
                         style: TextStyle(
                           color: hooloovooBlue,
                           fontSize: 22.sp,
@@ -49,7 +50,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                       SizedBox(
                           width: 270.sp,
                           child: Text(
-                            "Provide us with acccount to withdraw your funds",
+                            GoVestText.provide,
                             style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 15.sp,
@@ -60,7 +61,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                         height: 20.sp,
                       ),
                       Text(
-                        "Enter Your Account Number",
+                        GoVestText.accountNumber,
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
@@ -78,7 +79,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             contentPadding: EdgeInsets.symmetric(
                                 horizontal: 20.sp, vertical: 20.sp),
                             isCollapsed: true,
-                            labelText: '0123456789',
+                            labelText: GoVestText.longDigits,
                             labelStyle: TextStyle(
                               color: hooloovooBlue,
                               fontSize: 14.sp,
@@ -97,7 +98,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                       ),
                       SizedBox(height: 20.sp,),
                       Text(
-                        "Select Your Bank",
+                        GoVestText.selectBank,
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
@@ -115,7 +116,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             contentPadding: EdgeInsets.symmetric(
                                 horizontal: 20.sp, vertical: 20.sp),
                             isCollapsed: true,
-                            labelText: "Select Your Bank",
+                            labelText: GoVestText.selectBank,
                             labelStyle: TextStyle(
                               color: hooloovooBlue,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -141,7 +142,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                   color: hooloovooBlue,
                   borderRadius: BorderRadius.circular(4.r)
                               ),
-                              child: Center(child: Text("VERIFY ACCOUNT", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: whiteText),)),
+                              child: Center(child: Text(GoVestText.verifyAccount, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: whiteText),)),
                              ),
                             ],
                   ),
@@ -178,7 +179,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                 SizedBox(
                   width: 200.sp,
                   child: Text(
-                    "Connect your Card & bank",
+                    GoVestText.connectCard,
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 24.sp,
@@ -211,7 +212,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                         Padding(
                           padding: EdgeInsets.only(left: 66.sp),
                           child: Text(
-                            "Add Bank Details",
+                            GoVestText.addBank,
                             style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
@@ -242,7 +243,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                     children: [
                                       TextSpan(
                                         text:
-                                            "This is where your funds would be transfered to\nwhen you inititate withdrwal.\n",
+                                            GoVestText.funds,
                                         style: TextStyle(
                                           color: spanishGrey,
                                           fontWeight: FontWeight.w400,
@@ -250,7 +251,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                       ),
                                       TextSpan(
                                         text:
-                                            "You would be credited before 1 hr.",
+                                            GoVestText.credited,
                                         style: TextStyle(
                                           color: spanishGrey,
                                           fontWeight: FontWeight.w700,
@@ -292,7 +293,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                         Padding(
                           padding: EdgeInsets.only(left: 66.sp, top: 10.sp),
                           child: Text(
-                            "Add Debit Card",
+                            GoVestText.addDebitCard,
                             style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
@@ -317,7 +318,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                               SizedBox(
                                 width: 250.sp,
                                 child: Text(
-                                  "We don’t store your card details, it is passed to your bank for verification",
+                                  GoVestText.store,
                                   style: TextStyle(
                                     color: spanishGrey,
                                     fontWeight: FontWeight.w400,
@@ -353,7 +354,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "LUKMAN IBRAHIM OLALEKAN",
+                            GoVestText.accountName,
                             style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
@@ -364,7 +365,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             height: 15.sp,
                           ),
                           Text(
-                            "3091534445 - First Bank",
+                            GoVestText.accountDetails,
                             style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
@@ -384,7 +385,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                 Padding(
                   padding: EdgeInsets.only(left: 220.sp),
                   child: Text(
-                    'Edit Bank Details',
+                    GoVestText.editBank,
                     style: TextStyle(
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 12.sp,
@@ -412,7 +413,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           Padding(
                             padding: EdgeInsets.only(left: 20.sp),
                             child: Text(
-                              "LUKMAN IBRAHIM OLALEKAN",
+                              GoVestText.accountName,
                               style: TextStyle(
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
@@ -423,7 +424,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           Padding(
                             padding: EdgeInsets.only(right: 20.sp),
                             child: Text(
-                              "12/22",
+                              GoVestText.expiryDate,
                               style: TextStyle(
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
@@ -442,7 +443,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           Padding(
                             padding: EdgeInsets.only(left: 20.sp),
                             child: Text(
-                              "****  ****  **** 3566",
+                              GoVestText.lastFourDigits,
                               style: TextStyle(
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
@@ -453,7 +454,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           Padding(
                             padding: EdgeInsets.only(right: 20.sp),
                             child: Text(
-                              "First Bank",
+                              GoVestText.bankName,
                               style: TextStyle(
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,
@@ -472,7 +473,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                 Padding(
                   padding: EdgeInsets.only(left: 260.sp),
                   child: Text(
-                    'Edit Card',
+                    GoVestText.editCard,
                     style: TextStyle(
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 12.sp,

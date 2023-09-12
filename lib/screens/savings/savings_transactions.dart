@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/create_new_savings.dart';
 import 'package:govest_app/screens/savings/savings_dashboard.dart';
 import '../constants/asset_path.dart';
@@ -52,7 +53,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     ),
                                     children: [
                                       TextSpan(
-                                        text: "Go",
+                                        text: GoVestText.go,
                                         style: TextStyle(
                                           decoration: TextDecoration.underline,
                                           decorationColor: springForth,
@@ -61,7 +62,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         ),
                                       ),
                                       TextSpan(
-                                        text: "Savings",
+                                        text: GoVestText.savings2,
                                         style: TextStyle(
                                             decoration:
                                                 TextDecoration.underline,
@@ -73,7 +74,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   ),
                                 ),
                                 Text(
-                                  "Take a bold step to get higher return",
+                                  GoVestText.boldStep,
                                   style: TextStyle(
                                       fontSize: 10.sp,
                                       fontWeight: FontWeight.w400,
@@ -95,7 +96,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               width: 5.sp,
                             ),
                             Text(
-                              "590,000.00",
+                              GoVestText.fiveNinety,
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
                                 decorationColor: blackText,
@@ -124,7 +125,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               );
                               },
                                 child: Text(
-                                  "Dashboard",
+                                  GoVestText.dashboard,
                                   style: TextStyle(
                                     fontSize: 16.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
@@ -134,7 +135,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                 ),
                               ),
                               Text(
-                                "Transactions",
+                                GoVestText.transactions,
                                 style: TextStyle(
                                   fontSize: 16.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -182,7 +183,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Go Target savings",
+                                  GoVestText.goTargetSavings2,
                                   style: TextStyle(
                                     decoration: TextDecoration.underline,
                                     decorationColor:
@@ -198,7 +199,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   height: 10.sp,
                                 ),
                                 Text(
-                                  "SCHOOL FEE",
+                                  GoVestText.schoolFee,
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
                                       decorationColor:
@@ -219,7 +220,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   color: whiteText),
                               child: Center(
                                 child: Text(
-                                  "35%",
+                                  GoVestText.thirtyFivePercent,
                                   style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w700,
@@ -250,7 +251,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "TARGET",
+                                      GoVestText.target,
                                       style: TextStyle(
                                         fontSize: 14.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
@@ -262,7 +263,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       height: 15.sp,
                                     ),
                                     Text(
-                                      "# 590,000",
+                                      GoVestText.fiveNinetyKay,
                                       style: TextStyle(
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -287,7 +288,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "TARGET",
+                                      GoVestText.target,
                                       style: TextStyle(
                                         fontSize: 14.sp,
                                         fontWeight: FontWeight.w700,
@@ -299,7 +300,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                       height: 15.sp,
                                     ),
                                     Text(
-                                      "# 200,000",
+                                      GoVestText.twoHundredK,
                                       style: TextStyle(
                                           fontSize: 16.sp,
                                           fontWeight: FontWeight.w700,
@@ -339,7 +340,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Go Savings",
+                                  GoVestText.goSavings3,
                                   style: TextStyle(
                                     decoration: TextDecoration.underline,
                                     decorationColor:
@@ -355,7 +356,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   height: 10.sp,
                                 ),
                                 Text(
-                                  "EMERGENCY FUND",
+                                  GoVestText.emergencyFund2,
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
                                       decorationColor:
@@ -376,7 +377,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   color: whiteText),
                               child: Center(
                                 child: Text(
-                                  "20%",
+                                  GoVestText.twentyPercent,
                                   style: TextStyle(
                                       fontSize: 12.sp,
                                       fontWeight: FontWeight.w700,
@@ -407,7 +408,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "TARGET",
+                                      GoVestText.target,
                                       style: TextStyle(
                                         fontSize: 14.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
@@ -417,7 +418,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     ),
                                     SizedBox(height: 15,),
                                     Text(
-                                      "# 590,000",
+                                      GoVestText.fiveNinetyKay,
                                       style: TextStyle(
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -442,7 +443,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "TARGET",
+                                      GoVestText.target,
                                       style: TextStyle(
                                         fontSize: 14.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
@@ -453,7 +454,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     SizedBox(height: 15,
                                     ),
                                     Text(
-                                      "# 200,000",
+                                      GoVestText.twoHundredK,
                                       style: TextStyle(
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -500,7 +501,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        "Go Safe Lock",
+                                        GoVestText.goSafelock,
                                         style: TextStyle(
                                           decoration: TextDecoration.underline,
                                           decorationColor:
@@ -520,7 +521,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     height: 10.sp,
                                   ),
                                   Text(
-                                    "TRUST FUND",
+                                    GoVestText.trustFund,
                                     style: TextStyle(
                                         decoration: TextDecoration.underline,
                                         decorationColor:
@@ -541,7 +542,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     color: whiteText),
                                 child: Center(
                                   child: Text(
-                                    "40%",
+                                    GoVestText.fortyPercent,
                                     style: TextStyle(
                                         fontSize: 12.sp,
                                         fontWeight: FontWeight.w700,
@@ -572,7 +573,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "TARGET",
+                                        GoVestText.target,
                                         style: TextStyle(
                                           fontSize: 14.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -584,7 +585,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         height: 15,
                                       ),
                                       Text(
-                                        "# 590,000",
+                                        GoVestText.fiveNinetyKay,
                                         style: TextStyle(
                                             fontSize: 16.sp,
                                             fontFamily: GoVestAssetsPath.govestFont,
@@ -609,7 +610,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "TARGET",
+                                        GoVestText.target,
                                         style: TextStyle(
                                           fontSize: 14.sp,
                                           fontWeight: FontWeight.w700,
@@ -621,7 +622,7 @@ class _SavingsTransactionsScreenState extends State<SavingsTransactionsScreen> {
                                         height: 15,
                                       ),
                                       Text(
-                                        "# 200,000",
+                                        GoVestText.twoHundredK,
                                         style: TextStyle(
                                             fontSize: 16.sp,
                                             fontWeight: FontWeight.w700,

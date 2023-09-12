@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/safelock/safelock_days.dart';
 import '../constants/asset_path.dart';
 import '../savings/savings_dashboard.dart';
@@ -52,7 +53,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                     width: 20.sp,
                   ),
                   Text(
-                    "Create GOSafe Lock",
+                    GoVestText.gosafeLock,
                     style: TextStyle(
                       fontSize: 20.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -66,7 +67,7 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
                 height: 20.sp,
               ),
               Text(
-                "Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas.",
+                GoVestText.amet2,
                 style: TextStyle(
                   fontSize: 14.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -112,13 +113,13 @@ class _GoSafelockScreenState extends State<GoSafelockScreen> {
               Row(
                 children: [
                   SafelockContainer1(
-                      ReturnDays: "60 - 90 DAYS",
+                      ReturnDays: GoVestText.days,
                       ReturnPerAnnum: ReturnPerAnnum),
                   SizedBox(
                     width: 10.sp,
                   ),
                   SafelockContainer2(
-                      ReturnDays2: "91 - 120 DAYS",
+                      ReturnDays2: GoVestText.days2,
                       ReturnPerAnnum2: ReturnPerAnnum2)
                 ],
               )
@@ -178,7 +179,7 @@ class SafelockContainer2 extends StatelessWidget {
             SizedBox(
               width: 130.sp,
               child: Text(
-                "Lock funds away for short-term to avoid spending.",
+                GoVestText.lockFunds,
                 style: TextStyle(
                   fontSize: 10.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -269,7 +270,7 @@ class SafelockContainer1 extends StatelessWidget {
               SizedBox(
                 width: 130.sp,
                 child: Text(
-                  "Lock funds away for short-term to avoid spending.",
+                  GoVestText.lockFunds,
                   style: TextStyle(
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/investment/investment_package.dart';
 import '../constants/asset_path.dart';
 
@@ -35,11 +36,11 @@ class _ReferralScreenState extends State<ReferralScreen> {
                       ),
                       children: [
                         TextSpan(
-                          text: "Go",
+                          text: GoVestText.go,
                           style: TextStyle(color: veteranBlue),
                         ),
                         TextSpan(
-                          text: "VEST",
+                          text: GoVestText.vest,
                           style: TextStyle(
                             color: springForth,
                           ),
@@ -67,7 +68,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "10% ",
+                                GoVestText.tenPercent,
                                 style: TextStyle(
                                   fontSize: 48.sp,
                                   fontWeight: FontWeight.w700,
@@ -76,7 +77,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                 ),
                               ),
                               Text(
-                                "Commission",
+                                GoVestText.commission2,
                                 style: TextStyle(
                                   color: whiteText,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -93,7 +94,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                         height: 40.sp,
                       ),
                       Text(
-                        "Earn commission for every transaction made by the person you refer.",
+                        GoVestText.transactionCommission,
                         style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
@@ -110,7 +111,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
               Padding(
                 padding: EdgeInsets.only(right: 120.sp),
                 child: Text(
-                  "Copy your referral code",
+                  GoVestText.referralCode,
                   style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, fontFamily: GoVestAssetsPath.govestFont),
                 ),
               ),
@@ -136,7 +137,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                       Padding(
                         padding: EdgeInsets.only(left: 60.sp),
                         child: Text(
-                          "GO-12FRGDT",
+                          GoVestText.frgdt,
                           style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w700,
@@ -157,7 +158,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               height: 10.sp,
                             ),
                             Text(
-                              "Tap to Copy",
+                              GoVestText.tapToCopy,
                               style: TextStyle(
                                 color: whiteText,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -188,7 +189,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Sign-Ups",
+                              GoVestText.signups,
                               style: TextStyle(
                                   fontSize: 12.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -196,7 +197,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                   color: spanishGrey),
                             ),
                             Text(
-                              "Sign-Ups with Trading",
+                              GoVestText.trading,
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
@@ -213,7 +214,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "10",
+                              GoVestText.ten,
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w700,
@@ -221,7 +222,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               ),
                             ),
                             Text(
-                              "7",
+                              GoVestText.seven,
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -247,7 +248,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Total Bonus Earned",
+                              GoVestText.totalBonus,
                               style: TextStyle(
                                 color: spanishGrey,
                                 fontSize: 10.sp,
@@ -256,7 +257,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                               ),
                             ),
                             Text(
-                              "Bonus per referral",
+                              GoVestText.referralBonus,
                               style: TextStyle(
                                 color: spanishGrey,
                                 fontSize: 10.sp,
@@ -277,7 +278,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                   width: 5.sp,
                                 ),
                                 Text(
-                                  "3,500.00",
+                                  GoVestText.threeFive,
                                   style: TextStyle(
                                       fontSize: 13.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
@@ -293,7 +294,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                                   width: 5.sp,
                                 ),
                                 Text(
-                                  "500.00",
+                                  GoVestText.fiveHundred,
                                   style: TextStyle(
                                       fontSize: 13.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
@@ -326,7 +327,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                       Image.asset(GoVestAssetsPath.upload),
                       SizedBox(height: 20.sp,),
                       Text(
-                        "Share Link",
+                        GoVestText.shareLink,
                         style: TextStyle(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w700,

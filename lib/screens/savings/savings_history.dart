@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/gosavings.dart';
 import '../constants/asset_path.dart';
 
@@ -46,7 +47,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           width: 70.sp,
                         ),
                         Text(
-                          "Overview",
+                          GoVestText.overview,
                           style: TextStyle(
                             fontSize: 24.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -60,7 +61,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       height: 20.sp,
                     ),
                     Text(
-                      "Your Target Savings",
+                      GoVestText.targetSavings,
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -79,7 +80,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           width: 2.sp,
                         ),
                         Text(
-                          "50,000",
+                          GoVestText.fiftyK,
                           style: TextStyle(
                               fontSize: 32.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -95,7 +96,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                               color: whiteText),
                         ),
                         Text(
-                          "300,000",
+                          GoVestText.threeHundredKay,
                           style: TextStyle(
                               fontSize: 16.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -129,7 +130,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
-                          "42 days Left",
+                          GoVestText.fortyTwoDays,
                           style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -163,7 +164,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           width: 40.sp,
                         ),
                         Text(
-                          "Auto Save On",
+                          GoVestText.autoSave,
                           style: TextStyle(
                               fontSize: 12.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -195,7 +196,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                       ),
                       child: Center(
                         child: Text(
-                          "Save Now",
+                          GoVestText.saveNow,
                           style: TextStyle(
                             fontSize: 20.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -213,7 +214,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Savings History",
+                        GoVestText.savingsHistory,
                         style: TextStyle(
                             fontSize: 18.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -221,7 +222,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                             color: spanishGrey),
                       ),
                       Text(
-                        "See more",
+                        GoVestText.seeMore,
                         style: TextStyle(
                             fontSize: 12.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -295,7 +296,7 @@ class HistoryWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Save from wallet",
+                  GoVestText.saveWallet,
                   style: TextStyle(
                     color: hooloovooBlue,
                     fontFamily: GoVestAssetsPath.govestFont,
@@ -304,7 +305,7 @@ class HistoryWidget extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "12-Dec-2021",
+                  GoVestText.decemberTwelve,
                   style: TextStyle(
                       fontSize: 10.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -316,7 +317,7 @@ class HistoryWidget extends StatelessWidget {
           ],
         ),
         Text(
-          "#50,000.00",
+          GoVestText.fiftyKay,
           style: TextStyle(
             fontSize: 14.sp,
             fontFamily: GoVestAssetsPath.govestFont,

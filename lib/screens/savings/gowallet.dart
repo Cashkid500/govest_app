@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/profile/add_bank.dart';
 import '../constants/asset_path.dart';
 
@@ -26,7 +27,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Go Wallet",
+                GoVestText.goWallet2,
                 style: TextStyle(
                   fontSize: 18,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -38,7 +39,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Tap any of the options below to quick save immeditely",
+                GoVestText.tap,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -50,7 +51,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                 height: 20.sp,
               ),
               Text(
-                "Amount to Save",
+                GoVestText.amountSave,
                 style: TextStyle(
                   fontSize: 20.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -66,7 +67,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
               children: [
                 Image.asset(GoVestAssetsPath.bigNaira, height: 16.sp,),
                 SizedBox(width: 10.sp,),
-                Text("20,000.00", style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
+                Text(GoVestText.figure2, style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
               ],
              ),
              SizedBox(height: 5.sp,
@@ -82,7 +83,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                       width: 5.sp,
                     ),
                     Text(
-                      "Type in amount you would like to lock",
+                      GoVestText.amount,
                       style: TextStyle(
                           fontSize: 12.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -114,7 +115,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
+                      GoVestText.acknowledge,
                       style: TextStyle(
                         color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -131,7 +132,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Select Payment Method",
+                GoVestText.paymentMethod,
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
@@ -139,7 +140,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                     color: spanishGrey),
               ),
               SizedBox(height: 15.sp,),
-              Text("Tap any of the options below to quick save immediately", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 12.sp, fontWeight: FontWeight.w400, color: blackText),),
+              Text(GoVestText.tap, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 12.sp, fontWeight: FontWeight.w400, color: blackText),),
               SizedBox(height: 30.sp,),
              Container(
               height: 60.sp,
@@ -148,7 +149,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                 color: Color(0xff0EB51F),
                 borderRadius: BorderRadius.circular(10.r)
               ),
-              child: Center(child: Text("Use Go Wallet (N20,000)", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),)),
+              child: Center(child: Text(GoVestText.use, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),)),
              ),
              SizedBox(height: 30.sp,),
              Container(
@@ -163,7 +164,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                 children: [
                   Image.asset(GoVestAssetsPath.mastercard),
                   SizedBox(width: 10.sp,),
-                  Text("Use Card with Paystack", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),),
+                  Text(GoVestText.card, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),),
                 ],
               )),
              ),

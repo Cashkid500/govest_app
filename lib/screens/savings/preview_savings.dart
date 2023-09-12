@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/gosave.dart';
 import '../constants/asset_path.dart';
 
@@ -31,7 +32,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 height: 20.sp,
               ),
               Text(
-                "Finish settings up",
+                GoVestText.finish,
                 style: TextStyle(
                   fontSize: 18.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -43,7 +44,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Finalize your target savings settings",
+                GoVestText.finalize,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -74,7 +75,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Total target of N50,000",
+                            GoVestText.totalTarget,
                             style: TextStyle(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w700,
@@ -85,7 +86,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                           SizedBox(
                             width: 230.sp,
                             child: Text(
-                              "Setup a savings target and get paid every month for upto 8%",
+                              GoVestText.savingsSetup,
                               style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
@@ -101,9 +102,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 ),
               ),
             SizedBox(height: 30.sp,),
-             Text("Preferred Amont to save on a manual basis", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
+             Text(GoVestText.preferred, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
              SizedBox(height: 20.sp),
-            Text("3,000", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: blackText),),
+            Text(GoVestText.threeKay, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: blackText),),
             SizedBox(height: 20.sp,
              child: Divider(
               thickness: 1.sp,
@@ -113,10 +114,10 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Start Date", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
+                Text(GoVestText.startDate, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
                 Padding(
                   padding: EdgeInsets.only(right: 40.sp),
-                  child: Text("Withdrawal Date", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
+                  child: Text(GoVestText.withdrawalDate, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
                 )
               ],
              ),
@@ -124,9 +125,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("12 Sep 2021", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+                Text(GoVestText.sep, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
                 Icon(Icons.calendar_today, color: spanishGrey,),
-                Text("12 Dec 2021", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
+                Text(GoVestText.dec, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
                 Icon(Icons.calendar_today, color: spanishGrey,),
               ],
              ),
@@ -156,7 +157,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
             text: TextSpan(
               children: <TextSpan>[
                 TextSpan(
-                  text: "Your target savings will end in",
+                  text: GoVestText.end,
                   style: TextStyle(
                     color: spanishGrey,
                     fontWeight: FontWeight.w500,
@@ -165,7 +166,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   ),
                 ),
                 TextSpan(
-                  text: "120 days",
+                  text: GoVestText.oneTwentyDays,
                   style: TextStyle(
                     color: hooloovooBlue,
                     fontWeight: FontWeight.w500,
@@ -174,7 +175,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   ),
                 ),
                 TextSpan(
-                  text: "with",
+                  text: GoVestText.with2,
                   style: TextStyle(
                     color: spanishGrey,
                     fontWeight: FontWeight.w500,
@@ -183,7 +184,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   ),
                 ),
                 TextSpan(
-                  text: "12%",
+                  text: GoVestText.twelvePercent,
                   style: TextStyle(
                     color: springForth,
                     fontFamily: GoVestAssetsPath.govestFont,
@@ -192,7 +193,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   ),
                 ),
                 TextSpan(
-                  text: "return rate",
+                  text: GoVestText.returnRate2,
                   style: TextStyle(
                     color: spanishGrey,
                     fontWeight: FontWeight.w500,
@@ -205,7 +206,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
           ),
         SizedBox(height: 15.sp,),
               Text(
-                "Select source of fund",
+                GoVestText.selectSource,
                 style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
@@ -224,7 +225,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    labelText: 'Go Wallet - NGN 200,000',
+                    labelText: GoVestText.wallet2,
                     labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(
                       Icons.expand_more,
@@ -260,7 +261,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I authorize GoVEST to safelock NGN200,000 immediately and return it in full on Wednesday.",
+                      GoVestText.authorize2,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 10.sp,
@@ -296,7 +297,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
+                      GoVestText.acknowledge,
                       style: TextStyle(
                         color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -321,7 +322,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   color: hooloovooBlue,
                   borderRadius: BorderRadius.circular(10.r)
                 ),
-                child: Center(child: Text("CREATE GO TARGET", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: whiteText),)),
+                child: Center(child: Text(GoVestText.createGoTarget, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: whiteText),)),
                            ),
               )
             ],

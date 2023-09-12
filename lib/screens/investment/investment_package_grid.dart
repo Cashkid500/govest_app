@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/dashboard/dashboard.dart';
 import 'package:govest_app/screens/profile/profile_account.dart';
 import 'package:govest_app/screens/profile/setup_kyc.dart';
@@ -43,7 +44,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Hello,",
+                          GoVestText.hello3,
                           style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -51,7 +52,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                               fontWeight: FontWeight.w700),
                         ),
                         Text(
-                          "Ganni West",
+                          GoVestText.gW,
                           style: TextStyle(
                               color: whiteText,
                               fontSize: 25.sp,
@@ -71,7 +72,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 padding: EdgeInsets.only(left: 20.sp),
                 child: Row(
                   children: [
-                    Text("Go",
+                    Text(GoVestText.go,
                     style:TextStyle(
                       color: whiteText,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -86,7 +87,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                    MaterialPageRoute(builder: (BuildContext context) =>DashboardScreen())
               );
             },
-                      child: Text("Dashboard",
+                      child: Text(GoVestText.dashboard,
                       style: TextStyle(
                         color: whiteText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -112,7 +113,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                    MaterialPageRoute(builder: (BuildContext context) =>ProfileAccountScreen())
               );
               },
-                      child: Text("Profile account",
+                      child: Text(GoVestText.profileAccount,
                       style: TextStyle(
                         color: whiteText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -138,7 +139,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                    MaterialPageRoute(builder: (BuildContext context) =>TransactionHistoryScreen())
                   );
                   },
-                      child: Text("Transaction History",
+                      child: Text(GoVestText.transactionHistory,
                       style: TextStyle(
                         color: whiteText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -164,7 +165,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                    MaterialPageRoute(builder: (BuildContext context) =>AddBankScreen())
                   );
                   },
-                      child: Text("Bank & Debit Card",
+                      child: Text(GoVestText.bankDebitCard,
                       style: TextStyle(
                         color: whiteText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -190,7 +191,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                    MaterialPageRoute(builder: (BuildContext context) =>SetupKYCScreen())
               );
               },
-                      child: Text("Setup KYC",
+                      child: Text(GoVestText.setupKYC,
                       style: TextStyle(
                         color: whiteText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -210,7 +211,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                   children: [
                     Icon(Icons.info, color: whiteText,),
                     SizedBox(width: 10.sp,),
-                    Text("About GoVest",
+                    Text(GoVestText.aboutGoVest,
                     style: TextStyle(
                       color: whiteText,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -229,7 +230,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                   children: [
                     Icon(Icons.headset_mic, color: whiteText,),
                     SizedBox(width: 10.sp,),
-                    Text("Customer Center",
+                    Text(GoVestText.customerCenter,
                     style: TextStyle(
                       color: whiteText,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -256,7 +257,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text("Log out",
+                          Text(GoVestText.logout,
                               style: TextStyle(
                                 fontSize: 20.sp,
                                 fontWeight: FontWeight.w700,

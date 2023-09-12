@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/savings_transactions.dart';
 import '../constants/asset_path.dart';
 
@@ -54,7 +55,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                   ),
                                   children: [
                                     TextSpan(
-                                      text: "Go",
+                                      text: GoVestText.go,
                                       style: TextStyle(
                                         decoration: TextDecoration.underline,
                                         decorationColor: springForth,
@@ -63,7 +64,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                                       ),
                                     ),
                                     TextSpan(
-                                      text: "Savings",
+                                      text: GoVestText.savings2,
                                       style: TextStyle(
                                           decoration: TextDecoration.underline,
                                           decorationColor: veteranBlue,
@@ -75,7 +76,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                               ),
                               SizedBox(height: 10.sp,),
                               Text(
-                                "Take a bold step to get higher return",
+                                GoVestText.boldStep,
                                 style: TextStyle(
                                     fontSize: 10.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
@@ -97,7 +98,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                             width: 5.sp,
                           ),
                           Text(
-                            "590,000.00",
+                            GoVestText.fiveNinety,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               decorationColor: blackText,
@@ -117,7 +118,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Dashboard",
+                              GoVestText.dashboard,
                               style: TextStyle(
                                 fontSize: 16.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -132,7 +133,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
               );
             },
                               child: Text(
-                                "Transactions",
+                                GoVestText.transactions,
                                 style: TextStyle(
                                   fontSize: 16.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -171,7 +172,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                   width: 20.sp,
                 ),
                 SavingsDashboardContainer2(
-                    Gotype: "Go Wallet", Amount: Amount, Interest: Interest),
+                    Gotype: GoVestText.goWallet3, Amount: Amount, Interest: Interest),
               ],
             ),
             Row(
@@ -180,9 +181,9 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                   width: 20.sp,
                 ),
                 SavingsDashboardContainer2(
-                    Gotype: "Go Lock", Amount: Amount, Interest: Interest),
+                    Gotype: GoVestText.goLock, Amount: Amount, Interest: Interest),
                 SavingsDashboardContainer1(
-                    Gotype: "Go Target", Amount: Amount, Interest: Interest),
+                    Gotype: GoVestText.goTarget2, Amount: Amount, Interest: Interest),
               ],
             )
           ],
@@ -249,7 +250,7 @@ class SavingsDashboardContainer2 extends StatelessWidget {
               SizedBox(
                 width: 130.sp,
                 child: Text(
-                  "Lock funds away for short-term to avoid spending.",
+                  GoVestText.lockFunds,
                   style: TextStyle(
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
@@ -344,7 +345,7 @@ class SavingsDashboardContainer1 extends StatelessWidget {
               SizedBox(
                 width: 130.sp,
                 child: Text(
-                  "Lock funds away for short-term to avoid spending.",
+                  GoVestText.lockFunds,
                   style: TextStyle(
                     fontSize: 10.sp,
                     fontFamily: GoVestAssetsPath.govestFont,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/savings_history.dart';
 
 import '../constants/asset_path.dart';
@@ -55,7 +56,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "PREVIEW",
+                        GoVestText.preview,
                         style: TextStyle(
                           fontSize: 20.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -64,7 +65,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         ),
                       ),
                       Text(
-                        "Safelock School Fund",
+                        GoVestText.schoolFund,
                         style: TextStyle(
                           fontSize: 14.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -78,7 +79,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
               ),
               SizedBox(height: 20.sp,),
               Text(
-                "Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas.",
+                GoVestText.amet2,
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontFamily: GoVestAssetsPath.govestFont,
@@ -99,7 +100,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Fund and Return",
+                        GoVestText.fundReturn,
                         style: TextStyle(
                           fontSize: 18.sp,
                           color: whiteText,
@@ -123,7 +124,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Fund To Lock",
+                            GoVestText.lockFund,
                             style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -132,7 +133,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             ),
                           ),
                           Text(
-                            "Return Rate",
+                            GoVestText.returnRate,
                             style: TextStyle(
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -152,7 +153,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 width: 5.sp,
                               ),
                               Text(
-                                "200,000",
+                                GoVestText.twoHundredKay2,
                                 style: TextStyle(
                                     fontSize: 14.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
@@ -162,7 +163,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             ],
                           ),
                           Text(
-                            "0.5 %",
+                            GoVestText.halfPercent,
                             style: TextStyle(
                                 fontSize: 14.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -187,7 +188,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Amount to Return",
+                            GoVestText.amountReturn,
                             style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -196,7 +197,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             ),
                           ),
                           Text(
-                            "Payback Date",
+                            GoVestText.paybackDate,
                             style: TextStyle(
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -216,7 +217,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                 width: 5.sp,
                               ),
                               Text(
-                                "205,000",
+                                GoVestText.twoZeroFive,
                                 style: TextStyle(
                                     fontSize: 14.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
@@ -226,7 +227,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             ],
                           ),
                           Text(
-                            "11th Oct 2021",
+                            GoVestText.october2,
                             style: TextStyle(
                                 fontSize: 14.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -254,7 +255,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Duration of Lock",
+                            GoVestText.lockDuration,
                             style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -263,7 +264,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                             ),
                           ),
                           Text(
-                            "Payback Into",
+                            GoVestText.paybackInto,
                             style: TextStyle(
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -276,7 +277,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "15 days",
+                            GoVestText.fifteenDays,
                             style: TextStyle(
                                 fontSize: 14.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -293,7 +294,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                                   width: 5.sp,
                                 ),
                                 Text(
-                                  "** 4566",
+                                  GoVestText.pin,
                                   style: TextStyle(
                                       fontSize: 14.sp,
                                       fontFamily: GoVestAssetsPath.govestFont,
@@ -344,7 +345,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I authorize GoVEST to safelock NGN500,000 immediately and return it in full on Wednesday 11th of October 2021 by 12:23PM to my bank account with 2355643. I confirm and approve this transaction.",
+                      GoVestText.authorize,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 10.sp,
@@ -380,7 +381,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
+                      GoVestText.acknowledge,
                       style: TextStyle(
                         color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -409,7 +410,7 @@ class _SafelockPreviewScreenState extends State<SafelockPreviewScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "Create GoSafeLock",
+                      GoVestText.goSafeLock2,
                       style: TextStyle(
                         fontSize: 20.sp,
                         fontFamily: GoVestAssetsPath.govestFont,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/preview_savings.dart';
 
 import '../constants/asset_path.dart';
@@ -45,7 +46,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Create GoTargetSavings",
+                GoVestText.goTargetSavings,
                 style: TextStyle(
                   fontSize: 18.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -57,7 +58,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 height: 30.sp,
               ),
               Text(
-                "How much is your Target?",
+                GoVestText.targetAmount,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -79,7 +80,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                     width: 10.sp,
                   ),
                   Text(
-                    "200,000.00",
+                    GoVestText.figure,
                     style: TextStyle(
                         fontSize: 24.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -103,7 +104,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                   width: 5.sp,
                 ),
                 Text(
-                  "Type in amount you would like to lock",
+                  GoVestText.amount,
                   style: TextStyle(
                       fontSize: 12.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -115,7 +116,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Set Title for your Target",
+                GoVestText.setTitle2,
                 style: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
@@ -124,7 +125,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
               ),
               SizedBox(height: 20.sp),
               Text(
-                "Wedding Aid",
+                GoVestText.weddingAid,
                 style: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontWeight: FontWeight.w700,
@@ -142,7 +143,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 height: 25.sp,
               ),
               Text(
-                "How do you want to safe?",
+                GoVestText.howSafe,
                 style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
@@ -198,7 +199,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                 height: 25.sp,
               ),
               Text(
-                "How do you want to safe?",
+                GoVestText.howSafe,
                 style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 12.sp,
@@ -284,7 +285,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
                       borderRadius: BorderRadius.circular(10.r)),
                   child: Center(
                       child: Text(
-                    "CONTINUE",
+                    GoVestText.cont,
                     style: TextStyle(
                         fontFamily: GoVestAssetsPath.govestFont,
                         fontSize: 20.sp,

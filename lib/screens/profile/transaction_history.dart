@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import '../constants/asset_path.dart';
 
 
@@ -31,7 +32,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
                     SizedBox(
                       height: 15.sp,
                     ),
-                    Text('Transaction History', style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize:  22, color: hooloovooBlue),)
+                    Text(GoVestText.transactionHistory, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize:  22, color: hooloovooBlue),)
                   ],
                 ),
                 SizedBox(
@@ -42,7 +43,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
         decoration: InputDecoration(
           contentPadding: EdgeInsets.symmetric(horizontal: 30.sp, vertical: 18.sp),
           isCollapsed: true,
-          labelText: 'Quick find transaction',
+          labelText: GoVestText.quickFind,
           labelStyle: TextStyle(
               color: blackOak,
               fontSize: 14.0,
@@ -132,7 +133,7 @@ class Withdraw extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                 'Withdrawal from savings',
+                 GoVestText.savingsWithdrawal,
                   style: TextStyle(
                     color: hooloovooBlue,
                     fontSize: 12.sp,
@@ -141,7 +142,7 @@ class Withdraw extends StatelessWidget {
                   ),
                 ),
                 Text(
-                 '12-Dec-2021',
+                  GoVestText.decemberTwelve,
                   style: TextStyle(
                       fontSize: 10.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -153,7 +154,7 @@ class Withdraw extends StatelessWidget {
           ],
         ),
         Text(
-          '#50,000.00',
+          GoVestText.fiftyKay,
           style: TextStyle(
             fontSize: 14.sp,
             fontFamily: GoVestAssetsPath.govestFont,
@@ -194,7 +195,7 @@ class Invest extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Invest in Fish farming',
+            GoVestText.fishFarming,
             style: TextStyle(
               color: hooloovooBlue,
               fontSize: 12.sp,
@@ -203,7 +204,7 @@ class Invest extends StatelessWidget {
             ),
           ),
           Text(
-           '12-Dec-2021',
+           GoVestText.decemberTwelve,
             style: TextStyle(
                 fontSize: 10.sp,
                 fontFamily: GoVestAssetsPath.govestFont,
@@ -215,7 +216,7 @@ class Invest extends StatelessWidget {
     ],
         ),
         Text(
-    '#250,000.00',
+    GoVestText.twoFiftyKay,
     style: TextStyle(
       fontSize: 14.sp,
       fontFamily: GoVestAssetsPath.govestFont,

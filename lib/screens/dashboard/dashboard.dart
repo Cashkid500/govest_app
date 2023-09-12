@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/referral/referral.dart';
 import '../constants/asset_path.dart';
 
@@ -42,7 +43,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             Padding(
                               padding: EdgeInsets.only(left: 10.sp),
                               child: Text(
-                                "Hello",
+                                GoVestText.hello2,
                                 style: TextStyle(
                                   fontSize: 16.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -51,7 +52,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               ),
                             ),
                             Text(
-                              ", Ganni West",
+                              GoVestText.ganniWest,
                               style: TextStyle(
                                 fontSize: 19.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -69,21 +70,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       child: Row(
                         children: [
                           DashboardContainer(
-                              walletName: "GOWALLET",
-                              accNo: "*******5645",
-                              amount: "30,250.00",
-                              name: "Ganni West",
-                              bank: "Wema Bank",
+                              walletName: GoVestText.goWallet,
+                              accNo: GoVestText.asteriskDigit,
+                              amount: GoVestText.thirtyK,
+                              name: GoVestText.gW,
+                              bank: GoVestText.wemaBank,
                               imagepath: GoVestAssetsPath.plus),
                           SizedBox(
                             width: 10.sp,
                           ),
                           DashboardContainer(
-                            walletName: "GOWALLET",
-                            accNo: "*******5645",
-                            amount: "30,250.00",
-                            name: "Ganni West",
-                            bank: "Wema Bank",
+                            walletName: GoVestText.goWallet,
+                            accNo: GoVestText.asteriskDigit,
+                            amount: GoVestText.thirtyK,
+                            name: GoVestText.gW,
+                            bank: GoVestText.wemaBank,
                             imagepath: GoVestAssetsPath.plus,
                           ),
                         ],
@@ -113,7 +114,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           height: 5.sp,
                         ),
                         Text(
-                          "INVESTMENT",
+                          GoVestText.investment,
                           style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -124,7 +125,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           height: 10.sp,
                         ),
                         Text(
-                          "Transaction fees to earn for every trade from a referral.",
+                          GoVestText.fees,
                           style: TextStyle(
                             color: whiteText,
                             fontSize: 10.sp,
@@ -156,7 +157,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           height: 10.sp,
                         ),
                         Text(
-                          "SAVINGS",
+                          GoVestText.savings,
                           style: TextStyle(
                               color: whiteText,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -167,7 +168,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           height: 10.sp,
                         ),
                         Text(
-                          "Transaction fees to earn for every trade from a referral.",
+                          GoVestText.fees,
                           style: TextStyle(
                             fontSize: 10.sp,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -184,7 +185,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             SizedBox(height: 20.sp,),
             Padding(padding: EdgeInsets.only(left: 20.sp),
               child: Text(
-                "REFER & EARN",
+                GoVestText.refer,
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontFamily: GoVestAssetsPath.govestFont,
@@ -213,7 +214,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Earn 10% commission when\na friend joins with your code",
+                                GoVestText.commission,
                                 style: TextStyle(
                                   fontSize: 12.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -223,7 +224,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               ),
                               SizedBox(height: 15.sp,),
                               Text(
-                                "REFER NOW",
+                                GoVestText.referNow,
                                 style: TextStyle(
                                     fontSize: 12.sp,
                                     fontFamily: GoVestAssetsPath.govestFont,
@@ -246,7 +247,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "What’s up today?",
+                    GoVestText.today,
                     style: TextStyle(
                       color: spanishGrey,
                       fontWeight: FontWeight.w500,
@@ -255,7 +256,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
                   ),
                   Text(
-                    "See more",
+                    GoVestText.seeMore,
                     style: TextStyle(
                       color: spanishGrey,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -293,7 +294,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Column(
                             children: [
                               Text(
-                                "Wallet withdraw",
+                                GoVestText.walletWithdraw,
                                 style: TextStyle(
                                   fontSize: 14.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -305,7 +306,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 height: 5.sp,
                               ),
                               Text(
-                                "5 May 2021 at 12:30 AM",
+                                GoVestText.may,
                                 style: TextStyle(
                                   fontSize: 10.sp,
                                   fontFamily: GoVestAssetsPath.govestFont,
@@ -321,7 +322,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             Image.asset(GoVestAssetsPath.naira),
                             SizedBox(width: 2.sp,),
                             Text(
-                              "2,000",
+                              GoVestText.twoThousand,
                               style: TextStyle(
                                   fontSize: 14.sp,
                                   fontWeight: FontWeight.w700,

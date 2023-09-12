@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/safelock/safelock_preview.dart';
 
 import '../constants/asset_path.dart';
@@ -50,7 +51,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     width: 20.sp,
                   ),
                   Text(
-                    "SafeLock for 10-30 Days",
+                    GoVestText.safelockDays,
                     style: TextStyle(
                       fontSize: 20.sp,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -64,7 +65,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 height: 20.sp,
               ),
               Text(
-                "Create a safelock for 10-30 days with a return close to 6%. The longer the payback date, the higher your return.",
+                GoVestText.createSafelock,
                 style: TextStyle(
                     fontSize: 12.sp,
                     fontFamily: GoVestAssetsPath.govestFont,
@@ -76,7 +77,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 height: 30.sp,
               ),
               Text(
-                "How much ?",
+                GoVestText.howMuch,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -96,7 +97,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    labelText: '200,000.00',
+                    labelText: GoVestText.twoHundredKay,
                     prefixIcon: Image.asset(
                         GoVestAssetsPath.bigNaira, height: 10.sp,), // Placeholder text
                     labelStyle: TextStyle(
@@ -118,7 +119,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     width: 5.sp,
                   ),
                   Text(
-                    "Type in amount you would like to lock",
+                    GoVestText.type,
                     style: TextStyle(
                         fontSize: 12.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -131,7 +132,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Set Title",
+                GoVestText.setTitle,
                 style: TextStyle(
                   fontSize: 14.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -151,7 +152,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    labelText: 'Emergency fund',
+                    labelText: GoVestText.emergencyFund,
                     labelStyle: TextStyle(color: blackText, fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700),
                     border: InputBorder.none,
                   ),
@@ -161,7 +162,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Payback Date",
+                GoVestText.paybackDate,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -171,7 +172,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
               ),
               SizedBox(height: 10.sp,),
               Text(
-                "The longer it is, the higher your return.",
+                GoVestText.longer,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -196,7 +197,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                       color: spanishGrey,
                       size: 30.sp,
                     ),
-                    labelText: '11 October 2021',
+                    labelText: GoVestText.october,
                     labelStyle: TextStyle(
                         color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -216,7 +217,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                     width: 10.sp,
                   ),
                   Text(
-                    "Your return is 0.5 % at 10 days.",
+                    GoVestText.yourReturn,
                     style: TextStyle(
                         fontSize: 12.sp,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -229,7 +230,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Select source of fund",
+                GoVestText.selectSource,
                 style: TextStyle(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w700,
@@ -248,7 +249,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    labelText: 'Wallet - NGN 200,000',
+                    labelText: GoVestText.wallet,
                     labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(
                       Icons.expand_more,
@@ -277,7 +278,7 @@ class _SafelockDaysScreenState extends State<SafelockDaysScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "Preview GoSafe",
+                      GoVestText.previewGoSafe,
                       style: TextStyle(
                         fontSize: 20.sp,
                         fontFamily: GoVestAssetsPath.govestFont,

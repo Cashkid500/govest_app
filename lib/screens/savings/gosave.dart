@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/gowallet.dart';
 
 import '../constants/asset_path.dart';
@@ -37,7 +38,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Create GoTargetSavings",
+                GoVestText.goTargetSavings,
                 style: TextStyle(
                   fontSize: 18,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -49,7 +50,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Create a safelock for 10-30 days with a return close to 6%. The longer the payback date, the higher your return.",
+                GoVestText.createSafelock2,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -61,7 +62,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 height: 20.sp,
               ),
               Text(
-                "How much to save per time?",
+                GoVestText.savePerTime,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -77,7 +78,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
               children: [
                 Image.asset(GoVestAssetsPath.bigNaira, height: 16.sp,),
                 SizedBox(width: 10.sp,),
-                Text("200,000.00", style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
+                Text(GoVestText.figure, style: TextStyle(fontSize: 24.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700),)
               ],
              ),
              SizedBox(height: 5.sp,
@@ -93,7 +94,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                       width: 5.sp,
                     ),
                     Text(
-                      "Type in amount you would like to lock",
+                      GoVestText.amount,
                       style: TextStyle(
                           fontSize: 12.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -103,16 +104,16 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
               ]
              ),
              SizedBox(height: 30.sp,),
-             Text("Set Title for your Savings", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
+             Text(GoVestText.savingsTitle, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
              SizedBox(height: 20.sp),
-            Text("Wedding Aid", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: blackText),),
+            Text(GoVestText.weddingAid, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: blackText),),
             SizedBox(height: 20.sp,
              child: Divider(
               thickness: 1.sp,
               color: blackText,
              ),),
              SizedBox(height: 25.sp,),
-             Text("How do you want to safe?", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, fontFamily: GoVestAssetsPath.govestFont, color: Color(0xff979797)),),
+             Text(GoVestText.howSafe, style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.sp, fontFamily: GoVestAssetsPath.govestFont, color: Color(0xff979797)),),
              SizedBox(height: 10.sp),
              SizedBox(
                 height: MediaQuery.of(context).size.height / 12,
@@ -181,7 +182,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Select source of fund",
+                GoVestText.selectSource,
                 style: TextStyle(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.w700,
@@ -200,7 +201,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    labelText: 'Wallet - NGN 200,000',
+                    labelText: GoVestText.wallet,
                     labelStyle: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 18.sp, fontWeight: FontWeight.w700, color: Color(0xff000000)),
                     suffixIcon: Icon(Icons.expand_more,color: spanishGrey,size: 30.sp,),
                    ),
@@ -229,7 +230,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   SizedBox(
                     width: 260.sp,
                     child: Text(
-                      "I hereby acknowledge this SafeLock CANNOT be broken once it has been created.",
+                      GoVestText.acknowledge,
                       style: TextStyle(
                         color: blackText,
                         fontFamily: GoVestAssetsPath.govestFont,
@@ -254,7 +255,7 @@ class _GoSaveScreenState extends State<GoSaveScreen> {
                   color: hooloovooBlue,
                   borderRadius: BorderRadius.circular(10.r)
                 ),
-                child: Center(child: Text("GO SAVE NOW", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
+                child: Center(child: Text(GoVestText.goSaveNow, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 20.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                ),
              )
             ],

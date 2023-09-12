@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import '../constants/asset_path.dart';
 
 class EditProfileScreen extends StatefulWidget {
@@ -28,7 +29,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               children: [
                 Icon(Icons.chevron_left,size: 40,color: whiteText),
                 SizedBox(height: 10.sp,),
-                Center(child: Text("Edit Profile", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: whiteText),)),
+                Center(child: Text(GoVestText.editProfile, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: whiteText),)),
                 SizedBox(height: 10.sp,),
                 Center(child: Image.asset(GoVestAssetsPath.profileImage)),
                 SizedBox(
@@ -36,7 +37,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 ),
                 Center(
                   child: Text(
-                    "Ganni West",
+                    GoVestText.gW,
                     style: TextStyle(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w700,
@@ -58,7 +59,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Change avatar",
+                            GoVestText.changeAvatar,
                             style: TextStyle(
                               fontSize: 10.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -76,19 +77,19 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 SizedBox(
                   height: 40.sp,
                 ),
-                EditTextfield(name: "Email"),
+                EditTextfield(name: GoVestText.email),
                 SizedBox(
                   height: 15.sp,
                 ),
-                EditTextfield(name: "Username"),
+                EditTextfield(name: GoVestText.username),
                 SizedBox(
                   height: 15.sp,
                 ),
-                EditTextfield(name: "Phone Number"),
+                EditTextfield(name: GoVestText.phoneNumber2),
                 SizedBox(
                   height: 15.sp,
                 ),
-                EditTextfield(name: "Date of Birth"),
+                EditTextfield(name: GoVestText.birthDate),
                 SizedBox(
                   height: 70.sp,
                 ),
@@ -101,7 +102,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "Save Changes",
+                      GoVestText.saveChanges,
                       style: TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: hooloovooBlue),
                     ),
                   ),

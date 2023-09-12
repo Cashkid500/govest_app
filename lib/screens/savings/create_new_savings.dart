@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/safelock/gosafe_lock.dart';
 import '../constants/asset_path.dart';
 
@@ -44,7 +45,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
               ),
               SizedBox(height: 20.sp,),
               Text(
-                "Savings Discipline",
+                GoVestText.savingsDiscipline,
                 style: TextStyle(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w700,
@@ -57,7 +58,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                 child: Padding(
                   padding: EdgeInsets.only(left: 40.sp,),
                   child: Text(
-                    "Save with discipline towards a\n specific goal or target. Earn interests\n daily, weekly or monthly.",
+                    GoVestText.save,
                     style: TextStyle(
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
@@ -81,7 +82,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                 ),
                 child: Center(
                   child: Text(
-                    "CREATE GOSAVINGS",
+                    GoVestText.createGoSavings,
                     style: TextStyle(
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w700,
@@ -110,7 +111,7 @@ class _CreateNewSavingsScreenState extends State<CreateNewSavingsScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        "CREATE GOSAFE",
+                        GoVestText.createGoSave,
                         style: TextStyle(
                           fontSize: 20.sp,
                           fontFamily: GoVestAssetsPath.govestFont,

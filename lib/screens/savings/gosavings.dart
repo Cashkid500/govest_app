@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/gotarget_savings.dart';
 import '../constants/asset_path.dart';
 
@@ -30,7 +31,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Create GoSavings",
+                GoVestText.goSavings,
                 style: TextStyle(
                   fontSize: 18.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -42,7 +43,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                 height: 30.sp,
               ),
               Text(
-                "Create a safelock for 10-30 days with a return close to 6%. The longer the payback date, the higher your return.",
+                GoVestText.createSafelock,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontFamily: GoVestAssetsPath.govestFont,
@@ -73,7 +74,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "GoSavings",
+                            GoVestText.goSavings2,
                             style: TextStyle(
                               fontSize: 20.sp,
                               fontFamily: GoVestAssetsPath.govestFont,
@@ -84,7 +85,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                           SizedBox(
                             width: 230,
                             child: Text(
-                              "Create a safelock for 10-30 days with a return close to 6%.",
+                              GoVestText.safelockDays2,
                               style: TextStyle(
                                 fontFamily: GoVestAssetsPath.govestFont,
                                 fontSize: 12.sp,
@@ -126,7 +127,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "GoTarget Savings",
+                              GoVestText.goTarget,
                               style: TextStyle(
                                 fontSize: 20.sp,
                                 fontWeight: FontWeight.w700,
@@ -137,7 +138,7 @@ class _GoSavingsScreenState extends State<GoSavingsScreen> {
                             SizedBox(
                               width: 230.sp,
                               child: Text(
-                                "Setup a savings target and get paid every month for upto 8%",
+                                GoVestText.savingsTarget,
                                 style: TextStyle(
                                   fontFamily: GoVestAssetsPath.govestFont,
                                   fontSize: 12.sp,

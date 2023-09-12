@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import '../constants/asset_path.dart';
 import 'edit_profile.dart';
 
@@ -31,7 +32,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 SizedBox(height: 20.sp,),
                 Center(
                     child: Text(
-                  "Change Password",
+                  GoVestText.changePassword,
                   style: TextStyle(
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w700,
@@ -43,7 +44,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   child: SizedBox(
                     width: 300.sp,
                     child: Text(
-                      "Your new password must be different from your old password.",
+                      GoVestText.distinctPassword,
                       style: TextStyle(
                           fontSize: 12.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -64,7 +65,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   ),
                   child: TextField(
                     decoration: InputDecoration(
-                        hintText: "Enter Current Password",
+                        hintText: GoVestText.currentPassword,
                         hintStyle: TextStyle(color: spanishGrey, fontFamily: GoVestAssetsPath.govestFont),
                         contentPadding: EdgeInsets.all(10.sp),
                         border: InputBorder.none,
@@ -75,11 +76,11 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 SizedBox(
                   height: 20.sp,
                 ),
-                EditTextfield(name: "Enter New Password"),
+                EditTextfield(name: GoVestText.newPassword),
                 SizedBox(
                   height: 20.sp,
                 ),
-                EditTextfield(name: "Confirm New Password"),
+                EditTextfield(name: GoVestText.confirmNewPassword),
                 SizedBox(
                   height: 90.sp,
                 ),
@@ -92,7 +93,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "Change Password",
+                      GoVestText.changePassword,
                       style:
                           TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: hooloovooBlue),
                     ),

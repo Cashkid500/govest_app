@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/safelock/safelock.dart';
 import '../constants/asset_path.dart';
 
@@ -48,7 +49,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           Padding(
                             padding: EdgeInsets.only(left: 20.sp),
                             child: Text(
-                              "Ongoing Live",
+                              GoVestText.ongoingLive,
                               style: TextStyle(
                                   fontSize: 10.sp,
                                   fontWeight: FontWeight.w700,
@@ -73,7 +74,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                       Padding(
                         padding: EdgeInsets.only(left: 20.sp),
                         child: Text(
-                          "Cashew Nut Investment",
+                          GoVestText.cashew,
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -99,7 +100,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           bottom: 20.sp,
                         ),
                         child: Text(
-                          "By Agro-allied investment",
+                          GoVestText.agroAllied,
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
                             fontFamily: GoVestAssetsPath.govestFont,
@@ -117,7 +118,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           child: Padding(
                             padding: EdgeInsets.all(8.sp),
                             child: Text(
-                              "VERIFIED OPPURTUNITY",
+                              GoVestText.verifiedOpportunity,
                               style: TextStyle(
                                 fontSize: 6.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -135,7 +136,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Available",
+                              GoVestText.available,
                               style: TextStyle(
                                 fontSize: 11.sp,
                                 fontWeight: FontWeight.w400,
@@ -144,7 +145,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               ),
                             ),
                             Text(
-                              "N20,000",
+                              GoVestText.twentyK,
                               style: TextStyle(
                                 fontSize: 18.sp,
                                 fontWeight: FontWeight.w700,
@@ -161,7 +162,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "120 units left",
+                              GoVestText.units,
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w700,
@@ -170,7 +171,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               ),
                             ),
                             Text(
-                              "Per unit",
+                              GoVestText.perUnit,
                               style: TextStyle(
                                 fontSize: 10.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -192,7 +193,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
-                        "About this Investment",
+                        GoVestText.about,
                         style: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w700,
@@ -206,7 +207,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                     height: 10.sp,
                   ),
                   Text(
-                    "Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas.  Amet rhoncus tellus quis vestibulum. Urna nullam placerat nunc, bibendum tincidunt egestas. ",
+                    GoVestText.amet,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontFamily: GoVestAssetsPath.govestFont,
@@ -218,7 +219,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Text(
-                        "Read more",
+                        GoVestText.readMore,
                         style: TextStyle(
                           color: hooloovooBlue,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -255,7 +256,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
-                              "Insurance Partner",
+                              GoVestText.insurancePartner,
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w500,
@@ -267,7 +268,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                               height: 3.sp,
                             ),
                             Text(
-                              "Leadway Assurance",
+                              GoVestText.leadwayAssurance,
                               style: TextStyle(
                                 fontSize: 12.sp,
                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -287,11 +288,11 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       CashewNutReturn(
-                          investment: "Current Cost / Unit",
-                          Returnpath: "N 20,000"),
+                          investment: GoVestText.currentCost,
+                          Returnpath: GoVestText.twentyKay),
                       CashewNutReturn(
-                          investment: "Payout Type",
-                          Returnpath: "Capital + Profit"),
+                          investment: GoVestText.payoutType,
+                          Returnpath: GoVestText.capital),
                     ],
                   ),
                   SizedBox(
@@ -311,7 +312,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                       ),
                       child: Center(
                         child: Text(
-                          "BUY NOW",
+                          GoVestText.buyNow,
                           style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontFamily: GoVestAssetsPath.govestFont,

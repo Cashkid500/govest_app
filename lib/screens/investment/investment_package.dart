@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import '../constants/asset_path.dart';
 import 'investment_details.dart';
 
@@ -40,14 +41,14 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                       ),
                       children: [
                         TextSpan(
-                          text: "Vest",
+                          text: GoVestText.vestLowercase,
                           style: TextStyle(
                           color: springForth,
                           fontFamily: GoVestAssetsPath.govestFont,
                           ),
                         ),
                         TextSpan(
-                          text: "ing",
+                          text: GoVestText.ing,
                           style: TextStyle(color: veteranBlue, fontFamily: GoVestAssetsPath.govestFont),
                         ),
                       ],
@@ -66,7 +67,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
               Padding(
                 padding: EdgeInsets.only(right: 130.sp),
                 child: Text(
-                  "Take a bold step to get higher return",
+                  GoVestText.boldStep,
                   style: TextStyle(
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w400,
@@ -82,7 +83,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                     children: [
                       Image.asset(GoVestAssetsPath.nairaBlue),
                       Text(
-                        "590,000.00",
+                        GoVestText.fiveNinety,
                         style: TextStyle(
                           fontSize: 18.sp,
                           fontWeight: FontWeight.w700,
@@ -96,7 +97,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                     children: [
                       Image.asset(GoVestAssetsPath.nairaBlue),
                       Text(
-                        "690,000.00",
+                        GoVestText.sixNinety,
                         style: TextStyle(
                           fontSize: 18.sp,
                           fontFamily: GoVestAssetsPath.govestFont,
@@ -141,7 +142,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                             Padding(
                               padding: EdgeInsets.only(left: 6.sp),
                               child: Text(
-                                "We need to know\nyou better",
+                                GoVestText.need,
                                 style: TextStyle(
                                   fontSize: 20.sp,
                                   fontWeight: FontWeight.w700,
@@ -154,7 +155,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                             Padding(
                               padding: EdgeInsets.only(left: 8.sp),
                               child: Text(
-                                "PROCEED",
+                                GoVestText.proceed,
                                 style: TextStyle(
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w700,
@@ -189,7 +190,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                       padding: EdgeInsets.symmetric(horizontal: 10.sp),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: 'Search for investments',
+                          hintText: GoVestText.search4Investment,
                           border: InputBorder.none,
                           prefixIcon: Icon(Icons.search, color: greyText),
                         ),
@@ -281,7 +282,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   SizedBox(
                                     width: 125.sp,
                                     child: Text(
-                                      "Cashew Nut Investment",
+                                      GoVestText.cashew,
                                       style: TextStyle(
                                           fontSize: 16.sp,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -300,12 +301,12 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                       ),
                                       children: [
                                         TextSpan(
-                                          text: "13%",
+                                          text: GoVestText.thirteenPercent,
                                           style: TextStyle(
                                               color: poisonousIceCream, fontFamily: GoVestAssetsPath.govestFont),
                                         ),
                                         TextSpan(
-                                          text: " returns in 3 months",
+                                          text: GoVestText.returns,
                                           style: TextStyle(
                                             fontFamily: GoVestAssetsPath.govestFont,
                                             color: whiteText,
@@ -326,7 +327,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                             width: 2.sp,
                                           ),
                                           Text(
-                                            "50,000",
+                                            GoVestText.fiftyK,
                                             style: TextStyle(
                                                 color: whiteText,
                                                 fontFamily: GoVestAssetsPath.govestFont,
@@ -339,7 +340,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         width: 50.sp,
                                       ),
                                       Text(
-                                        "120",
+                                        GoVestText.oneTwenty,
                                         style: TextStyle(
                                           color: whiteText,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -357,7 +358,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        "Per unit",
+                                        GoVestText.perUnit,
                                         style: TextStyle(
                                           fontSize: 8.sp,
                                           fontWeight: FontWeight.w400,
@@ -368,7 +369,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                         width: 57.sp,
                                       ),
                                       Text(
-                                        "Available Unit",
+                                        GoVestText.availableUnit,
                                         style: TextStyle(
                                           fontSize: 8.sp,
                                           fontWeight: FontWeight.w400,
@@ -409,7 +410,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                 SizedBox(
                                   width: 125.sp,
                                   child: Text(
-                                    "Poultry Farm Investment",
+                                    GoVestText.poultry,
                                     style: TextStyle(
                                         fontSize: 16.sp,
                                         fontFamily: GoVestAssetsPath.govestFont,
@@ -428,12 +429,12 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                     ),
                                     children: [
                                       TextSpan(
-                                        text: "13%",
+                                        text: GoVestText.thirteenPercent,
                                         style:
                                             TextStyle(color: poisonousIceCream, fontFamily: GoVestAssetsPath.govestFont),
                                       ),
                                       TextSpan(
-                                        text: " returns in 3 months",
+                                        text: GoVestText.returns,
                                         style: TextStyle(
                                           color: whiteText,
                                           fontFamily: GoVestAssetsPath.govestFont,
@@ -454,7 +455,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                           width: 2.sp,
                                         ),
                                         Text(
-                                          "10,000",
+                                          GoVestText.tenKay,
                                           style: TextStyle(
                                               color: whiteText,
                                               fontFamily: GoVestAssetsPath.govestFont,
@@ -467,7 +468,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                       width: 50.sp,
                                     ),
                                     Text(
-                                      "300",
+                                      GoVestText.threeHundred,
                                       style: TextStyle(
                                         color: whiteText,
                                         fontFamily: GoVestAssetsPath.govestFont,
@@ -484,7 +485,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      "Per unit",
+                                      GoVestText.perUnit,
                                       style: TextStyle(
                                         fontSize: 8.sp,
                                         fontWeight: FontWeight.w400,
@@ -496,7 +497,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                       width: 49.sp,
                                     ),
                                     Text(
-                                      "Available Unit",
+                                      GoVestText.availableUnit,
                                       style: TextStyle(
                                         fontSize: 8.sp,
                                         fontWeight: FontWeight.w400,
@@ -516,7 +517,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                                       borderRadius: BorderRadius.circular(50.r)
                                     ),
                                     child: Center(
-                                      child: Text("SOLD OUT", style: TextStyle( fontSize: 6.sp, fontWeight: FontWeight.w700, color: glowingBrakeDisc, fontFamily: GoVestAssetsPath.govestFont,
+                                      child: Text(GoVestText.soldOut, style: TextStyle( fontSize: 6.sp, fontWeight: FontWeight.w700, color: glowingBrakeDisc, fontFamily: GoVestAssetsPath.govestFont,
                                     )),
                                     ),
                                   ),
@@ -546,7 +547,7 @@ class TotalInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Total Input",
+      GoVestText.totalInput,
       style: TextStyle(
         fontSize: 10.sp,
         fontFamily: GoVestAssetsPath.govestFont,

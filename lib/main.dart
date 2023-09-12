@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/onboarding/onboarding.dart';
 
 void main() => runApp(MyApp());
@@ -62,11 +63,11 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 children: [
                   TextSpan(
-                    text: "Go",
+                    text: GoVestText.go,
                     style: TextStyle(color: veteranBlue),
                   ),
                   TextSpan(
-                    text: "VEST",
+                    text: GoVestText.vest,
                     style: TextStyle(
                       color: springForth,
                     ),

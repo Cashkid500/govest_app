@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
 import '../constants/asset_path.dart';
@@ -40,7 +41,7 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                 Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Add Next of Kin',
+                    Text(GoVestText.addNextOfKin,
                     style: TextStyle(
                       fontFamily: GoVestAssetsPath.govestFont,
                       fontSize: 22.sp,
@@ -53,19 +54,19 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                 SizedBox(
                   height: 40.sp,
                 ),
-                NextofKinTextField(hint1: 'First Name'),
+                NextofKinTextField(hint1: GoVestText.firstName2),
                 SizedBox(
                   height: 20.sp,
                 ),
-                NextofKinTextField(hint1: 'Surname'),
+                NextofKinTextField(hint1: GoVestText.surname),
                   SizedBox(
                   height: 20.sp,
                 ),
-                NextofKinTextField(hint1: 'Phone Number'),
+                NextofKinTextField(hint1: GoVestText.phoneNumber2),
                   SizedBox(
                   height: 20.sp,
                 ),
-                NextofKinTextField(hint1: 'Email Address'),
+                NextofKinTextField(hint1: GoVestText.emailAddress2),
                   SizedBox(
                   height: 150.sp,
                 ),
@@ -78,7 +79,7 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                   borderRadius: BorderRadius.circular(8.r)
                 ),
                child: Center(
-                 child: Text('Add Next of Kin', 
+                 child: Text(GoVestText.addNextOfKin, 
                  style: TextStyle(
                   fontFamily: GoVestAssetsPath.govestFont,
                   fontSize: 14.sp,

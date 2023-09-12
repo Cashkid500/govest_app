@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
+import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
 import '../constants/asset_path.dart';
 
@@ -42,11 +43,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         children: [
                           TextSpan(
-                            text: "Go",
+                            text: GoVestText.go,
                             style: TextStyle(color: whiteText),
                           ),
                           TextSpan(
-                            text: "Vest",
+                            text: GoVestText.vestLowercase,
                             style: TextStyle(
                               color: springForth,
                             ),
@@ -64,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 left: 20.sp,
               ),
               child: Text(
-                "Welcome back,",
+                GoVestText.welcomeBack,
                 style: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 18.sp,
@@ -75,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Padding(
               padding: EdgeInsets.only(left: 20.sp),
               child: Text(
-                "Login to your Account",
+                GoVestText.login,
                 style: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 24.sp,
@@ -95,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: TextField(
               decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(10.sp),
-                    labelText: 'Email address',
+                    labelText: GoVestText.emailAddress,
                     labelStyle: TextStyle(
               fontFamily: GoVestAssetsPath.govestFont,
               fontSize: 16.sp,
@@ -117,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: TextField(
               decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(10.sp),
-                    labelText: 'Password',
+                    labelText: GoVestText.password,
                     labelStyle: TextStyle(
                     fontFamily: GoVestAssetsPath.govestFont,
                     fontSize: 16.sp,
@@ -131,7 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 5.sp,),
             Padding(
               padding: EdgeInsets.only(left: 20.sp),
-              child: Text("Forgot Password?", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w500, color: blackText),),
+              child: Text(GoVestText.forgotPassword, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w500, color: blackText),),
             ),
             SizedBox(height: 320.sp,),
             Padding(
@@ -148,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       decoration: BoxDecoration(
                   color: whiteText,
                   borderRadius: BorderRadius.circular(5.r)),
-                  child: Center(child: Text("SIGN ME IN", style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: hooloovooBlue),)),
+                  child: Center(child: Text(GoVestText.signMeIn, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: hooloovooBlue),)),
                 ),
               ),
             ),
@@ -164,11 +165,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             children: [
                               TextSpan(
-                                text: "New to GoVest? ",
+                                text: GoVestText.new2GoVest,
                                 style: TextStyle(color: whiteText),
                               ),
                               TextSpan(
-                                text: "Sign Up",
+                                text: GoVestText.signUp,
                                 style: TextStyle(
                                   color: blackText,
                                   fontSize: 12.sp,
