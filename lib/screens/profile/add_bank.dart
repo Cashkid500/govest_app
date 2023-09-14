@@ -89,7 +89,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                             filled: true,
                             fillColor: whiteText,
                             enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10.r),
+                              borderRadius: BorderRadius.circular(4.r),
                               borderSide:
                                   BorderSide(color: antiqueTin, width: 1.sp),
                             ),
