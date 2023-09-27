@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
+import 'package:govest_app/screens/investment/investment_package_grid.dart';
 import '../constants/asset_path.dart';
 
 
@@ -21,14 +22,20 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.only(left: 15.sp, right: 15.sp, top: 30.sp),
+            padding: EdgeInsets.only(left: 15.sp, right: 15.sp, top: 10.sp),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon( Icons.arrow_back_ios,color: hooloovooBlue,),
+                    GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  InvestmentPackageGridScreen()));
+                        },
+                    child: Icon( Icons.arrow_back_ios, color: hooloovooBlue,)),
                     SizedBox(
                       height: 15.sp,
                     ),

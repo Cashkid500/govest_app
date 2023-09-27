@@ -134,7 +134,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 ],
                               ),
                               SizedBox(
-                                width: 29.sp,
+                                width: 36.sp,
                               ),
                               Icon(
                                 Icons.chevron_right,
@@ -201,7 +201,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 ],
                               ),
                               SizedBox(
-                                width: 10.sp,
+                                width: 11.sp,
                               ),
                               Icon(
                                 Icons.chevron_right,
@@ -261,6 +261,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                   )
                                 ],
                               ),
+                              SizedBox(width: 5.sp,),
                               Icon(Icons.chevron_right,color: whiteText,),
                             ],
                           )

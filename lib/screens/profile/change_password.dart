@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
+import 'package:govest_app/screens/profile/profile_account.dart';
 import '../constants/asset_path.dart';
 import 'edit_profile.dart';
 
@@ -28,8 +29,14 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.chevron_left,size: 40.sp,color: whiteText,),
-                SizedBox(height: 20.sp,),
+                GestureDetector(
+                onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              ProfileAccountScreen()));
+                    },
+                child: Icon(Icons.arrow_back_ios, size: 25.sp, color: whiteText,)),
+                SizedBox(height: 30.sp,),
                 Center(
                     child: Text(
                   GoVestText.changePassword,

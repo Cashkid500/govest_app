@@ -128,8 +128,8 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                             ),
                             GestureDetector(
                               onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>SavingsTransactionsScreen())
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>SavingsTransactionsScreen())
               );
             },
                               child: Text(

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
+import 'package:govest_app/screens/signup/signup.dart';
 import '../constants/asset_path.dart';
 
 
@@ -30,9 +31,16 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.keyboard_arrow_left,
-                      color: whiteText,
+                    GestureDetector(
+                      onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  SignupScreen()));
+                        },
+                      child: Icon(
+                        Icons.keyboard_arrow_left,
+                        color: whiteText,
+                      ),
                     ),
                     RichText(
                       text: TextSpan(

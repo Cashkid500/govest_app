@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
+import 'package:govest_app/screens/investment/investment_package.dart';
 import 'package:govest_app/screens/safelock/safelock.dart';
 import '../constants/asset_path.dart';
 
@@ -17,7 +18,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-     String investment = "Expected Return";
+    String investment = "Expected Return";
     String Returnpath = "30% in 6 months";
     return Scaffold(
       body: SingleChildScrollView(
@@ -40,7 +41,12 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Icon(Icons.arrow_back_ios, color: whiteText,),
+                      GestureDetector(
+                      onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (BuildContext context) => InvestmentPackageScreen()));
+                          },
+                      child: Icon(Icons.arrow_back_ios, color: whiteText,)),
                       SizedBox(
                         height: 40.sp,
                       ),

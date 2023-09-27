@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
+import 'package:govest_app/screens/profile/profile_account.dart';
 import '../constants/asset_path.dart';
 
 class EditProfileScreen extends StatefulWidget {
@@ -24,10 +25,14 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           child: Padding(
             padding: EdgeInsets.only(left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.chevron_left,size: 40,color: whiteText),
+                GestureDetector(
+                onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => ProfileAccountScreen()));
+                    },
+                child: Icon(Icons.arrow_back_ios, size: 25.sp, color: whiteText)),
                 SizedBox(height: 10.sp,),
                 Center(child: Text(GoVestText.editProfile, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: whiteText),)),
                 SizedBox(height: 10.sp,),

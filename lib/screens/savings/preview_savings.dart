@@ -55,7 +55,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
               SizedBox(
                 height: 20.sp,
               ),
-             Container(
+            Container(
                 height: 76.sp,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
@@ -102,16 +102,16 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 ),
               ),
             SizedBox(height: 30.sp,),
-             Text(GoVestText.preferred, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
-             SizedBox(height: 20.sp),
+            Text(GoVestText.preferred, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
+            SizedBox(height: 20.sp),
             Text(GoVestText.threeKay, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: blackText),),
             SizedBox(height: 20.sp,
-             child: Divider(
+            child: Divider(
               thickness: 1.sp,
               color: blackText,
-             ),),
-             SizedBox(height: 25.sp,),
-             Row(
+            ),),
+            SizedBox(height: 25.sp,),
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(GoVestText.startDate, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
@@ -120,9 +120,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   child: Text(GoVestText.withdrawalDate, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 12.sp, color: spanishGrey),),
                 )
               ],
-             ),
-             SizedBox(height: 15.sp,),
-             Row(
+            ),
+            SizedBox(height: 15.sp,),
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(GoVestText.sep, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
@@ -130,9 +130,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                 Text(GoVestText.dec, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, fontSize: 16.sp, color: Color(0xff000000)),),
                 Icon(Icons.calendar_today, color: spanishGrey,),
               ],
-             ),
-             SizedBox(height: 15.sp,),
-             Row(
+            ),
+            SizedBox(height: 15.sp,),
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
@@ -151,9 +151,9 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                   ),
                 ),
               ],
-             ),
-             SizedBox(height: 5.sp,),
-             RichText(
+            ),
+            SizedBox(height: 5.sp,),
+            RichText(
             text: TextSpan(
               children: <TextSpan>[
                 TextSpan(
@@ -247,7 +247,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
                     height: 20.sp,
                     decoration: BoxDecoration(
                       color: hooloovooBlue,
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.r),
                     ),
                     child: Switch(
                       value: _switchValue,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/login/login.dart';
+import 'package:govest_app/screens/onboarding/onboarding.dart';
 import '../constants/asset_path.dart';
 import '../constants/color_constants.dart';
 
@@ -28,9 +29,16 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.keyboard_arrow_left,
-                      color: whiteText,
+                    GestureDetector(
+                      onTap: () {
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) => OnboardingScreen())
+              );
+            },
+                      child: Icon(
+                        Icons.keyboard_arrow_left,
+                        color: whiteText,
+                      ),
                     ),
                     RichText(
                       text: TextSpan(
@@ -211,9 +219,9 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 SizedBox(height: 20.sp,),
                 GestureDetector(
-                   onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>LoginScreen())
+                  onTap: () {
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>LoginScreen())
               );
             },
                   child: Container(

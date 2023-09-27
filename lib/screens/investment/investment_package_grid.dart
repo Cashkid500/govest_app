@@ -3,9 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/dashboard/dashboard.dart';
+import 'package:govest_app/screens/login/login.dart';
 import 'package:govest_app/screens/profile/profile_account.dart';
 import 'package:govest_app/screens/profile/setup_kyc.dart';
 import 'package:govest_app/screens/profile/transaction_history.dart';
+import 'package:govest_app/screens/signup/signup.dart';
 import '../constants/asset_path.dart';
 import '../profile/add_bank.dart';
 
@@ -83,8 +85,8 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                     SizedBox(width: 10.sp,),
                     GestureDetector(
                       onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>DashboardScreen())
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>DashboardScreen())
               );
             },
                       child: Text(GoVestText.dashboard,
@@ -109,8 +111,8 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                     SizedBox(width: 10.sp,),
                     GestureDetector(
                         onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>ProfileAccountScreen())
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>ProfileAccountScreen())
               );
               },
                       child: Text(GoVestText.profileAccount,
@@ -136,7 +138,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                     GestureDetector(
                     onTap: () {
                     Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>TransactionHistoryScreen())
+                  MaterialPageRoute(builder: (BuildContext context) =>TransactionHistoryScreen())
                   );
                   },
                       child: Text(GoVestText.transactionHistory,
@@ -161,8 +163,8 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                     SizedBox(width: 10.sp,),
                     GestureDetector(
                       onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>AddBankScreen())
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>AddBankScreen())
                   );
                   },
                       child: Text(GoVestText.bankDebitCard,
@@ -187,8 +189,8 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                     SizedBox(width: 10.sp,),
                     GestureDetector(
                       onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>SetupKYCScreen())
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>SetupKYCScreen())
               );
               },
                       child: Text(GoVestText.setupKYC,
@@ -246,26 +248,32 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 children: [
                   Padding(
                     padding: EdgeInsets.only(right: 20.sp),
-                    child: Container(
-                      height: 68.sp,
-                      width: 149.sp,
-                      decoration: BoxDecoration(
-                        color: whiteText,
-                        borderRadius: BorderRadius.circular(7.r),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(GoVestText.logout,
-                              style: TextStyle(
-                                fontSize: 20.sp,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: GoVestAssetsPath.govestFont,
-                                color: hooloovooBlue,
-                              ),),
-                              Image.asset(GoVestAssetsPath.logout),
-                        ],
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => LoginScreen()));
+                      },
+                      child: Container(
+                        height: 68.sp,
+                        width: 149.sp,
+                        decoration: BoxDecoration(
+                          color: whiteText,
+                          borderRadius: BorderRadius.circular(7.r),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(GoVestText.logout,
+                                style: TextStyle(
+                                  fontSize: 20.sp,
+                                  fontWeight: FontWeight.w700,
+                                  fontFamily: GoVestAssetsPath.govestFont,
+                                  color: hooloovooBlue,
+                                ),),
+                                Image.asset(GoVestAssetsPath.logout),
+                          ],
+                        ),
                       ),
                     ),
                   )

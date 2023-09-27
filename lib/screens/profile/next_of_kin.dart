@@ -4,6 +4,7 @@ import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
+import 'package:govest_app/screens/profile/profile_account.dart';
 import '../constants/asset_path.dart';
 import '../login/login.dart';
 import 'transaction_history.dart';
@@ -23,14 +24,14 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding:  EdgeInsets.only(left:15.sp, right: 15.sp, top: 40.sp),
+            padding:  EdgeInsets.only(left: 15.sp, right: 15.sp, top: 20.sp),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (BuildContext context)=>TransactionHistoryScreen())
+                      MaterialPageRoute(builder: (BuildContext context)=> ProfileAccountScreen())
                     );
                   },
                   child: Icon(
@@ -38,18 +39,16 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                     color: hooloovooBlue,
                   ),
                 ),
-                Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(GoVestText.addNextOfKin,
-                    style: TextStyle(
-                      fontFamily: GoVestAssetsPath.govestFont,
-                      fontSize: 22.sp,
-                      fontWeight: FontWeight.w700,
-                      color: hooloovooBlue,
-                    ),
-                    )
-                  ],
+                SizedBox(height: 20.sp,),
+                Center(
+                  child: Text(GoVestText.addNextOfKin,
+                  style: TextStyle(
+                    fontFamily: GoVestAssetsPath.govestFont,
+                    fontSize: 22.sp,
+                    fontWeight: FontWeight.w700,
+                    color: hooloovooBlue,
+                  ),
+                  ),
                 ),
                 SizedBox(
                   height: 40.sp,

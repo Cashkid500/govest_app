@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
+import 'package:govest_app/screens/investment/investment_package_grid.dart';
 import '../constants/asset_path.dart';
 import '../constants/color_constants.dart';
 
@@ -143,7 +144,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                   borderRadius: BorderRadius.circular(4.r)
                               ),
                               child: Center(child: Text(GoVestText.verifyAccount, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: whiteText),)),
-                             ),
+                            ),
                             ],
                   ),
                 ),
@@ -169,10 +170,14 @@ class _AddBankScreenState extends State<AddBankScreen> {
             padding: EdgeInsets.only(
                 left: 20.sp, top: 40.sp, right: 20.sp, bottom: 20.sp),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.chevron_left, color: whiteText, size: 30.sp),
+                GestureDetector(
+                onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => InvestmentPackageGridScreen()));
+                    },
+                child: Icon(Icons.arrow_back_ios, color: whiteText, size: 25.sp)),
                 SizedBox(
                   height: 20.sp,
                 ),

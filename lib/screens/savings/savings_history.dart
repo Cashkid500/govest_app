@@ -13,10 +13,10 @@ class SavingsHistoryScreen extends StatefulWidget {
 }
 
 class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
+  bool _switchValue = false;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    bool _switchFunction = false;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -31,12 +31,10 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                 padding: EdgeInsets.only(
                     right: 20.sp, left: 20.sp, top: 40.sp, bottom: 20.sp),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Icon(
                           Icons.close,
@@ -69,7 +67,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                           color: whiteText),
                     ),
                     SizedBox(
-                      height: 25,
+                      height: 25.sp,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -152,10 +150,10 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                             borderRadius: BorderRadius.circular(8.r),
                           ),
                           child: Switch(
-                            value: _switchFunction,
+                            value: _switchValue,
                             onChanged: (value) {
                               setState(() {
-                                _switchFunction = value;
+                                _switchValue = value;
                               });
                             },
                           ),
