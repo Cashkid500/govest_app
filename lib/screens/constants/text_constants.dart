@@ -187,6 +187,11 @@ class GoVestText {
   static const String fiftyKay = '#50,000.00';
   static const String fishFarming = 'Invest in Fish farming';
   static const String twoFiftyKay = '#250,000.00';
+  static const String proceed2 = 'Do you want to proceed?';
+  static const String authorizeText =
+      "I authorize GoVEST to safelock NGN200,000 immediately and return it in full on Wednesday.";
+  static const String cancel = 'CANCEL';
+  static const String confirm = 'CONFIRM';
 
 // Referral Text
   static const String tenPercent = "10% ";
