@@ -43,15 +43,21 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               textAlign: TextAlign.center,),
               SizedBox(height: 90.sp,),
               Center(
-                child: Container(
-                  height: 54.sp,
-                  width: 330.sp,
-                  decoration: BoxDecoration(
-                    color: hooloovooBlue,
-                    borderRadius: BorderRadius.circular(82.r),
-                  ),
-                  child: Center(
-                    child: Text(GoVestText.getStarted, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => SignupScreen()));
+                  },
+                  child: Container(
+                    height: 54.sp,
+                    width: 330.sp,
+                    decoration: BoxDecoration(
+                      color: hooloovooBlue,
+                      borderRadius: BorderRadius.circular(82.r),
+                    ),
+                    child: Center(
+                      child: Text(GoVestText.getStarted, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w700, color: whiteText),
+                      ),
                     ),
                   ),
                 ),
