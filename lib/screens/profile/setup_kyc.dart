@@ -136,15 +136,20 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                         ),
                       ),
                       SizedBox(height: 36.sp),
-                      Container(
-                              height: 60.sp,
-                              width: 300.sp,
-                              decoration: BoxDecoration(
-                              color: hooloovooBlue,
-                              borderRadius: BorderRadius.circular(10.r)
+                      GestureDetector(
+                        onTap: () {
+                      _showOrderDialog(context);
+                        },
+                        child: Container(
+                                height: 60.sp,
+                                width: 300.sp,
+                                decoration: BoxDecoration(
+                                color: hooloovooBlue,
+                                borderRadius: BorderRadius.circular(10.r)
+                                ),
+                                child: Center(child: Text(GoVestText.verifyBVN2, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
                               ),
-                              child: Center(child: Text(GoVestText.verifyBVN2, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: Color(0xffffffff)),)),
-                            ),
+                      ),
                         ],
                   ),
                 ),
@@ -292,6 +297,94 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                 ],
             ),
           ),
-        ));
+        )
+      );
+  }
+
+
+  void _showOrderDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(
+            GoVestText.correctBVN,
+            style: TextStyle(
+              fontFamily: GoVestAssetsPath.govestFont,
+              fontSize: 22.sp,
+              fontWeight: FontWeight.w700,
+              color: blackText,
+            ),
+          ),
+          content: Container(
+            height: 150.sp,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  GoVestText.bvnConfirmation,
+                  style: TextStyle(
+                    fontFamily: GoVestAssetsPath.govestFont,
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w400,
+                    color: blackText,
+                  ),
+                ),
+                SizedBox(
+                  height: 20.sp,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Container(
+                      height: 50.sp,
+                      width: 100.sp,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // Add your action for Cancel here
+                          Navigator.of(context).pop();
+                        },
+                        child: Text(
+                          GoVestText.cancel,
+                          style: TextStyle(
+                            fontFamily: GoVestAssetsPath.fontsPath,
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          primary: hooloovooBlue,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 50.sp,
+                      width: 100.sp,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // Add your action for Order Now here
+                          Navigator.of(context).pop();
+                        },
+                        child: Text(
+                          GoVestText.confirm,
+                          style: TextStyle(
+                            fontFamily: GoVestAssetsPath.fontsPath,
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          primary: springForth,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
   }
 }

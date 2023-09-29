@@ -192,6 +192,9 @@ class GoVestText {
       "I authorize GoVEST to safelock NGN200,000 immediately and return it in full on Wednesday.";
   static const String cancel = 'CANCEL';
   static const String confirm = 'CONFIRM';
+  static const String correctBVN = "Correct BVN";
+  static const String bvnConfirmation =
+      "To confirm this is your BVN,  you will receive an OTP to the number tied to your BVN and provide it in the next screen.";
 
 // Referral Text
   static const String tenPercent = "10% ";

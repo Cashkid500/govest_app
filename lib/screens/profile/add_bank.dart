@@ -494,9 +494,9 @@ class _AddBankScreenState extends State<AddBankScreen> {
               ],
             ),
           ),
-        ));
-  }
-// }
+        )
+      );
+    }
 
 void _showOrderDialog(BuildContext context) {
     showDialog(
