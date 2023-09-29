@@ -147,8 +147,8 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: EdgeInsets.only(left: 20.sp),
               child: GestureDetector(
                 onTap: () {
-                   Navigator.of(context).push(
-                   MaterialPageRoute(builder: (BuildContext context) =>InvestmentPackageGridScreen())
+                  Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) =>InvestmentPackageGridScreen())
               );
             },
                 child: Container(
@@ -163,29 +163,35 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 20.sp,),
                 Center(
-                  child: RichText(
-                    text: TextSpan(
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12.sp,
-                              fontFamily: GoVestAssetsPath.govestFont,
-                              height: 1.8.sp,
-                            ),
-                            children: [
-                              TextSpan(
-                                text: GoVestText.new2GoVest,
-                                style: TextStyle(color: whiteText),
+                  child: GestureDetector(
+                    onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => SignupScreen()));
+                  },
+                    child: RichText(
+                      text: TextSpan(
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 12.sp,
+                                fontFamily: GoVestAssetsPath.govestFont,
+                                height: 1.8.sp,
                               ),
-                              TextSpan(
-                                text: GoVestText.signUp,
-                                style: TextStyle(
-                                  color: blackText,
-                                  fontSize: 12.sp,
-                                  fontWeight: FontWeight.w600,
+                              children: [
+                                TextSpan(
+                                  text: GoVestText.new2GoVest,
+                                  style: TextStyle(color: whiteText),
                                 ),
-                              ),
-                            ],
-                          ),
+                                TextSpan(
+                                  text: GoVestText.signUp,
+                                  style: TextStyle(
+                                    color: blackText,
+                                    fontSize: 12.sp,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                    ),
                   ),
                 )
           ]

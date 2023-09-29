@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
+import 'package:govest_app/screens/login/login.dart';
 import 'package:govest_app/screens/signup/signup.dart';
 import '../constants/asset_path.dart';
 
@@ -28,7 +29,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
-                child: Text(GoVestText.skip, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: hooloovooBlue),),
+                child: GestureDetector(
+                onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => SignupScreen()));
+                    },
+                child: Text(GoVestText.skip, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: hooloovooBlue),)),
               ),
               SizedBox(height: 20.sp,),
               Center(child: Image.asset(GoVestAssetsPath.pageView1)),
@@ -55,17 +61,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       
           // Onboarding 2
           Container(
-             width: MediaQuery.of(context).size.width,
-             height: MediaQuery.of(context).size.height,
-             decoration: BoxDecoration(
-             color: hooloovooBlue,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            decoration: BoxDecoration(
+            color: hooloovooBlue,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Padding(
                   padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
-                  child: Text(GoVestText.skip, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: whiteText),),
+                  child: GestureDetector(
+                  onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => SignupScreen()));
+                      },
+                  child: Text(GoVestText.skip, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: whiteText),)),
                 ),
                 SizedBox(height: 20.sp,),
                 Center(child: Image.asset(GoVestAssetsPath.pageView2)),
@@ -104,7 +115,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top: 40.sp, right: 20.sp),
-                child: Text(GoVestText.skip, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: hooloovooBlue),),
+                child: GestureDetector(
+                onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => LoginScreen()));
+                    },
+                child: Text(GoVestText.skip, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 16.sp, fontWeight: FontWeight.w500, color: hooloovooBlue),)),
               ),
               SizedBox(height: 20.sp,),
               Center(child: Image.asset(GoVestAssetsPath.pageView3)),
