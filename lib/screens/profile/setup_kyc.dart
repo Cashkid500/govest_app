@@ -342,7 +342,9 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                       child: ElevatedButton(
                         onPressed: () {
                           // Add your action for Cancel here
-                          Navigator.of(context).pop();
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  SetupKYCScreen()));
                         },
                         child: Text(
                           GoVestText.cancel,
@@ -364,6 +366,58 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                         onPressed: () {
                           // Add your action for Order Now here
                           Navigator.of(context).pop();
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                title: Text(GoVestText.bvnVerification,
+                                style: TextStyle(
+                                  fontFamily: GoVestAssetsPath.govestFont,
+                                  fontSize: 18.sp,
+                                  fontWeight: FontWeight.w700,
+                                  color: hooloovooBlue,
+                                ),),
+                                content: Container(
+                                  height: 60.sp,
+                                  child: Text(GoVestText.bvnAuthorization,
+                                  style: TextStyle(
+                                  fontFamily: GoVestAssetsPath.govestFont,
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 13.sp,
+                                  color: scarabaeusSacer,
+                                  ),),
+                                ),
+                                actions: <Widget>[
+                                  Center(
+                                    child: Padding(
+                                      padding: EdgeInsets.only(bottom: 30.sp),
+                                      child: Container(
+                                        height: 40.sp,
+                                        width: 100.sp,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (BuildContext context) => SetupKYCScreen()));
+                                          },
+                                          child: Text(GoVestText.gracias, 
+                                          style: TextStyle(
+                                            fontFamily: GoVestAssetsPath.fontsPath,
+                                            fontSize: 12.sp,
+                                            fontWeight: FontWeight.w700,
+                                            color: whiteText,
+                                          ),),
+                                          style: ElevatedButton.styleFrom(
+                                            primary: springForth,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
                         },
                         child: Text(
                           GoVestText.confirm,
