@@ -195,6 +195,10 @@ class GoVestText {
   static const String correctBVN = "Correct BVN";
   static const String bvnConfirmation =
       "To confirm this is your BVN,  you will receive an OTP to the number tied to your BVN and provide it in the next screen.";
+  static const String bvnVerification = "BVN Verification Success";
+  static const String bvnAuthorization =
+      "I authorize GoVest to safelock NGN200,000 immediately and return it in full on Wednesday.";
+  static const String gracias = "THANKS!";
 
 // Referral Text
   static const String tenPercent = "10% ";
