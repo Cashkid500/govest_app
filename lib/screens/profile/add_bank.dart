@@ -532,7 +532,9 @@ void _showOrderDialog(BuildContext context) {
                       child: ElevatedButton(
                         onPressed: () {
                           // Add your action for Cancel here
-                          Navigator.of(context).pop();
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  AddBankScreen()));
                         },
                         child: Text(GoVestText.cancel,
                         style: TextStyle(
