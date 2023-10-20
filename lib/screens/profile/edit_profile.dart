@@ -23,19 +23,34 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(color: hooloovooBlue),
           child: Padding(
-            padding: EdgeInsets.only(left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
+            padding: EdgeInsets.only(
+                left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GestureDetector(
-                onTap: () {
+                    onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => ProfileAccountScreen()));
+                          builder: (BuildContext context) =>
+                              ProfileAccountScreen()));
                     },
-                child: Icon(Icons.arrow_back_ios, size: 25.sp, color: whiteText)),
-                SizedBox(height: 10.sp,),
-                Center(child: Text(GoVestText.editProfile, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 24.sp, fontWeight: FontWeight.w700, color: whiteText),)),
-                SizedBox(height: 10.sp,),
+                    child: Icon(Icons.arrow_back_ios,
+                        size: 25.sp, color: whiteText)),
+                SizedBox(
+                  height: 10.sp,
+                ),
+                Center(
+                    child: Text(
+                  GoVestText.editProfile,
+                  style: TextStyle(
+                      fontFamily: GoVestAssetsPath.govestFont,
+                      fontSize: 24.sp,
+                      fontWeight: FontWeight.w700,
+                      color: whiteText),
+                )),
+                SizedBox(
+                  height: 10.sp,
+                ),
                 Center(child: Image.asset(GoVestAssetsPath.profileImage)),
                 SizedBox(
                   height: 10.sp,
@@ -50,7 +65,9 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         color: whiteText),
                   ),
                 ),
-                SizedBox(height: 10.sp,),
+                SizedBox(
+                  height: 10.sp,
+                ),
                 Center(
                   child: Container(
                     height: 34.sp,
@@ -72,8 +89,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                               color: hooloovooBlue,
                             ),
                           ),
-                          SizedBox(width: 10.sp,),
-                          Icon(Icons.edit, color: hooloovooBlue,),
+                          SizedBox(
+                            width: 10.sp,
+                          ),
+                          Icon(
+                            Icons.edit,
+                            color: hooloovooBlue,
+                          ),
                         ],
                       ),
                     ),
@@ -98,17 +120,28 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 SizedBox(
                   height: 70.sp,
                 ),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 42.sp,
-                  decoration: BoxDecoration(
-                    color: whiteText,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Center(
-                    child: Text(
-                      GoVestText.saveChanges,
-                      style: TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: hooloovooBlue),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            ProfileAccountScreen()));
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 42.sp,
+                    decoration: BoxDecoration(
+                      color: whiteText,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Center(
+                      child: Text(
+                        GoVestText.saveChanges,
+                        style: TextStyle(
+                            fontSize: 14.sp,
+                            fontFamily: GoVestAssetsPath.govestFont,
+                            fontWeight: FontWeight.w700,
+                            color: hooloovooBlue),
+                      ),
                     ),
                   ),
                 )
@@ -120,7 +153,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     );
   }
 }
-
 
 class EditTextfield extends StatelessWidget {
   const EditTextfield({
@@ -140,7 +172,8 @@ class EditTextfield extends StatelessWidget {
       child: TextField(
         decoration: InputDecoration(
           hintText: name,
-          hintStyle: TextStyle(color: spanishGrey, fontFamily: GoVestAssetsPath.govestFont),
+          hintStyle: TextStyle(
+              color: spanishGrey, fontFamily: GoVestAssetsPath.govestFont),
           border: InputBorder.none,
           contentPadding: EdgeInsets.all(10.sp),
         ),

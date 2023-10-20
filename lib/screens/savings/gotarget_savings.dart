@@ -15,14 +15,14 @@ class GoTargetSavingsScreen extends StatefulWidget {
 
 class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
   List<String> items = [
-    "Daily",
-    "Weekly",
-    "Monthly",
+    GoVestText.daily,
+    GoVestText.weekly,
+    GoVestText.monthly,
   ];
   int current = 0;
   List<String> items1 = [
-    "Autosave",
-    "Manual",
+    GoVestText.autosave,
+    GoVestText.manual,
   ];
   int current1 = 0;
 

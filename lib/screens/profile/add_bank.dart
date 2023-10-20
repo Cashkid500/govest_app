@@ -97,7 +97,9 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.sp,),
+                      SizedBox(
+                        height: 20.sp,
+                      ),
                       Text(
                         GoVestText.selectBank,
                         style: TextStyle(
@@ -138,19 +140,26 @@ class _AddBankScreenState extends State<AddBankScreen> {
                       SizedBox(height: 55.sp),
                       GestureDetector(
                         onTap: () {
-                      _showOrderDialog(context);
+                          _showOrderDialog(context);
                         },
                         child: Container(
-                                height: 60.sp,
-                                width: 300.sp,
-                                decoration: BoxDecoration(
-                                        color: hooloovooBlue,
-                                        borderRadius: BorderRadius.circular(4.r)
-                                ),
-                                child: Center(child: Text(GoVestText.verifyAccount, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w700, color: whiteText),)),
-                              ),
+                          height: 60.sp,
+                          width: 300.sp,
+                          decoration: BoxDecoration(
+                              color: hooloovooBlue,
+                              borderRadius: BorderRadius.circular(4.r)),
+                          child: Center(
+                              child: Text(
+                            GoVestText.verifyAccount,
+                            style: TextStyle(
+                                fontFamily: GoVestAssetsPath.govestFont,
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.w700,
+                                color: whiteText),
+                          )),
+                        ),
                       ),
-                            ],
+                    ],
                   ),
                 ),
                 onTap: () {
@@ -178,11 +187,13 @@ class _AddBankScreenState extends State<AddBankScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GestureDetector(
-                onTap: () {
+                    onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => InvestmentPackageGridScreen()));
+                          builder: (BuildContext context) =>
+                              InvestmentPackageGridScreen()));
                     },
-                child: Icon(Icons.arrow_back_ios, color: whiteText, size: 25.sp)),
+                    child: Icon(Icons.arrow_back_ios,
+                        color: whiteText, size: 25.sp)),
                 SizedBox(
                   height: 20.sp,
                 ),
@@ -203,7 +214,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                 ),
                 GestureDetector(
                   onTap: () {
-                  _showBottomSheet(context);
+                    _showBottomSheet(context);
                   },
                   child: Container(
                     height: 150.sp,
@@ -252,16 +263,14 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                     ),
                                     children: [
                                       TextSpan(
-                                        text:
-                                            GoVestText.funds,
+                                        text: GoVestText.funds,
                                         style: TextStyle(
                                           color: spanishGrey,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
                                       TextSpan(
-                                        text:
-                                            GoVestText.credited,
+                                        text: GoVestText.credited,
                                         style: TextStyle(
                                           color: spanishGrey,
                                           fontWeight: FontWeight.w700,
@@ -284,7 +293,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                 ),
                 GestureDetector(
                   onTap: () {
-                  _showBottomSheet(context);
+                    _showBottomSheet(context);
                   },
                   child: Container(
                     height: 150.sp,
@@ -384,8 +393,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           ),
                         ],
                       ),
-                      Icon(Icons.fingerprint,
-                          color: hooloovooBlue, size: 50.sp)
+                      Icon(Icons.fingerprint, color: hooloovooBlue, size: 50.sp)
                     ],
                   ),
                 ),
@@ -494,35 +502,40 @@ class _AddBankScreenState extends State<AddBankScreen> {
               ],
             ),
           ),
-        )
-      );
-    }
+        ));
+  }
 
-void _showOrderDialog(BuildContext context) {
+  void _showOrderDialog(BuildContext context) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(GoVestText.proceed2, 
-          style: TextStyle(
-            fontFamily: GoVestAssetsPath.govestFont,
-            fontSize: 22.sp,
-            fontWeight: FontWeight.w700,
-            color: blackText,
-          ),),
+          title: Text(
+            GoVestText.proceed2,
+            style: TextStyle(
+              fontFamily: GoVestAssetsPath.govestFont,
+              fontSize: 22.sp,
+              fontWeight: FontWeight.w700,
+              color: blackText,
+            ),
+          ),
           content: Container(
             height: 130.sp,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(GoVestText.authorizeText,
-                style: TextStyle(
-                  fontFamily: GoVestAssetsPath.govestFont,
-                  fontSize: 12.sp,
-                  fontWeight: FontWeight.w400,
-                  color: blackText,
-                ),),
-                SizedBox(height: 20.sp,),
+                Text(
+                  GoVestText.authorizeText,
+                  style: TextStyle(
+                    fontFamily: GoVestAssetsPath.govestFont,
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w400,
+                    color: blackText,
+                  ),
+                ),
+                SizedBox(
+                  height: 20.sp,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
@@ -536,12 +549,14 @@ void _showOrderDialog(BuildContext context) {
                               builder: (BuildContext context) =>
                                   AddBankScreen()));
                         },
-                        child: Text(GoVestText.cancel,
-                        style: TextStyle(
-                          fontFamily: GoVestAssetsPath.fontsPath,
-                          fontSize: 12.sp,
-                          fontWeight: FontWeight.w700,
-                        ),),
+                        child: Text(
+                          GoVestText.cancel,
+                          style: TextStyle(
+                            fontFamily: GoVestAssetsPath.fontsPath,
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
                         style: ElevatedButton.styleFrom(
                           primary: hooloovooBlue,
                         ),
@@ -555,15 +570,16 @@ void _showOrderDialog(BuildContext context) {
                           // Add your action for Order Now here
                           Navigator.of(context).pop();
                         },
-                        child: Text(GoVestText.confirm,
-                        style: TextStyle(
-                          fontFamily: GoVestAssetsPath.fontsPath,
+                        child: Text(
+                          GoVestText.confirm,
+                          style: TextStyle(
+                            fontFamily: GoVestAssetsPath.fontsPath,
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w700,
-                        ),),
+                          ),
+                        ),
                         style: ElevatedButton.styleFrom(
-                          primary:
-                              springForth,
+                          primary: springForth,
                         ),
                       ),
                     ),
@@ -576,4 +592,4 @@ void _showOrderDialog(BuildContext context) {
       },
     );
   }
-  }
+}

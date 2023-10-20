@@ -24,30 +24,33 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding:  EdgeInsets.only(left: 15.sp, right: 15.sp, top: 20.sp),
+            padding: EdgeInsets.only(left: 15.sp, right: 15.sp, top: 20.sp),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (BuildContext context)=> ProfileAccountScreen())
-                    );
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            ProfileAccountScreen()));
                   },
                   child: Icon(
                     Icons.arrow_back_ios,
                     color: hooloovooBlue,
                   ),
                 ),
-                SizedBox(height: 20.sp,),
+                SizedBox(
+                  height: 20.sp,
+                ),
                 Center(
-                  child: Text(GoVestText.addNextOfKin,
-                  style: TextStyle(
-                    fontFamily: GoVestAssetsPath.govestFont,
-                    fontSize: 22.sp,
-                    fontWeight: FontWeight.w700,
-                    color: hooloovooBlue,
-                  ),
+                  child: Text(
+                    GoVestText.addNextOfKin,
+                    style: TextStyle(
+                      fontFamily: GoVestAssetsPath.govestFont,
+                      fontSize: 22.sp,
+                      fontWeight: FontWeight.w700,
+                      color: hooloovooBlue,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -58,37 +61,43 @@ class _NextOfKinScreenState extends State<NextOfKinScreen> {
                   height: 20.sp,
                 ),
                 NextofKinTextField(hint1: GoVestText.surname),
-                  SizedBox(
+                SizedBox(
                   height: 20.sp,
                 ),
                 NextofKinTextField(hint1: GoVestText.phoneNumber2),
-                  SizedBox(
+                SizedBox(
                   height: 20.sp,
                 ),
                 NextofKinTextField(hint1: GoVestText.emailAddress2),
-                  SizedBox(
+                SizedBox(
                   height: 150.sp,
                 ),
-              Center(
-               child: Container(
-                height: 45.sp,
-                width: 320.sp,
-                decoration: BoxDecoration(
-                  color: hooloovooBlue,
-                  borderRadius: BorderRadius.circular(8.r)
-                ),
-               child: Center(
-                 child: Text(GoVestText.addNextOfKin, 
-                 style: TextStyle(
-                  fontFamily: GoVestAssetsPath.govestFont,
-                  fontSize: 14.sp,
-                  fontWeight: FontWeight.w700,
-                  color: whiteText
-                 ),
-                 ),
-               ),
-               ),
-             )
+                Center(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              ProfileAccountScreen()));
+                    },
+                    child: Container(
+                      height: 45.sp,
+                      width: 320.sp,
+                      decoration: BoxDecoration(
+                          color: hooloovooBlue,
+                          borderRadius: BorderRadius.circular(8.r)),
+                      child: Center(
+                        child: Text(
+                          GoVestText.addNextOfKin,
+                          style: TextStyle(
+                              fontFamily: GoVestAssetsPath.govestFont,
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w700,
+                              color: whiteText),
+                        ),
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
@@ -112,27 +121,25 @@ class NextofKinTextField extends StatelessWidget {
       child: SizedBox(
         width: 350.sp,
         child: TextField(
-            keyboardType: TextInputType.multiline,
-            decoration: InputDecoration(
-              contentPadding:
-              EdgeInsets.symmetric(horizontal: 20.sp, vertical: 25.sp),
-              isCollapsed: true,
-              labelText: hint1,
-              labelStyle: TextStyle(
-              color: widowmaker,
-              fontSize: 14.sp,
-              fontWeight: FontWeight.w500,
-              fontFamily: GoVestAssetsPath.govestFont),
-              filled: true,
-              fillColor: whiteText,
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                borderSide: BorderSide(
-                  color: widowmaker,width: 1.3
-                ),
-              ),
+          keyboardType: TextInputType.multiline,
+          decoration: InputDecoration(
+            contentPadding:
+                EdgeInsets.symmetric(horizontal: 20.sp, vertical: 25.sp),
+            isCollapsed: true,
+            labelText: hint1,
+            labelStyle: TextStyle(
+                color: widowmaker,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w500,
+                fontFamily: GoVestAssetsPath.govestFont),
+            filled: true,
+            fillColor: whiteText,
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: widowmaker, width: 1.3),
             ),
           ),
+        ),
       ),
     );
   }

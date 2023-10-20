@@ -6,20 +6,20 @@ import 'package:govest_app/screens/investment/investment_package.dart';
 import 'package:govest_app/screens/safelock/safelock.dart';
 import '../constants/asset_path.dart';
 
-
 class InvestmentDetailsScreen extends StatefulWidget {
   const InvestmentDetailsScreen({Key? key}) : super(key: key);
 
   @override
-  State<InvestmentDetailsScreen> createState() => _InvestmentDetailsScreenState();
+  State<InvestmentDetailsScreen> createState() =>
+      _InvestmentDetailsScreenState();
 }
 
 class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    String investment = "Expected Return";
-    String Returnpath = "30% in 6 months";
+    String investment = GoVestText.expectedReturn;
+    String Returnpath = GoVestText.thirtyPercent;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -29,24 +29,29 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                 height: 375.sp,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                  image: AssetImage(GoVestAssetsPath.cashew),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
+                    image: AssetImage(GoVestAssetsPath.cashew),
+                    fit: BoxFit.cover,
+                    colorFilter: ColorFilter.mode(
                         veteranBlue.withOpacity(0.6), BlendMode.srcOver),
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.only(left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
+                  padding: EdgeInsets.only(
+                      left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       GestureDetector(
-                      onTap: () {
+                          onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) => InvestmentPackageScreen()));
+                                builder: (BuildContext context) =>
+                                    InvestmentPackageScreen()));
                           },
-                      child: Icon(Icons.arrow_back_ios, color: whiteText,)),
+                          child: Icon(
+                            Icons.arrow_back_ios,
+                            color: whiteText,
+                          )),
                       SizedBox(
                         height: 40.sp,
                       ),
@@ -76,7 +81,9 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           )
                         ],
                       ),
-                      SizedBox(height: 5.sp,),
+                      SizedBox(
+                        height: 5.sp,
+                      ),
                       Padding(
                         padding: EdgeInsets.only(left: 20.sp),
                         child: Text(
@@ -116,7 +123,9 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 20.sp,),
+                        padding: EdgeInsets.only(
+                          left: 20.sp,
+                        ),
                         child: Container(
                           decoration: BoxDecoration(
                               color: whiteText,
@@ -135,7 +144,9 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.sp,),
+                      SizedBox(
+                        height: 20.sp,
+                      ),
                       Padding(
                         padding: EdgeInsets.only(left: 20.sp, top: 5.sp),
                         child: Row(
@@ -192,7 +203,8 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                   ),
                 )),
             Padding(
-              padding: EdgeInsets.only(right: 40.sp, top: 20.sp, left: 40.sp, bottom: 20.sp),
+              padding: EdgeInsets.only(
+                  right: 40.sp, top: 20.sp, left: 40.sp, bottom: 20.sp),
               child: Column(
                 children: [
                   Row(
@@ -306,10 +318,9 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                 Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>SafelockScreen())
-            );
-          },
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => SafelockScreen()));
+                    },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       height: 50.sp,

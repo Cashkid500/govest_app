@@ -15,10 +15,10 @@ class InvestmentPackageScreen extends StatefulWidget {
 
 class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
   List<String> items = [
-  "RealVest",
-  "AgroVest",
-  "ManuVest",
-  "HalalVest",
+  GoVestText.realVest,
+  GoVestText.agroVest,
+  GoVestText.manuVest,
+  GoVestText.halalVest,
   ];
   int current = 0;
   @override

@@ -95,7 +95,9 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(width: 10.sp,),
+                          SizedBox(
+                            width: 10.sp,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -104,11 +106,12 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   GestureDetector(
-                                  onTap: () {
-                                  Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (BuildContext context) =>EditProfileScreen())
-                                  );
-                                  },
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  EditProfileScreen()));
+                                    },
                                     child: Text(
                                       GoVestText.editProfile,
                                       style: TextStyle(
@@ -173,11 +176,12 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   GestureDetector(
-                                  onTap: () {
-                                  Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (BuildContext context) =>NextOfKinScreen())
-                                  );
-                                  },
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  NextOfKinScreen()));
+                                    },
                                     child: Text(
                                       GoVestText.nextOfkinUpdate,
                                       style: TextStyle(
@@ -261,8 +265,13 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                   )
                                 ],
                               ),
-                              SizedBox(width: 5.sp,),
-                              Icon(Icons.chevron_right,color: whiteText,),
+                              SizedBox(
+                                width: 5.sp,
+                              ),
+                              Icon(
+                                Icons.chevron_right,
+                                color: whiteText,
+                              ),
                             ],
                           )
                         ],
@@ -330,11 +339,12 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     height: 5.sp,
                                   ),
                                   GestureDetector(
-                                  onTap: () {
-                                  Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (BuildContext context) =>ChangePasswordScreen())
-                                  );
-                                  },
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  ChangePasswordScreen()));
+                                    },
                                     child: Text(
                                       GoVestText.changePassword2,
                                       style: TextStyle(
@@ -350,7 +360,10 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               SizedBox(
                                 width: 60.sp,
                               ),
-                              Icon(Icons.chevron_right,color: whiteText,),
+                              Icon(
+                                Icons.chevron_right,
+                                color: whiteText,
+                              ),
                             ],
                           )
                         ],
@@ -366,10 +379,16 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(0)),
                             child: Center(
-                              child: Icon(Icons.headset,size: 25,color: whiteText,),
+                              child: Icon(
+                                Icons.headset,
+                                size: 25,
+                                color: whiteText,
+                              ),
                             ),
                           ),
-                          SizedBox(width: 20.sp,),
+                          SizedBox(
+                            width: 20.sp,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -403,7 +422,10 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                               SizedBox(
                                 width: 20.sp,
                               ),
-                              Icon(Icons.chevron_right,color: whiteText,),
+                              Icon(
+                                Icons.chevron_right,
+                                color: whiteText,
+                              ),
                             ],
                           )
                         ],

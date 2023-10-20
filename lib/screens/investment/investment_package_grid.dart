@@ -11,16 +11,16 @@ import 'package:govest_app/screens/signup/signup.dart';
 import '../constants/asset_path.dart';
 import '../profile/add_bank.dart';
 
-
 class InvestmentPackageGridScreen extends StatefulWidget {
   const InvestmentPackageGridScreen({Key? key}) : super(key: key);
 
   @override
-  State<InvestmentPackageGridScreen> createState() => _InvestmentPackageGridScreenState();
+  State<InvestmentPackageGridScreen> createState() =>
+      _InvestmentPackageGridScreenState();
 }
 
-class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScreen> {
-
+class _InvestmentPackageGridScreenState
+    extends State<InvestmentPackageGridScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -28,17 +28,22 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
       backgroundColor: hooloovooBlue,
       body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(left: 15.sp, top: 50.sp),
-              child: Icon(Icons.close, color: whiteText,),
-            ),
-            SizedBox(height: 50.sp,),
-            Padding(
-              padding: EdgeInsets.only(left: 20.sp, right: 20.sp),
-              child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 15.sp, top: 50.sp),
+                child: Icon(
+                  Icons.close,
+                  color: whiteText,
+                ),
+              ),
+              SizedBox(
+                height: 50.sp,
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 20.sp, right: 20.sp),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
@@ -63,39 +68,79 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                         ),
                       ],
                     ),
-                    Image.asset(GoVestAssetsPath.profile, height: 80.sp,),
+                    Image.asset(
+                      GoVestAssetsPath.profile,
+                      height: 80.sp,
+                    ),
                   ],
                 ),
-            ),
-            SizedBox(
+              ),
+              SizedBox(
                 height: 50.sp,
               ),
               Padding(
                 padding: EdgeInsets.only(left: 20.sp),
                 child: Row(
                   children: [
-                    Text(GoVestText.go,
-                    style:TextStyle(
+                    Text(
+                      GoVestText.go,
+                      style: TextStyle(
+                          color: whiteText,
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w700),
+                    ),
+                    SizedBox(
+                      width: 10.sp,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                DashboardScreen()));
+                      },
+                      child: Text(
+                        GoVestText.dashboard,
+                        style: TextStyle(
+                          color: whiteText,
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20.sp,
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 20.sp),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.person,
                       color: whiteText,
-                      fontFamily: GoVestAssetsPath.govestFont,
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w700
-                    ) ,
                     ),
-                    SizedBox(width: 10.sp,),
+                    SizedBox(
+                      width: 10.sp,
+                    ),
                     GestureDetector(
                       onTap: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>DashboardScreen())
-              );
-            },
-                      child: Text(GoVestText.dashboard,
-                      style: TextStyle(
-                        color: whiteText,
-                        fontFamily: GoVestAssetsPath.govestFont,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w400,
-                      ),),
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                ProfileAccountScreen()));
+                      },
+                      child: Text(
+                        GoVestText.profileAccount,
+                        style: TextStyle(
+                          color: whiteText,
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -107,73 +152,61 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 padding: EdgeInsets.only(left: 20.sp),
                 child: Row(
                   children: [
-                    Icon(Icons.person, color: whiteText,),
-                    SizedBox(width: 10.sp,),
-                    GestureDetector(
-                        onTap: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>ProfileAccountScreen())
-              );
-              },
-                      child: Text(GoVestText.profileAccount,
-                      style: TextStyle(
-                        color: whiteText,
-                        fontFamily: GoVestAssetsPath.govestFont,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w400,
-                      ),),
+                    Icon(
+                      Icons.receipt_long,
+                      color: whiteText,
                     ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20.sp,
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 20.sp),
-                child: Row(
-                  children: [
-                    Icon(Icons.receipt_long, color: whiteText,),
-                    SizedBox(width: 10.sp,),
-                    GestureDetector(
-                    onTap: () {
-                    Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>TransactionHistoryScreen())
-                  );
-                  },
-                      child: Text(GoVestText.transactionHistory,
-                      style: TextStyle(
-                        color: whiteText,
-                        fontFamily: GoVestAssetsPath.govestFont,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w400,
-                      ),),
+                    SizedBox(
+                      width: 10.sp,
                     ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20.sp,
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 20.sp),
-                child: Row(
-                  children: [
-                    Icon(Icons.account_balance_wallet, color: whiteText,),
-                    SizedBox(width: 10.sp,),
                     GestureDetector(
                       onTap: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>AddBankScreen())
-                  );
-                  },
-                      child: Text(GoVestText.bankDebitCard,
-                      style: TextStyle(
-                        color: whiteText,
-                        fontFamily: GoVestAssetsPath.govestFont,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w400,
-                      ),),
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                TransactionHistoryScreen()));
+                      },
+                      child: Text(
+                        GoVestText.transactionHistory,
+                        style: TextStyle(
+                          color: whiteText,
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20.sp,
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 20.sp),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.account_balance_wallet,
+                      color: whiteText,
+                    ),
+                    SizedBox(
+                      width: 10.sp,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                AddBankScreen()));
+                      },
+                      child: Text(
+                        GoVestText.bankDebitCard,
+                        style: TextStyle(
+                          color: whiteText,
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -186,20 +219,24 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 child: Row(
                   children: [
                     Image.asset(GoVestAssetsPath.kyc),
-                    SizedBox(width: 10.sp,),
+                    SizedBox(
+                      width: 10.sp,
+                    ),
                     GestureDetector(
                       onTap: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>SetupKYCScreen())
-              );
-              },
-                      child: Text(GoVestText.setupKYC,
-                      style: TextStyle(
-                        color: whiteText,
-                        fontFamily: GoVestAssetsPath.govestFont,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w400,
-                      ),),
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                SetupKYCScreen()));
+                      },
+                      child: Text(
+                        GoVestText.setupKYC,
+                        style: TextStyle(
+                          color: whiteText,
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -211,15 +248,22 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 padding: EdgeInsets.only(left: 20.sp),
                 child: Row(
                   children: [
-                    Icon(Icons.info, color: whiteText,),
-                    SizedBox(width: 10.sp,),
-                    Text(GoVestText.aboutGoVest,
-                    style: TextStyle(
+                    Icon(
+                      Icons.info,
                       color: whiteText,
-                      fontFamily: GoVestAssetsPath.govestFont,
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w400,
-                    ),),
+                    ),
+                    SizedBox(
+                      width: 10.sp,
+                    ),
+                    Text(
+                      GoVestText.aboutGoVest,
+                      style: TextStyle(
+                        color: whiteText,
+                        fontFamily: GoVestAssetsPath.govestFont,
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -230,19 +274,28 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                 padding: EdgeInsets.only(left: 20.sp),
                 child: Row(
                   children: [
-                    Icon(Icons.headset_mic, color: whiteText,),
-                    SizedBox(width: 10.sp,),
-                    Text(GoVestText.customerCenter,
-                    style: TextStyle(
+                    Icon(
+                      Icons.headset_mic,
                       color: whiteText,
-                      fontFamily: GoVestAssetsPath.govestFont,
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w400,
-                    ),),
+                    ),
+                    SizedBox(
+                      width: 10.sp,
+                    ),
+                    Text(
+                      GoVestText.customerCenter,
+                      style: TextStyle(
+                        color: whiteText,
+                        fontFamily: GoVestAssetsPath.govestFont,
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
                   ],
                 ),
               ),
-              SizedBox(height: 60.sp,),
+              SizedBox(
+                height: 60.sp,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -264,14 +317,16 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(GoVestText.logout,
-                                style: TextStyle(
-                                  fontSize: 20.sp,
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: GoVestAssetsPath.govestFont,
-                                  color: hooloovooBlue,
-                                ),),
-                                Image.asset(GoVestAssetsPath.logout),
+                            Text(
+                              GoVestText.logout,
+                              style: TextStyle(
+                                fontSize: 20.sp,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: GoVestAssetsPath.govestFont,
+                                color: hooloovooBlue,
+                              ),
+                            ),
+                            Image.asset(GoVestAssetsPath.logout),
                           ],
                         ),
                       ),
@@ -279,8 +334,7 @@ class _InvestmentPackageGridScreenState extends State<InvestmentPackageGridScree
                   )
                 ],
               )
-          ]
-        ),
+            ]),
       ),
     );
   }

@@ -16,7 +16,6 @@ class SignupScreen extends StatefulWidget {
 class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
-    String phonepath = 'Phone number';
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: hooloovooBlue,
@@ -31,10 +30,10 @@ class _SignupScreenState extends State<SignupScreen> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) => OnboardingScreen())
-              );
-            },
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                OnboardingScreen()));
+                      },
                       child: Icon(
                         Icons.keyboard_arrow_left,
                         color: whiteText,
@@ -146,31 +145,40 @@ class _SignupScreenState extends State<SignupScreen> {
               height: 10.sp,
             ),
             TextField1(phonepath: GoVestText.phoneNumber),
-            SizedBox(height: 10.sp,),
+            SizedBox(
+              height: 10.sp,
+            ),
             TextField1(phonepath: GoVestText.emailAddress),
-            SizedBox(height: 10.sp,),
+            SizedBox(
+              height: 10.sp,
+            ),
             TextField1(phonepath: GoVestText.password),
-            SizedBox(height: 10.sp,),
+            SizedBox(
+              height: 10.sp,
+            ),
             TextField1(phonepath: GoVestText.confirmPassword),
-            SizedBox(height: 10.sp,),
+            SizedBox(
+              height: 10.sp,
+            ),
             Container(
               height: 50.sp,
               width: 340.sp,
-            decoration: BoxDecoration(
-            color: whiteText,
-            borderRadius: BorderRadius.circular(5.r)),
-        child: TextField(
-          decoration: InputDecoration(
-          contentPadding: EdgeInsets.all(10.sp),
-          labelText: GoVestText.referral,
-          labelStyle: TextStyle(
-            fontFamily: GoVestAssetsPath.govestFont,
-            fontSize: 16.sp,
-            fontWeight: FontWeight.w500,
-            color: weatheredStone,
-          ),
-          suffixIcon: Icon(Icons.loyalty, color: hooloovooBlue,)
-        )),
+              decoration: BoxDecoration(
+                  color: whiteText, borderRadius: BorderRadius.circular(5.r)),
+              child: TextField(
+                  decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(10.sp),
+                      labelText: GoVestText.referral,
+                      labelStyle: TextStyle(
+                        fontFamily: GoVestAssetsPath.govestFont,
+                        fontSize: 16.sp,
+                        fontWeight: FontWeight.w500,
+                        color: weatheredStone,
+                      ),
+                      suffixIcon: Icon(
+                        Icons.loyalty,
+                        color: hooloovooBlue,
+                      ))),
             ),
             SizedBox(
               height: 5.sp,
@@ -178,93 +186,111 @@ class _SignupScreenState extends State<SignupScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(Icons.error_outlined, color: whiteText, size: 15.sp,),
+                Icon(
+                  Icons.error_outlined,
+                  color: whiteText,
+                  size: 15.sp,
+                ),
                 Padding(
                   padding: EdgeInsets.only(right: 30.sp),
-                  child: Text(
-                    GoVestText.yourFriend, style: TextStyle(
-                      fontFamily: GoVestAssetsPath.govestFont, fontSize: 10.sp, fontWeight: FontWeight.w400, color: whiteText
-                    )
-                  ),
+                  child: Text(GoVestText.yourFriend,
+                      style: TextStyle(
+                          fontFamily: GoVestAssetsPath.govestFont,
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w400,
+                          color: whiteText)),
                 ),
               ],
             ),
-            SizedBox(height: 40.sp,),
-                SizedBox(
-                  width: 251.sp,
-                  child: RichText(
-                    text: TextSpan(
-                          style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 12.sp,
-                            fontFamily: GoVestAssetsPath.govestFont,
-                            height: 1.8.sp,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: GoVestText.bySigning,
-                              style: TextStyle(color: whiteText),
-                            ),
-                            TextSpan(
-                              text: GoVestText.terms,
-                              style: TextStyle(
-                                color: blackText,
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
+            SizedBox(
+              height: 40.sp,
+            ),
+            SizedBox(
+              width: 251.sp,
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 12.sp,
+                    fontFamily: GoVestAssetsPath.govestFont,
+                    height: 1.8.sp,
                   ),
+                  children: [
+                    TextSpan(
+                      text: GoVestText.bySigning,
+                      style: TextStyle(color: whiteText),
+                    ),
+                    TextSpan(
+                      text: GoVestText.terms,
+                      style: TextStyle(
+                        color: blackText,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
                 ),
-                SizedBox(height: 20.sp,),
-                GestureDetector(
-                  onTap: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>LoginScreen())
-              );
-            },
-                  child: Container(
-                          height: 50.sp,
-                          width: 340.sp,
-                          decoration: BoxDecoration(
-                          color: royalBlue,
-                          borderRadius: BorderRadius.circular(5.r),
-                          border: Border.all(color: whiteText)),
-                          child: Center(child: Text(GoVestText.family, style: TextStyle(fontFamily: GoVestAssetsPath.govestFont, fontSize: 14.sp, fontWeight: FontWeight.w800, color: whiteText),)),
-                  ),
-                ),
-                SizedBox(height: 20.sp,),
-                GestureDetector(
-                  onTap: () {
+              ),
+            ),
+            SizedBox(
+              height: 20.sp,
+            ),
+            GestureDetector(
+              onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => LoginScreen()));
               },
-                  child: RichText(
-                    text: TextSpan(
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12.sp,
-                              fontFamily: GoVestAssetsPath.govestFont,
-                              height: 1.8.sp,
-                            ),
-                            children: [
-                              TextSpan(
-                                text: GoVestText.already,
-                                style: TextStyle(color: whiteText),
-                              ),
-                              TextSpan(
-                                text: GoVestText.signIn,
-                                style: TextStyle(
-                                  color: blackText,
-                                  fontSize: 12.sp,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ],
-                          ),
+              child: Container(
+                height: 50.sp,
+                width: 340.sp,
+                decoration: BoxDecoration(
+                    color: royalBlue,
+                    borderRadius: BorderRadius.circular(5.r),
+                    border: Border.all(color: whiteText)),
+                child: Center(
+                    child: Text(
+                  GoVestText.family,
+                  style: TextStyle(
+                      fontFamily: GoVestAssetsPath.govestFont,
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w800,
+                      color: whiteText),
+                )),
+              ),
+            ),
+            SizedBox(
+              height: 20.sp,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => LoginScreen()));
+              },
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 12.sp,
+                    fontFamily: GoVestAssetsPath.govestFont,
+                    height: 1.8.sp,
                   ),
-                )
+                  children: [
+                    TextSpan(
+                      text: GoVestText.already,
+                      style: TextStyle(color: whiteText),
+                    ),
+                    TextSpan(
+                      text: GoVestText.signIn,
+                      style: TextStyle(
+                        color: blackText,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
@@ -286,8 +312,7 @@ class TextField1 extends StatelessWidget {
       height: 50.sp,
       width: 340.sp,
       decoration: BoxDecoration(
-          color: whiteText,
-          borderRadius: BorderRadius.circular(5.r)),
+          color: whiteText, borderRadius: BorderRadius.circular(5.r)),
       child: TextField(
           decoration: InputDecoration(
         contentPadding: EdgeInsets.all(10.sp),

@@ -17,8 +17,8 @@ class GoSaveScreen extends StatefulWidget {
 class _GoSaveScreenState extends State<GoSaveScreen> {
   bool _switchFunction = false;
   List<String> items1 = [
-  "Autosave",
-  "Manual",
+  GoVestText.autosave,
+  GoVestText.manual,
   ];
   int current1 = 0;
 

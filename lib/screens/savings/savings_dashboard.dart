@@ -18,9 +18,9 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    String Gotype = "Go Bank";
-    String Amount = "# 40,000";
-    String Interest = "6%p.a";
+    String Gotype = GoVestText.gobank;
+    String Amount = GoVestText.fortyKay;
+    String Interest = GoVestText.sixPercent;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

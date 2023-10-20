@@ -107,6 +107,12 @@ class GoVestText {
   static const String threeHundred = "300";
   static const String soldOut = "SOLD OUT";
   static const String totalInput = "Total Input";
+  static const String realVest = "RealVest";
+  static const String agroVest = "AgroVest";
+  static const String manuVest = "ManuVest";
+  static const String halalVest = "HalalVest";
+  static const String expectedReturn = "Expected Return";
+  static const String thirtyPercent = "30% in 6 months";
 
 // Profile Text
   static const String connectBank = "Connect your bank";
@@ -353,4 +359,12 @@ class GoVestText {
   static const String thirtyFivePercent = "35%";
   static const String schoolFee = "SCHOOL FEE";
   static const String goTargetSavings2 = "Go Target savings";
+  static const String autosave = "Autosave";
+  static const String manual = "Manual";
+  static const String daily = "Daily";
+  static const String weekly = "Weekly";
+  static const String monthly = "Monthly";
+  static const String gobank = "Go Bank";
+  static const String fortyKay = "# 40,000";
+  static const String sixPercent = "6%p.a";
 }

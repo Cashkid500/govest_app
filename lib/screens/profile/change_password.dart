@@ -14,6 +14,7 @@ class ChangePasswordScreen extends StatefulWidget {
 }
 
 class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
+  bool _isSecurePassword = true;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -24,19 +25,26 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(color: hooloovooBlue),
           child: Padding(
-            padding: EdgeInsets.only(left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
+            padding: EdgeInsets.only(
+                left: 20.sp, right: 20.sp, top: 40.sp, bottom: 20.sp),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GestureDetector(
-                onTap: () {
+                    onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
                               ProfileAccountScreen()));
                     },
-                child: Icon(Icons.arrow_back_ios, size: 25.sp, color: whiteText,)),
-                SizedBox(height: 30.sp,),
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      size: 25.sp,
+                      color: whiteText,
+                    )),
+                SizedBox(
+                  height: 30.sp,
+                ),
                 Center(
                     child: Text(
                   GoVestText.changePassword,
@@ -46,7 +54,9 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                       fontFamily: GoVestAssetsPath.govestFont,
                       color: whiteText),
                 )),
-                SizedBox(height: 10.sp,),
+                SizedBox(
+                  height: 10.sp,
+                ),
                 Center(
                   child: SizedBox(
                     width: 300.sp,
@@ -71,13 +81,27 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     border: Border.all(color: whiteText),
                   ),
                   child: TextField(
+                    obscureText: _isSecurePassword,
                     decoration: InputDecoration(
                         hintText: GoVestText.currentPassword,
-                        hintStyle: TextStyle(color: spanishGrey, fontFamily: GoVestAssetsPath.govestFont),
+                        hintStyle: TextStyle(
+                            color: spanishGrey,
+                            fontFamily: GoVestAssetsPath.govestFont),
                         contentPadding: EdgeInsets.all(10.sp),
                         border: InputBorder.none,
-                        suffixIcon: Icon(Icons.visibility_off,
-                            size: 20.sp, color: hooloovooBlue)),
+                        suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            _isSecurePassword = !_isSecurePassword;
+                          });
+                        },
+                        icon: _isSecurePassword
+                            ? Icon(Icons.visibility_off)
+                            : Icon(Icons.visibility),
+                        iconSize: 20.sp,
+                        color: hooloovooBlue,
+                      ),
+                            ),
                   ),
                 ),
                 SizedBox(
@@ -91,18 +115,28 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 SizedBox(
                   height: 90.sp,
                 ),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 42.sp,
-                  decoration: BoxDecoration(
-                    color: whiteText,
-                    borderRadius: BorderRadius.circular(8.r),
-                  ),
-                  child: Center(
-                    child: Text(
-                      GoVestText.changePassword,
-                      style:
-                          TextStyle(fontSize: 14.sp, fontFamily: GoVestAssetsPath.govestFont, fontWeight: FontWeight.w700, color: hooloovooBlue),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            ProfileAccountScreen()));
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 42.sp,
+                    decoration: BoxDecoration(
+                      color: whiteText,
+                      borderRadius: BorderRadius.circular(8.r),
+                    ),
+                    child: Center(
+                      child: Text(
+                        GoVestText.changePassword,
+                        style: TextStyle(
+                            fontSize: 14.sp,
+                            fontFamily: GoVestAssetsPath.govestFont,
+                            fontWeight: FontWeight.w700,
+                            color: hooloovooBlue),
+                      ),
                     ),
                   ),
                 )
