@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
-import '../constants/asset_path.dart';
-import 'investment_details.dart';
+import 'package:govest_app/screens/investment/investment_details.dart';
 
 
 class InvestmentPackageScreen extends StatefulWidget {
@@ -255,7 +255,7 @@ class _InvestmentPackageScreenState extends State<InvestmentPackageScreen> {
                   GestureDetector(
                     onTap: () {
                     Navigator.of(context).push(
-                    MaterialPageRoute(builder: (BuildContext context) =>InvestmentDetailsScreen())
+                    MaterialPageRoute(builder: (BuildContext context) =>const InvestmentDetailsScreen())
                     );
                     },
                   child: Container(

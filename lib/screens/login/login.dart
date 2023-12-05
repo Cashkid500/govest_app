@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
 import 'package:govest_app/screens/signup/signup.dart';
-import '../constants/asset_path.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       GestureDetector(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) =>
+                              builder: (BuildContext context) =>const
                                   SignupScreen()));
                         },
                         child: Icon(
@@ -175,7 +175,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) =>
+                        builder: (BuildContext context) =>const
                             InvestmentPackageGridScreen()));
                   },
                   child: Container(
@@ -203,7 +203,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => SignupScreen()));
+                        builder: (BuildContext context) =>const SignupScreen()));
                   },
                   child: RichText(
                     text: TextSpan(

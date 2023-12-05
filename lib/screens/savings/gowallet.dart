@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
-import 'package:govest_app/screens/profile/add_bank.dart';
-import '../constants/asset_path.dart';
 
 
 class GoWalletScreen extends StatefulWidget {
@@ -74,7 +73,8 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
              child: Divider(
               thickness: 1.sp,
               color: blackText,
-             ),),
+             ),
+             ),
              SizedBox(height: 5.sp,),
              Row(
               children: [
@@ -101,7 +101,7 @@ class _GoWalletScreenState extends State<GoWalletScreen> {
                     height: 20.sp,
                     decoration: BoxDecoration(
                       color: spanishGrey,
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.r),
                     ),
                     child: Switch(
                       value: _switchFunction,

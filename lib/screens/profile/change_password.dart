@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/profile/profile_account.dart';
-import '../constants/asset_path.dart';
 import 'edit_profile.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
@@ -34,14 +34,15 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
+                          builder: (BuildContext context) =>const
                               ProfileAccountScreen()));
                     },
                     child: Icon(
                       Icons.arrow_back_ios,
                       size: 25.sp,
                       color: whiteText,
-                    )),
+                    ),
+                ),
                 SizedBox(
                   height: 30.sp,
                 ),
@@ -118,7 +119,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) =>
+                        builder: (BuildContext context) =>const
                             ProfileAccountScreen()));
                   },
                   child: Container(

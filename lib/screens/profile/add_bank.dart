@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
+import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/investment/investment_package_grid.dart';
-import '../constants/asset_path.dart';
-import '../constants/color_constants.dart';
 
 class AddBankScreen extends StatefulWidget {
   const AddBankScreen({Key? key}) : super(key: key);
@@ -156,7 +156,8 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w700,
                                 color: whiteText),
-                          )),
+                          ),
+                        ),
                         ),
                       ),
                     ],
@@ -189,11 +190,12 @@ class _AddBankScreenState extends State<AddBankScreen> {
                 GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
+                          builder: (BuildContext context) =>const
                               InvestmentPackageGridScreen()));
                     },
                     child: Icon(Icons.arrow_back_ios,
-                        color: whiteText, size: 25.sp)),
+                        color: whiteText, size: 25.sp),
+                ),
                 SizedBox(
                   height: 20.sp,
                 ),
@@ -287,6 +289,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                     ),
                   ),
                 ),
+                
                 // Second Container
                 SizedBox(
                   height: 20.sp,

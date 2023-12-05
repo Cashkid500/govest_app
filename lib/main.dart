@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-            builder: (context) =>
+            builder: (context) => const
                 OnboardingScreen()), // Replace NextScreen with the screen you want to navigate to
       );
     });

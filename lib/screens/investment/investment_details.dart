@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/investment/investment_package.dart';
 import 'package:govest_app/screens/safelock/safelock.dart';
-import '../constants/asset_path.dart';
 
 class InvestmentDetailsScreen extends StatefulWidget {
   const InvestmentDetailsScreen({Key? key}) : super(key: key);
@@ -45,7 +45,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                       GestureDetector(
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) =>
+                                builder: (BuildContext context) =>const
                                     InvestmentPackageScreen()));
                           },
                           child: Icon(
@@ -319,7 +319,7 @@ class _InvestmentDetailsScreenState extends State<InvestmentDetailsScreen> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => SafelockScreen()));
+                          builder: (BuildContext context) =>const SafelockScreen()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,

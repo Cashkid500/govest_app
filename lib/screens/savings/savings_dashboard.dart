@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/savings_transactions.dart';
-import '../constants/asset_path.dart';
 
 
 class SavingsDashboardScreen extends StatefulWidget {
@@ -129,7 +129,7 @@ class _SavingsDashboardScreenState extends State<SavingsDashboardScreen> {
                             GestureDetector(
                               onTap: () {
                   Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) =>SavingsTransactionsScreen())
+                  MaterialPageRoute(builder: (BuildContext context) =>const SavingsTransactionsScreen())
               );
             },
                               child: Text(

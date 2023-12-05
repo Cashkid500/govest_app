@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/profile/change_password.dart';
 import 'package:govest_app/screens/profile/edit_profile.dart';
 import 'package:govest_app/screens/profile/next_of_kin.dart';
-import '../constants/asset_path.dart';
-import '../login/login.dart';
 
 class ProfileAccountScreen extends StatefulWidget {
   const ProfileAccountScreen({Key? key}) : super(key: key);
@@ -109,7 +108,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) =>
+                                              builder: (BuildContext context) =>const
                                                   EditProfileScreen()));
                                     },
                                     child: Text(
@@ -179,7 +178,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) =>
+                                              builder: (BuildContext context) =>const
                                                   NextOfKinScreen()));
                                     },
                                     child: Text(
@@ -342,7 +341,7 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) =>
+                                              builder: (BuildContext context) =>const
                                                   ChangePasswordScreen()));
                                     },
                                     child: Text(

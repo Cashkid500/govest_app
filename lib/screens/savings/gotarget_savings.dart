@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/preview_savings.dart';
-
-import '../constants/asset_path.dart';
 
 class GoTargetSavingsScreen extends StatefulWidget {
   const GoTargetSavingsScreen({Key? key}) : super(key: key);
@@ -275,7 +274,7 @@ class _GoTargetSavingsScreenState extends State<GoTargetSavingsScreen> {
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (BuildContext context) => PreviewSavingsScreen()));
+                      builder: (BuildContext context) =>const PreviewSavingsScreen()));
                 },
                 child: Container(
                   height: 60.sp,

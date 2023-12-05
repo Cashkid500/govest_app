@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/gosave.dart';
-import '../constants/asset_path.dart';
 
 
 class PreviewSavingsScreen extends StatefulWidget {
@@ -312,7 +312,7 @@ class _PreviewSavingsScreenState extends State<PreviewSavingsScreen> {
               GestureDetector(
                 onTap: () {
                  Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>GoSaveScreen())
+                 MaterialPageRoute(builder: (BuildContext context) =>const GoSaveScreen())
             );
           },
                 child: Container(

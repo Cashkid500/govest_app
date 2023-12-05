@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/savings/gosavings.dart';
-import '../constants/asset_path.dart';
 
 class SavingsHistoryScreen extends StatefulWidget {
   const SavingsHistoryScreen({Key? key}) : super(key: key);
@@ -182,7 +182,7 @@ class _SavingsHistoryScreenState extends State<SavingsHistoryScreen> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
+                          builder: (BuildContext context) => const
                               GoSavingsScreen()));
                     },
                     child: Container(

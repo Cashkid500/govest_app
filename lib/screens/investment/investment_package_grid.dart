@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/dashboard/dashboard.dart';
 import 'package:govest_app/screens/login/login.dart';
+import 'package:govest_app/screens/profile/add_bank.dart';
 import 'package:govest_app/screens/profile/profile_account.dart';
 import 'package:govest_app/screens/profile/setup_kyc.dart';
 import 'package:govest_app/screens/profile/transaction_history.dart';
-import 'package:govest_app/screens/signup/signup.dart';
-import '../constants/asset_path.dart';
-import '../profile/add_bank.dart';
 
 class InvestmentPackageGridScreen extends StatefulWidget {
   const InvestmentPackageGridScreen({Key? key}) : super(key: key);
@@ -96,7 +95,7 @@ class _InvestmentPackageGridScreenState
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) =>const
                                 DashboardScreen()));
                       },
                       child: Text(
@@ -129,7 +128,7 @@ class _InvestmentPackageGridScreenState
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) =>const
                                 ProfileAccountScreen()));
                       },
                       child: Text(
@@ -162,7 +161,7 @@ class _InvestmentPackageGridScreenState
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) =>const
                                 TransactionHistoryScreen()));
                       },
                       child: Text(
@@ -195,7 +194,7 @@ class _InvestmentPackageGridScreenState
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) =>const
                                 AddBankScreen()));
                       },
                       child: Text(
@@ -225,7 +224,7 @@ class _InvestmentPackageGridScreenState
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) =>const
                                 SetupKYCScreen()));
                       },
                       child: Text(
@@ -304,7 +303,7 @@ class _InvestmentPackageGridScreenState
                     child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => LoginScreen()));
+                            builder: (BuildContext context) =>const LoginScreen()));
                       },
                       child: Container(
                         height: 68.sp,

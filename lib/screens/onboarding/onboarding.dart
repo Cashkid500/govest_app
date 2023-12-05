@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/login/login.dart';
 import 'package:govest_app/screens/signup/signup.dart';
-import '../constants/asset_path.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -30,7 +30,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => SignupScreen()));
+                          builder: (BuildContext context) =>const SignupScreen()));
                     },
                     child: Text(
                       GoVestText.skip,
@@ -64,7 +64,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => SignupScreen()));
+                        builder: (BuildContext context) =>const SignupScreen()));
                   },
                   child: Container(
                     height: 54.sp,
@@ -104,7 +104,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => SignupScreen()));
+                            builder: (BuildContext context) =>const SignupScreen()));
                       },
                       child: Text(
                         GoVestText.skip,
@@ -113,7 +113,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             fontSize: 16.sp,
                             fontWeight: FontWeight.w500,
                             color: whiteText),
-                      )),
+                      ),
+                    ),
                 ),
                 SizedBox(
                   height: 20.sp,
@@ -179,7 +180,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => LoginScreen()));
+                          builder: (BuildContext context) =>const LoginScreen()));
                     },
                     child: Text(
                       GoVestText.skip,
@@ -213,7 +214,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => SignupScreen()));
+                        builder: (BuildContext context) =>const SignupScreen()));
                   },
                   child: Container(
                     height: 54.sp,

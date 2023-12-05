@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
-import '../constants/asset_path.dart';
-import '../savings/savings_dashboard.dart';
+import 'package:govest_app/screens/savings/savings_dashboard.dart';
 
 
 class SafelockScreen extends StatefulWidget {
@@ -162,7 +162,7 @@ class _SafelockScreenState extends State<SafelockScreen> {
               GestureDetector(
                 onTap: () {
                  Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>SavingsDashboardScreen())
+                 MaterialPageRoute(builder: (BuildContext context) =>const SavingsDashboardScreen())
             );
           },
                 child: Container(

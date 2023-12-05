@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:govest_app/screens/constants/asset_path.dart';
 import 'package:govest_app/screens/constants/color_constants.dart';
 import 'package:govest_app/screens/constants/text_constants.dart';
 import 'package:govest_app/screens/referral/referral.dart';
-import '../constants/asset_path.dart';
 
 
 class DashboardScreen extends StatefulWidget {
@@ -272,7 +272,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: GestureDetector(
                 onTap: () {
                  Navigator.of(context).push(
-                 MaterialPageRoute(builder: (BuildContext context) =>ReferralScreen())
+                 MaterialPageRoute(builder: (BuildContext context) =>const ReferralScreen())
                 );
                 },
                 child: Container(
