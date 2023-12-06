@@ -150,7 +150,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               : Icon(Icons.visibility),
                           color: hooloovooBlue,
                         ),
-                          )),
+                        ),
+                        ),
                 ),
               ),
               SizedBox(
