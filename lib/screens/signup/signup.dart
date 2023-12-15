@@ -31,7 +31,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) =>const
                                 OnboardingScreen()));
                       },
                       child: Icon(
@@ -112,7 +112,8 @@ class _SignupScreenState extends State<SignupScreen> {
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w500,
                           color: weatheredStone),
-                    )),
+                    ),
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -136,7 +137,8 @@ class _SignupScreenState extends State<SignupScreen> {
                         fontWeight: FontWeight.w500,
                         color: weatheredStone,
                       ),
-                    )),
+                    ),
+                    ),
                   ),
                 ),
               ],
@@ -178,7 +180,9 @@ class _SignupScreenState extends State<SignupScreen> {
                       suffixIcon: Icon(
                         Icons.loyalty,
                         color: hooloovooBlue,
-                      ))),
+                      ),
+                      ),
+                    ),
             ),
             SizedBox(
               height: 5.sp,
@@ -198,7 +202,8 @@ class _SignupScreenState extends State<SignupScreen> {
                           fontFamily: GoVestAssetsPath.govestFont,
                           fontSize: 10.sp,
                           fontWeight: FontWeight.w400,
-                          color: whiteText)),
+                          color: whiteText),
+                         ),
                 ),
               ],
             ),
@@ -238,7 +243,7 @@ class _SignupScreenState extends State<SignupScreen> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => LoginScreen()));
+                    builder: (BuildContext context) =>const LoginScreen()));
               },
               child: Container(
                 height: 50.sp,
@@ -255,7 +260,8 @@ class _SignupScreenState extends State<SignupScreen> {
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w800,
                       color: whiteText),
-                )),
+                ),
+                ),
               ),
             ),
             SizedBox(
@@ -264,7 +270,7 @@ class _SignupScreenState extends State<SignupScreen> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => LoginScreen()));
+                    builder: (BuildContext context) =>const LoginScreen()));
               },
               child: RichText(
                 text: TextSpan(
