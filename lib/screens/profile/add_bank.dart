@@ -57,7 +57,8 @@ class _AddBankScreenState extends State<AddBankScreen> {
                                 fontSize: 15.sp,
                                 fontWeight: FontWeight.w400,
                                 color: scarabaeusSacer),
-                          )),
+                          ),
+                        ),
                       SizedBox(
                         height: 20.sp,
                       ),
@@ -140,6 +141,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                       SizedBox(height: 55.sp),
                       GestureDetector(
                         onTap: () {
+                          Navigator.of(context).pop();
                           _showOrderDialog(context);
                         },
                         child: Container(
@@ -561,7 +563,7 @@ class _AddBankScreenState extends State<AddBankScreen> {
                           ),
                         ),
                         style: ElevatedButton.styleFrom(
-                          primary: hooloovooBlue,
+                          backgroundColor: hooloovooBlue,
                         ),
                       ),
                     ),

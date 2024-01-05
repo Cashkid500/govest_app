@@ -57,7 +57,8 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                                 fontSize: 15.sp,
                                 fontWeight: FontWeight.w400,
                                 color: scarabaeusSacer),
-                          )),
+                          ),
+                      ),
                       SizedBox(
                         height: 20.sp,
                       ),
@@ -137,6 +138,7 @@ class _SetupKYCScreenState extends State<SetupKYCScreen> {
                       SizedBox(height: 36.sp),
                       GestureDetector(
                         onTap: () {
+                        Navigator.of(context).pop();
                       _showOrderDialog(context);
                         },
                         child: Container(
